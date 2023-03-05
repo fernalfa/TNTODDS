@@ -5,7 +5,6 @@ time.sleep(3)
 ROTATION = 821001
 ADD = 2
 
-
 REPEAT = 20
 def deleteempty():
     pyautogui.press('enter')

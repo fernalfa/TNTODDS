@@ -8,7 +8,8 @@ count = 0
 time.sleep(3)
 
 
-number = 47
+number = 15
+
 
 
 # Iterate excel rows till to finish
@@ -34,6 +35,18 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
 
+    elif (str(int(excel_data['AdjOdds'][count]))) == '-30':
+        pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
+        pyautogui.press('down')
+        print('NEXT TOURNAMENT')
+        print('ALL BETS ACTION')
 
     else:
         pyautogui.press('enter')
@@ -43,8 +56,10 @@ for column in excel_data['Row ID'].tolist():
 
     # Set counter with the number of Rows
     if count == number - 1:
-        print(count+1)
-        print('COMPLETED')
+        print(str((excel_data['A'][count])))
+        print(str(int(excel_data['AdjOdds'][count])))
+        print('COMPLETED, PLEASE CHECK')
         break
+    print(str((excel_data['A'][count])))
+    print(str(int(excel_data['AdjOdds'][count])))
     count = count + 1
-    print(count)

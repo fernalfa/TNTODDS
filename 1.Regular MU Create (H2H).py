@@ -7,7 +7,7 @@ excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
 time.sleep(3)
 
-number = 9
+number = 4
 
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():
