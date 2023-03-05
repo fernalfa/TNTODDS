@@ -2,10 +2,11 @@ import time
 import pyautogui
 time.sleep(3)
 
-ROTATION = 821001
+ROTATION = 7851035
 ADD = 2
 
-REPEAT = 20
+REPEAT = 14
+
 def deleteempty():
     pyautogui.press('enter')
     pyautogui.press('del')

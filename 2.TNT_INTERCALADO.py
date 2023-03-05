@@ -8,7 +8,7 @@ count = 0
 time.sleep(3)
 
 
-number = 20
+number = 128
 
 
 # Iterate excel rows till to finish
