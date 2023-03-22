@@ -2,41 +2,31 @@ import time
 import pandas
 import pyautogui
 # Read data from excel
-sport = "LINEAL"
+sport = "Regular MU Create"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
 time.sleep(3)
+extracents = 20
 
 
-number = 85
-
+number = 21
 
 
 # Iterate excel r
 # ws till to finish
 for column in excel_data['Row ID'].tolist():
     # DELETE IF NO ODDS IN EXCEL ROW
-    if (str(int(excel_data['AdjOdds'][count]))) == '0':
+    if (str(int(excel_data['YES'][count]))) == '0':
         pyautogui.press('enter')
         pyautogui.press('del')
         pyautogui.press('enter')
+        time.sleep(2)
+        pyautogui.press('down')
+        pyautogui.press('down')
         pyautogui.press('down')
 
 
-    elif (str(int(excel_data['AdjOdds'][count]))) == '-20':
-        pyautogui.press('down')
-        pyautogui.press('down')
-        pyautogui.press('down')
-        print('NEXT TOURNAMENT')
-
-    elif (str(int(excel_data['AdjOdds'][count]))) == '-28':
-        pyautogui.press('down')
-        pyautogui.press('down')
-        pyautogui.press('down')
-        pyautogui.press('down')
-        print('NEXT TOURNAMENT')
-
-    elif (str(int(excel_data['AdjOdds'][count]))) == '-30':
+    elif (str(int(excel_data['YES'][count]))) == '-30':
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('enter')
@@ -51,17 +41,18 @@ for column in excel_data['Row ID'].tolist():
 
     else:
         pyautogui.press('enter')
-        pyautogui.typewrite(str(int(excel_data['AdjOdds'][count])))
+        pyautogui.typewrite(str((int(excel_data['YES'][count]))-(extracents)))
         pyautogui.press('enter')
+        pyautogui.press('down')
+        pyautogui.press('down')
         pyautogui.press('down')
 
     # Set counter with the number of Rows
     if count == number - 1:
-        print(str((excel_data['A'][count])))
-        print(str(int(excel_data['AdjOdds'][count])))
+        print(count)
+        print(str(int(excel_data['YES'][count])))
         print('COMPLETED, PLEASE CHECK')
         break
     print(count)
-    print(str((excel_data['A'][count])))
-    print(str(int(excel_data['AdjOdds'][count])))
+    print(str(int(excel_data['YES'][count])))
     count = count + 1
