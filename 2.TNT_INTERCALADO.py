@@ -8,7 +8,7 @@ count = 0
 time.sleep(3)
 
 
-number = 18
+number = 180
 
 
 # Iterate excel rows till to finish
@@ -55,6 +55,7 @@ for column in excel_data['Row ID'].tolist():
 
     # Set counter with the number of Rows
     if count == number - 1:
+        print(count)
         print(str((excel_data['A'][count])))
         print(str(int(excel_data['AdjOdds'][count])))
         print('COMPLETED, PLEASE CHECK')

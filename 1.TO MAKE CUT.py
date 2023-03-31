@@ -9,7 +9,7 @@ count = 0
 time.sleep(5)
 # Iterate excel rows till to finish
 
-repeat = 21
+repeat = 2
 
 for column in excel_data['Row ID'].tolist():
 

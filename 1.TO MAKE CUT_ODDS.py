@@ -6,10 +6,10 @@ sport = "Regular MU Create"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
 time.sleep(3)
-extracents = 20
 
 
-number = 21
+extracents = 10
+number = 2
 
 
 # Iterate excel r
