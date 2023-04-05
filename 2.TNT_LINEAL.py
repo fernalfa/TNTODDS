@@ -7,7 +7,8 @@ excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
 time.sleep(3)
 
-number = 36
+
+number = 101
 
 
 # Iterate excel r
@@ -55,11 +56,12 @@ for column in excel_data['Row ID'].tolist():
 
     # Set counter with the number of Rows
     if count == number - 1:
+        print(count + 1)
         print(str((excel_data['A'][count])))
         print(str(int(excel_data['AdjOdds'][count])))
         print('COMPLETED, PLEASE CHECK')
         break
-    print(count)
+    print(count + 1)
     print(str((excel_data['A'][count])))
     print(str(int(excel_data['AdjOdds'][count])))
     count = count + 1

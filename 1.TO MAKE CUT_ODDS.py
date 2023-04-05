@@ -8,8 +8,8 @@ count = 0
 time.sleep(3)
 
 
-extracents = 10
-number = 2
+extracents = 0
+number = 15
 
 
 # Iterate excel r
@@ -49,10 +49,10 @@ for column in excel_data['Row ID'].tolist():
 
     # Set counter with the number of Rows
     if count == number - 1:
-        print(count)
+        print(count + 1)
         print(str(int(excel_data['YES'][count])))
         print('COMPLETED, PLEASE CHECK')
         break
-    print(count)
+    print(count + 1)
     print(str(int(excel_data['YES'][count])))
     count = count + 1

@@ -2,5 +2,4 @@ import time
 import pyautogui
 time.sleep(3)
 
-
-pyautogui.typewrite('MLB - EXACT')
+pyautogui.typewrite('DUAL FORECAST - US MASTERS')

@@ -9,10 +9,9 @@ count = 0
 time.sleep(5)
 # Iterate excel rows till to finish
 
-repeat = 2
+repeat = 3
 
 for column in excel_data['Row ID'].tolist():
-
     pyautogui.typewrite(str(excel_data['PLAYER'][count]))
     pyautogui.write(" - ")
     pyautogui.write(" TO MAKE THE CUT")
@@ -23,15 +22,17 @@ for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['PLAYER'][count]))
     pyautogui.write(" NO MAKE CUT")
     pyautogui.hotkey('alt', 'o')
-    time.sleep(10)
+    time.sleep(8)
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     # Set counter with the number of Rows
     if count == repeat - 1:
+        print(count + 1)
         print(str(excel_data['PLAYER'][count]))
         print('COMPLETED')
         break
+    print(count + 1)
     print(str(excel_data['PLAYER'][count]))
     count = count + 1
