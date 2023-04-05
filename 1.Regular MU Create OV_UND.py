@@ -10,20 +10,18 @@ time.sleep(3)
 
 
 # Iterate excel rows till to finish
-number = 29
+number = 2
+
+
 for column in excel_data['Row ID'].tolist():
 
     pyautogui.typewrite(str(excel_data['PLAYER'][count]))
-    pyautogui.write(" (")
-    pyautogui.typewrite(str(excel_data['TEAM'][count]))
-    pyautogui.write(") - ")
-    pyautogui.typewrite(str(excel_data['DESCRIPTION'][count]))
     pyautogui.press('tab', presses=2)
     pyautogui.write("OVER")
     pyautogui.press('tab')
     pyautogui.write("UNDER")
     pyautogui.hotkey('alt', 'o')
-    time.sleep(10)
+    time.sleep(7)
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
