@@ -1,21 +1,24 @@
 import time
 import pyautogui
-time.sleep(3)
+time.sleep(5)
 
-ROTATION = 899049
-ADD = 2
 
-REPEAT = 6
+a = 3
+number = 6
+
+value = 899145
+
+
+
+
 def deleteempty():
     pyautogui.press('enter')
-    pyautogui.press('del')
-    pyautogui.typewrite(str(ROTATION))
+    pyautogui.typewrite(str(value))
     pyautogui.press('enter')
-    pyautogui.press('down', presses = 3)
+    pyautogui.press('down', presses = a)
 count = 0
 
-while (count < REPEAT):
+while (count < number):
     count = count + 1
-    print(str(ROTATION))
     print(deleteempty())
-    ROTATION = ROTATION + ADD
+    value = value + 2

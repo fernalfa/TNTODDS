@@ -8,11 +8,11 @@ count = 0
 time.sleep(3)
 
 
-number = 15
+number = 101
 
 
-
-# Iterate excel rows till to finish
+# Iterate excel r
+# ws till to finish
 for column in excel_data['Row ID'].tolist():
     # DELETE IF NO ODDS IN EXCEL ROW
     if (str(int(excel_data['AdjOdds'][count]))) == '0':
@@ -56,10 +56,12 @@ for column in excel_data['Row ID'].tolist():
 
     # Set counter with the number of Rows
     if count == number - 1:
+        print(count + 1)
         print(str((excel_data['A'][count])))
         print(str(int(excel_data['AdjOdds'][count])))
         print('COMPLETED, PLEASE CHECK')
         break
+    print(count + 1)
     print(str((excel_data['A'][count])))
     print(str(int(excel_data['AdjOdds'][count])))
     count = count + 1
