@@ -3,19 +3,18 @@ import pyautogui
 time.sleep(5)
 
 
-a = 3
-number = 6
-
-value = 899145
-
+number = 252
+value = 561001
 
 
 
 def deleteempty():
     pyautogui.press('enter')
+    pyautogui.press('end')
+    pyautogui.press('backspace', presses = 6)
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
-    pyautogui.press('down', presses = a)
+    pyautogui.press('down', presses = 3)
 count = 0
 
 while (count < number):

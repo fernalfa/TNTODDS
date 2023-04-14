@@ -1,32 +1,22 @@
-import requests
-from bs4 import BeautifulSoup
+import time
+import pyautogui
+time.sleep(5)
 
-url = 'https://sportsbook.fanduel.com/navigation/nba?tab=player-doubles'
 
-# Realizar la solicitud HTTP GET a la página web
-response = requests.get(url)
+number = 242
+value = 9881101
 
-# Imprimir el HTML obtenido
-print(response.text)
 
-# Crear el objeto BeautifulSoup con el HTML obtenido
-soup = BeautifulSoup(response.text, 'html.parser')
+def deleteempty():
+    pyautogui.press('enter')
+    pyautogui.press('end')
+    pyautogui.press('backspace', presses = 7)
+    pyautogui.typewrite(str(value))
+    pyautogui.press('enter')
+    pyautogui.press('down', presses = 3)
+count = 0
 
-# Encontrar la tabla de jugadores
-table = soup.find('table', {'class': 'table--sportsbook'})
-
-# Encontrar todas las filas de la tabla
-rows = table.find_all('tr')
-
-# Iterar sobre cada fila y extraer el nombre del jugador y las probabilidades de dobles
-for row in rows:
-    # Encontrar el nombre del jugador
-    name_div = row.find('div', {'class': 'name'})
-    name = name_div.text.strip()
-
-    # Encontrar las probabilidades de dobles
-    odds_div = row.find('div', {'class': 'bet'})
-    odds = odds_div.text.strip()
-
-    # Imprimir los resultados
-    print(f'Jugador: {name}, Probabilidades de dobles: {odds}')
+while (count < number):
+    count = count + 1
+    print(deleteempty())
+    value = value + 2

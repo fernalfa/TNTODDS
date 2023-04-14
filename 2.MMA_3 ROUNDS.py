@@ -8,7 +8,8 @@ count = 0
 time.sleep(3)
 
 
-number = 24
+number = 23
+
 
 
 

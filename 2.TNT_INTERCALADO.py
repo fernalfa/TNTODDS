@@ -8,7 +8,8 @@ count = 0
 time.sleep(3)
 
 
-number = 301
+number = 151
+
 
 
 
@@ -56,12 +57,12 @@ for column in excel_data['Row ID'].tolist():
 
     # Set counter with the number of Rows
     if count == number - 1:
-        print(count)
+        print(count + 1)
         print(str((excel_data['A'][count])))
         print(str(int(excel_data['AdjOdds'][count])))
         print('COMPLETED, PLEASE CHECK')
         break
-    print(count)
+    print(count + 1)
     print(str((excel_data['A'][count])))
     print(str(int(excel_data['AdjOdds'][count])))
     count = count + 1
