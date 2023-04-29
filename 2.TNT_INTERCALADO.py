@@ -2,13 +2,14 @@ import time
 import pandas
 import pyautogui
 # Read data from excel
+
 sport = "INTERCALADO"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
 time.sleep(3)
 
+number = 200
 
-number = 151
 
 
 
@@ -44,7 +45,19 @@ for column in excel_data['Row ID'].tolist():
     elif (str(int(excel_data['AdjOdds'][count]))) == '-40':
         pyautogui.press('down')
         pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
         pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
 

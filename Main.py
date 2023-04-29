@@ -1,63 +1,22 @@
 import time
-import pandas
 import pyautogui
-# Read data from excel
-time.sleep(3)
+time.sleep(5)
 
 
-TOTAL = 8.5
-VALUE = 2
+number = 4
 
-def alternate():
+value = 8001401
 
-        pyautogui.press('down')
-        pyautogui.press('down')
-        pyautogui.press('enter')
-        pyautogui.write('-1')
-        pyautogui.press('enter')
-        pyautogui.press('down', presses = 5)
-        pyautogui.press('enter')
-        pyautogui.write('-1.5')
-        pyautogui.press('enter')
-        pyautogui.press('down', presses = 3)
-        pyautogui.press('enter')
-        pyautogui.write('-2.5')
-        pyautogui.press('enter')
-        pyautogui.press('down', presses = 4)
-        pyautogui.press('left', presses = 6)
-        pyautogui.press('enter')
-        pyautogui.write(str(TOTAL + 0.5))
-        pyautogui.press('enter')
-        pyautogui.press('down', presses = 3)
-        pyautogui.press('enter')
-        pyautogui.write(str(TOTAL - 0.5))
-        pyautogui.press('enter')
-def alternate2():
-    pyautogui.press('down')
-    pyautogui.press('down')
-    pyautogui.press('down')
-    pyautogui.press('enter')
-    pyautogui.write('-1')
-    pyautogui.press('enter')
-    pyautogui.press('down', presses=3)
-    pyautogui.press('enter')
-    pyautogui.write('-1.5')
-    pyautogui.press('enter')
-    pyautogui.press('down', presses=5)
-    pyautogui.press('enter')
-    pyautogui.write('-2.5')
-    pyautogui.press('enter')
-    pyautogui.press('down', presses=3)
-    pyautogui.press('left', presses=6)
-    pyautogui.press('enter')
-    pyautogui.write(str(TOTAL + 0.5))
-    pyautogui.press('enter')
-    pyautogui.press('down', presses=3)
-    pyautogui.press('enter')
-    pyautogui.write(str(TOTAL - 0.5))
-    pyautogui.press('enter')
 
-if str(int(VALUE)) == '1':
-    alternate()
-else:
-    alternate2()
+def deleteempty():
+    pyautogui.press('enter')
+    pyautogui.press('backspace')
+    pyautogui.typewrite(str(value))
+    pyautogui.press('enter')
+    pyautogui.press('down', presses = 3)
+count = 0
+
+while (count < number):
+    count = count + 1
+    print(deleteempty())
+    value = value + 2

@@ -10,7 +10,7 @@ time.sleep(3)
 
 
 # Iterate excel rows till to finish
-number = 2
+number = 6
 
 
 for column in excel_data['Row ID'].tolist():

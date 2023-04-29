@@ -8,8 +8,7 @@ count = 0
 time.sleep(3)
 
 
-number = 56
-
+number = 154
 
 
 
@@ -49,6 +48,26 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
         print('ALL BETS ACTION')
+
+    elif (str(int(excel_data['AdjOdds'][count]))) == '-40':
+        pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
+        pyautogui.press('down')
+        print('NEXT TOURNAMENT')
+        print('DOUBLE HEADER')
 
     else:
         pyautogui.press('enter')

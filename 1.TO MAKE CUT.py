@@ -9,7 +9,7 @@ count = 0
 time.sleep(5)
 # Iterate excel rows till to finish
 
-repeat = 3
+repeat = 25
 
 for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['PLAYER'][count]))

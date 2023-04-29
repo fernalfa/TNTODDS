@@ -1,21 +1,26 @@
 import time
 import pyautogui
-time.sleep(5)
+time.sleep(3)
 
 
-number = 26
-value = 1399
+number = 5
+value = 91
+value2 = 99
 
 
 def deleteempty():
     pyautogui.press('enter')
-    pyautogui.press('end')
+    pyautogui.press('home')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
     pyautogui.press('down', presses = 3)
+    pyautogui.press('enter')
+    pyautogui.press('home')
+    pyautogui.typewrite(str(value2))
+    pyautogui.press('enter')
+    pyautogui.press('down', presses = 5)
 count = 0
 
 while (count < number):
     count = count + 1
-    value = value + 2
     print(deleteempty())
