@@ -8,9 +8,7 @@ excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
 time.sleep(3)
 
-number = 200
-
-
+number = 40
 
 
 
@@ -22,12 +20,28 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
+        print('ODDS DELETED')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-20':
         pyautogui.press('down')
         pyautogui.press('down')
+        print('NEXT TOURNAMENT')
+        print('2 LINES JUMP')
+
+    elif (str(int(excel_data['AdjOdds'][count]))) == '-22':
+        pyautogui.press('down')
+        pyautogui.press('down')
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
+        print('3 LINES JUMP')
+
+    elif (str(int(excel_data['AdjOdds'][count]))) == '-28':
+        pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('down')
+        print('NEXT TOURNAMENT')
+        print('4 LINES JUMP')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-30':
         pyautogui.press('down')
@@ -39,8 +53,8 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
-        print('NEXT TOURNAMENT')
-        print('ALL BETS ACTION')
+        print('2 LINES JUMP')
+        print('ALL BETS ACTION HEADER')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-40':
         pyautogui.press('down')
@@ -60,7 +74,7 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('enter')
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
-
+        print('DOUBLE HEADER')
 
     else:
         pyautogui.press('enter')

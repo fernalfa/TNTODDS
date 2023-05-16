@@ -10,25 +10,30 @@ time.sleep(3)
 
 
 # Iterate excel rows till to finish
-number = 6
+number = 2
 
+
+VALUE = "OVER"
+VALUE1 = "UNDER"
 
 for column in excel_data['Row ID'].tolist():
 
     pyautogui.typewrite(str(excel_data['PLAYER'][count]))
     pyautogui.press('tab', presses=2)
-    pyautogui.write("OVER")
+    pyautogui.typewrite(str(VALUE))
     pyautogui.press('tab')
-    pyautogui.write("UNDER")
+    pyautogui.typewrite(str(VALUE1))
     pyautogui.hotkey('alt', 'o')
-    time.sleep(7)
+    time.sleep(15)
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     # Set counter with the number of Rows
     if count == number - 1:
+        print(str(excel_data['PLAYER'][count]))
         print(count+1)
         print('COMPLETED')
         break
+    print(str(excel_data['PLAYER'][count]))
     count = count + 1
     print(count)

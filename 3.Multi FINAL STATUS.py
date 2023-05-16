@@ -1,22 +1,21 @@
 import time
 import pyautogui
-time.sleep(3)
-value = 0
 
-number = 4
+time.sleep(3)
+
+number = 10
 
 
 def deleteempty():
-    pyautogui.press('tab')
-    pyautogui.press('tab')
+    pyautogui.hotkey('ctrl', 's')
+    pyautogui.hotkey('alt', 'f')
     pyautogui.press('enter')
-    pyautogui.press('enter')
-    pyautogui.press('up')
-    pyautogui.press('down')
+    pyautogui.press('down', presses=3)
+
 
 count = 0
 
 while (count < number):
     count = count + 1
-    print(deleteempty())
     print(count)
+    print(deleteempty())

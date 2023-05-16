@@ -5,7 +5,7 @@ import pyautogui
 time.sleep(3)
 
 
-TOTAL = 8.5
+TOTAL = 7.5
 VALUE = 2
 
 def alternate():

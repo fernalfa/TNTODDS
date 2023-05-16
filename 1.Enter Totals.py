@@ -9,7 +9,7 @@ time.sleep(3)
 
 
 
-number = 9
+number = 68
 
 
 
@@ -17,7 +17,7 @@ number = 9
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():
     # DELETE IF NO ODDS IN EXCEL ROW
-    if (str((excel_data['TOTALS2'][count]))) == '0':
+    if (str((excel_data['TOTALS'][count]))) == '0':
         pyautogui.press('enter')
         pyautogui.press('del')
         pyautogui.press('enter')
@@ -25,14 +25,9 @@ for column in excel_data['Row ID'].tolist():
 
     else:
         pyautogui.press('enter')
-        pyautogui.typewrite(str((excel_data['TOTALS2'][count])))
-        pyautogui.press('enter')
-        pyautogui.press('right')
-        pyautogui.press('enter')
-        pyautogui.typewrite('-110')
+        pyautogui.typewrite(str((excel_data['TOTALS'][count])))
         pyautogui.press('enter')
         pyautogui.press('down', presses=3)
-        pyautogui.press('left')
 
     # Set counter with the number of Rows
     if count == number - 1:

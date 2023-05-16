@@ -2,21 +2,24 @@ import time
 import pyautogui
 time.sleep(4)
 
-
 number = 1
 
-TEAMS = 'BRAVES @ METS'
-A = 5502329
-B = 5502329
+TEAMS = 'twins @ dodgers'
 
-C = 5503329
-D = 5504329
-
-E = 5505293
-F = 5506311
-G = 5507329
-
-H = 5508329
+# ENTER PITCHER PROPS ROTATION
+A = 5315225
+# ENTER TOTAL BASES ROTATION
+B = 5325489
+# ENTER SINGLES ROTATION
+C = 5335455
+# ENTER DOUBLES ROTATION
+D = 5345457
+# ENTER STOLEN BASES ROTATION
+E = 5355431
+# ENTER TOTAL RUNS ROTATION
+F = 5365489
+# ENTER TOTAL HOME RUNS ROTATION
+G = 5375487
 
 
 def deleteempty():
@@ -69,16 +72,11 @@ def deleteempty():
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
-    pyautogui.write(str(H))
-    pyautogui.press('tab', presses = 3)
-    pyautogui.write(str(TEAMS))
-    pyautogui.hotkey('alt', 'o')
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('del')
 
 count = 0
 
 while (count < number):
     count = count + 1
     print(deleteempty())
+    print(TEAMS + ' BANNERS CREATED, PLEASE CHECK')

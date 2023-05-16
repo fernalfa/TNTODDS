@@ -4,11 +4,21 @@ import pyautogui
 # Read data from excel
 time.sleep(3)
 
-VALUE = 1
-TOTAL = 8.5
-A = -150
-B = -230
-C = -285
+
+# ENTER GAME FAVORITE SIDE
+VALUE = 2
+# ENTER GAME TOTAL
+
+TOTAL = 9
+
+# ENTER SIDE ODDS
+A = -125
+B = -275
+C = -255
+
+# ENTER OVER/UNDER JUICE
+D = -160
+E = -150
 
 
 def alternate():
@@ -49,9 +59,19 @@ def alternate():
         pyautogui.press('enter')
         pyautogui.write(str(TOTAL + 0.5))
         pyautogui.press('enter')
-        pyautogui.press('down', presses = 3)
+        pyautogui.press('right')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write(str(D))
+        pyautogui.press('enter')
+        pyautogui.press('down', presses=2)
+        pyautogui.press('left')
         pyautogui.press('enter')
         pyautogui.write(str(TOTAL - 0.5))
+        pyautogui.press('enter')
+        pyautogui.press('right')
+        pyautogui.press('enter')
+        pyautogui.write(str(E))
         pyautogui.press('enter')
         pyautogui.press('down')
 
@@ -95,9 +115,19 @@ def alternate2():
     pyautogui.press('enter')
     pyautogui.write(str(TOTAL + 0.5))
     pyautogui.press('enter')
-    pyautogui.press('down', presses=3)
+    pyautogui.press('right')
+    pyautogui.press('down')
+    pyautogui.press('enter')
+    pyautogui.write(str(D))
+    pyautogui.press('enter')
+    pyautogui.press('down', presses=2)
+    pyautogui.press('left')
     pyautogui.press('enter')
     pyautogui.write(str(TOTAL - 0.5))
+    pyautogui.press('enter')
+    pyautogui.press('right')
+    pyautogui.press('enter')
+    pyautogui.write(str(E))
     pyautogui.press('enter')
     pyautogui.press('down')
 
