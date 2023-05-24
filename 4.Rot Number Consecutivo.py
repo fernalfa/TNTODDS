@@ -1,22 +1,18 @@
 import time
 import pyautogui
-time.sleep(5)
 
-number = 300
+time.sleep(3)
+number = 15
 
-# ENTER INITIAL ROTATION NUMBER
-value = 5375001
+value = 99901
 
-
-def deleteempty():
+def delete_empty():
     pyautogui.press('enter')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
-    pyautogui.press('down', presses = 3)
-count = 0
+    pyautogui.press('down', presses=6)
 
-while (count < number):
-    count = count + 1
-    print(deleteempty())
+for count in range(1, number + 1):
+    delete_empty()
     print(count)
-    value = value + 2
+    value += 2

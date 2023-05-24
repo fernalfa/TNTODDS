@@ -3,7 +3,7 @@ import pyautogui
 time.sleep(4)
 times = 0
 
-number = 415
+number = 500
 
 def deleteempty():
     pyautogui.press('tab')

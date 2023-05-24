@@ -9,16 +9,16 @@ time.sleep(3)
 VALUE = 2
 # ENTER GAME TOTAL
 
-TOTAL = 9
+TOTAL = 7.5
 
 # ENTER SIDE ODDS
-A = -125
-B = -275
-C = -255
+A = +105
+B = -300
+C = -275
 
 # ENTER OVER/UNDER JUICE
-D = -160
-E = -150
+UNDER = -150
+OVER = -135
 
 
 def alternate():
@@ -62,7 +62,7 @@ def alternate():
         pyautogui.press('right')
         pyautogui.press('down')
         pyautogui.press('enter')
-        pyautogui.write(str(D))
+        pyautogui.write(str(UNDER))
         pyautogui.press('enter')
         pyautogui.press('down', presses=2)
         pyautogui.press('left')
@@ -71,7 +71,7 @@ def alternate():
         pyautogui.press('enter')
         pyautogui.press('right')
         pyautogui.press('enter')
-        pyautogui.write(str(E))
+        pyautogui.write(str(OVER))
         pyautogui.press('enter')
         pyautogui.press('down')
 
@@ -118,7 +118,7 @@ def alternate2():
     pyautogui.press('right')
     pyautogui.press('down')
     pyautogui.press('enter')
-    pyautogui.write(str(D))
+    pyautogui.write(str(UNDER))
     pyautogui.press('enter')
     pyautogui.press('down', presses=2)
     pyautogui.press('left')
@@ -127,7 +127,7 @@ def alternate2():
     pyautogui.press('enter')
     pyautogui.press('right')
     pyautogui.press('enter')
-    pyautogui.write(str(E))
+    pyautogui.write(str(OVER))
     pyautogui.press('enter')
     pyautogui.press('down')
 

@@ -4,9 +4,10 @@ import pyautogui
 
 # Read data from excel
 sport = "3-7 INNINGS"
-excel_data = pandas.read_excel('Odds.xlsx', sheet_name=sport)
-number = 0
+excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
+number = 15
+
 time.sleep(5)
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():
