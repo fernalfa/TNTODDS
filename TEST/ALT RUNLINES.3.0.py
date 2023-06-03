@@ -1,158 +1,56 @@
-data = """TEX Rangers
- 
--6.5
-+675
-PIT Pirates
- 
-+6.5
-−1100
-TEX Rangers
- 
--6
-+650
-PIT Pirates
- 
-+6
-−1050
-TEX Rangers
- 
--5.5
-+490
-PIT Pirates
- 
-+5.5
-−725
-TEX Rangers
- 
--5
-+460
-PIT Pirates
- 
-+5
-−670
-TEX Rangers
- 
--4.5
-+340
-PIT Pirates
- 
-+4.5
-−450
-TEX Rangers
- 
--4
-+310
-PIT Pirates
- 
-+4
-−410
-TEX Rangers
- 
--3.5
-+235
-PIT Pirates
- 
-+3.5
-−300
-TEX Rangers
- 
--3
-+210
-PIT Pirates
- 
-+3
-−265
-TEX Rangers
- 
--2.5
-+160
-PIT Pirates
- 
-+2.5
-−195
-TEX Rangers
- 
--2
-+130
-PIT Pirates
- 
-+2
-−160
-TEX Rangers
- 
--1
-−135
-PIT Pirates
- 
-+1
+data = """
+07:05 PM
+1911
+Texas Rangers
+J. Gray -R
+O 26
+-135
+1912
+Baltimore Orioles
+G. Rodriguez -R
+U 26
 +105
-TEX Rangers
- 
-+1
-−300
-PIT Pirates
- 
--1
-+235
-TEX Rangers
- 
-+1.5
-−400
-PIT Pirates
- 
--1.5
-+300
-TEX Rangers
- 
-+2
-−670
-PIT Pirates
- 
--2
-+460
-TEX Rangers
- 
-+2.5
-−760
-PIT Pirates
- 
--2.5
-+510
-TEX Rangers
- 
-+3
-−1300
-PIT Pirates
- 
--3
-+750"""
+07:05 PM
+1919
+San Diego Padres
+J. Musgrove -R
+O 27
+-120
+1920
+New York Yankees
+R. Vasquez -R
+U 27
+-110
+"""
 
 lines = data.split('\n')
 
 rows = []
 current_row = {}
-current_key = ""
 
 for line in lines:
     line = line.strip()
     if line:
-        if not current_key or current_key == "Team":
-            current_row["Team"] = line
-            current_key = "Spread"
-        elif current_key == "Spread":
-            current_row["Spread"] = float(line)
-            current_key = "Odds"
-        elif current_key == "Odds":
-            odds_value = line.replace("−", "-")  # Replace minus sign character with regular hyphen
-            current_row["Odds"] = int(odds_value)
-            if current_row["Spread"] in [-2.5, -1.5, -1, 1, 1.5, 2.5]:
-                rows.append(current_row)
+        if "PM" in line or "AM" in line:
+            current_row["Time"] = line
+        elif line.isdigit():
+            current_row["Rot Number"] = int(line)
+        elif line.startswith("O"):
+            _, over_total, over_odds = line.split()
+            current_row["Total Over"] = int(over_total)
+            current_row["Over Odds"] = int(over_odds)
+        elif line.startswith("U"):
+            _, under_total, under_odds = line.split()
+            current_row["Total Under"] = int(under_total)
+            current_row["Under Odds"] = int(under_odds)
+            rows.append(current_row)
             current_row = {}
-            current_key = "Team"
 
 # Print the collected rows
 for row in rows:
-    print("Team:", row["Team"])
-    print("Spread:", row["Spread"])
-    print("Odds:", row["Odds"])
-    print()
+    print("Time:", row["Time"])
+    print("Rot Number:", row["Rot Number"])
+    print("Total Over:", row["Total Over"])
+    print("Over Odds:", row["Over Odds"])
+    print("Total Under:", row["Total Under"])
+    print("Under Odds:", row["Under Odds"])

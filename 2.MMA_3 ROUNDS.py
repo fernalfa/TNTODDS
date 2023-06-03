@@ -13,6 +13,7 @@ number = 26
 
 
 
+
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():
     # DELETE IF NO ODDS IN EXCEL ROW

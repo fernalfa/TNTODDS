@@ -3,7 +3,7 @@ import pyautogui
 
 time.sleep(3)
 
-number = 10
+number = 20
 
 
 def deleteempty():

@@ -1,68 +1,31 @@
-import time
-import re
-import pyautogui
-time.sleep(3)
+scenarios = [
+    "MIA Heat 100:106 BOS Celtics",
+    "+15000",
+    "MIA Heat 101:107 BOS Celtics",
+    "+15000",
+    "MIA Heat 107:110 BOS Celtics",
+    "+15000",
+    "MIA Heat 101:106 BOS Celtics",
+    "+16000",
+    "MIA Heat 105:99 BOS Celtics",
+    "+16000",
+    "MIA Heat 104:107 BOS Celtics",
+    "+16000",
+    "MIA Heat 101:104 BOS Celtics",
+    "+16000",
+    "MIA Heat 99:105 BOS Celtics",
+    "+16000",
+    "MIA Heat 99:104 BOS Celtics",
+    "+16000"
+]
 
-def split_text_numbers(data):
-    pattern = r'([A-Za-z\s]+)(\d+:\d+)([A-Za-z\s]+)\n([+-]?\d+)'
-    matches = re.findall(pattern, data)
-    result = []
-    for match in matches:
-        team1 = match[0].strip()
-        score = match[1]
-        team2 = match[2].strip()
-        number = int(match[3])
-        result.append((team1, score, team2, number))
-    return result
-
-def oddsprint():
-    pyautogui.press('enter')
-    pyautogui.typewrite(str(int(number)))
-    pyautogui.press('enter')
-    pyautogui.press('down')
-
-
-
-# Example usage
-data = '''
-MIA Heat 83:78 BOS Celtics
-+18000
-MIA Heat 79:72 BOS Celtics
-+18000
-MIA Heat 80:88 BOS Celtics
-+18000
-MIA Heat 74:80 BOS Celtics
-+18000
-MIA Heat 83:78 BOS Celtics
-+18000
-MIA Heat 79:72 BOS Celtics
-+18000
-MIA Heat 80:88 BOS Celtics
-+18000
-MIA Heat 74:80 BOS Celtics
-+18000
-MIA Heat 83:78 BOS Celtics
-+18000
-MIA Heat 79:72 BOS Celtics
-+18000
-MIA Heat 80:88 BOS Celtics
-+18000
-MIA Heat 74:80 BOS Celtics
-+18000
-MIA Heat 83:78 BOS Celtics
-+18000
-MIA Heat 79:72 BOS Celtics
-+18000
-MIA Heat 80:88 BOS Celtics
-+18000
-MIA Heat 74:80 BOS Celtics
-+18000
-'''
-
-split_result = split_text_numbers(data)
-for item in split_result:
-    team1, score, team2, number = item
-
-    print(oddsprint())
-    time.sleep(3)
-    print(f'{team1} {score} {team2} {number}')
+for i in range(0, len(scenarios), 2):
+    scenario = scenarios[i]
+    additional_info = scenarios[i + 1]
+    parts = scenario.split()
+    team1 = ' '.join(parts[:2])  # Join the first two parts as team 1
+    score1, score2 = parts[2].split(':')  # Split the third part on ":" to get the scores
+    team2 = ' '.join(parts[3:])  # Join the remaining parts as team 2
+    print(f"{team1} {score1} - {team2} {score2}")
+    print(additional_info)
+    print()

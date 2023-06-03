@@ -9,7 +9,9 @@ count = 0
 time.sleep(3)
 
 
-number = 95
+number = 255
+
+
 
 
 

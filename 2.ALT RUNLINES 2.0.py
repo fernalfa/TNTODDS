@@ -9,16 +9,16 @@ time.sleep(3)
 VALUE = 2
 # ENTER GAME TOTAL
 
-TOTAL = 7.5
+TOTAL = 9.5
 
 # ENTER SIDE ODDS
-A = +105
-B = -300
-C = -275
+A = -110
+B = -285
+C = -215
 
 # ENTER OVER/UNDER JUICE
 UNDER = -150
-OVER = -135
+OVER = -150
 
 
 def alternate():
