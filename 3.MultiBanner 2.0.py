@@ -1,35 +1,70 @@
 import time
 import pandas
 import pyautogui
-
 # Read data from excel
 sport = "BANNERS"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
+count = 0
 time.sleep(3)
 
-number = 2
+number = 1
 
-# Iterate through excel rows
-for count, row in excel_data.iterrows():
-    for i in range(1, 8):
-        rot_value = int(row[f'ROT{i}'])
-        banner_value = str(row['BANNER'])
 
-        pyautogui.write(str(rot_value))
-        pyautogui.press('tab', presses=3)
-        pyautogui.typewrite(banner_value)
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('alt', 'o')
-        pyautogui.press('del')
+# Iterate excel r
+# ws till to finish
+for column in excel_data['Row ID'].tolist():
+    pyautogui.typewrite(str(excel_data['ROT1'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.typewrite(str(excel_data['ROT2'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.typewrite(str(excel_data['ROT3'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.typewrite(str(excel_data['ROT4'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.typewrite(str(excel_data['ROT5'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.typewrite(str(excel_data['ROT6'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.typewrite(str(excel_data['ROT7'][count]))
+    pyautogui.press('tab', presses = 3)
+    pyautogui.typewrite(str(excel_data['BANNER'][count]))
+    pyautogui.hotkey('alt', 'o')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
 
-    print(f"{banner_value} BANNERS CREATED, PLEASE CHECK")
+count = 0
 
-    # Check if the desired number of rows is reached
-    if count == number - 1:
-        print(count + 1)
-        print('COMPLETED')
-        break
-
-    print(count + 1)
+while (count < number):
+    print((str(excel_data['BANNER'][count])) + ' BANNERS CREATED, PLEASE CHECK')
+    count = count + 1
