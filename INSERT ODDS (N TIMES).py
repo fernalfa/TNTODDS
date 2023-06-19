@@ -3,7 +3,7 @@ import pyautogui
 time.sleep(5)
 
 
-number = 4
+number = 40
 value = -120
 
 
@@ -15,6 +15,5 @@ def deleteempty():
 count = 0
 
 while (count < number):
-    print(count)
     count = count + 1
     print(deleteempty())

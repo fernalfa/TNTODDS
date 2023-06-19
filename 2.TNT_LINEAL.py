@@ -8,7 +8,8 @@ count = 0
 time.sleep(3)
 
 
-number = 101
+number = 153
+
 
 
 # Iterate excel r
@@ -20,13 +21,21 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
+        print('ODDS DELETED')
 
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-20':
         pyautogui.press('down')
         pyautogui.press('down')
+        print('NEXT TOURNAMENT')
+        print('2 LINES JUMP')
+
+    elif (str(int(excel_data['AdjOdds'][count]))) == '-25':
+        pyautogui.press('down')
+        pyautogui.press('down')
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
+        print('3 LINES JUMP')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-28':
         pyautogui.press('down')
@@ -34,6 +43,7 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('down')
         pyautogui.press('down')
         print('NEXT TOURNAMENT')
+        print('4 LINES JUMP')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-30':
         pyautogui.press('down')
@@ -45,8 +55,27 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
-        print('NEXT TOURNAMENT')
-        print('ALL BETS ACTION')
+        print('2 LINES JUMP')
+        print('ALL BETS ACTION HEADER')
+
+    elif (str(int(excel_data['AdjOdds'][count]))) == '-40':
+        pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
+        pyautogui.press('down')
+        pyautogui.press('enter')
+        pyautogui.write('-125')
+        pyautogui.press('enter')
+        pyautogui.press('enter')
+        pyautogui.press('del')
+        pyautogui.press('enter')
+        pyautogui.press('down')
+        print('DOUBLE HEADER')
 
     else:
         pyautogui.press('enter')
