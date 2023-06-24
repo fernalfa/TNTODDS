@@ -5,10 +5,10 @@ import pyautogui
 sport = "LINEAL"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
-time.sleep(3)
+time.sleep(4)
 
 
-number = 120
+number = 32
 
 
 
@@ -42,8 +42,10 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('down')
         print('NEXT TOURNAMENT')
-        print('4 LINES JUMP')
+        print('7 LINES JUMP')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-30':
         pyautogui.press('down')

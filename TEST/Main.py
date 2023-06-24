@@ -1,88 +1,40 @@
 import time
 import pyautogui
-time.sleep(4)
+import re
 
-pyautogui.press('enter')
-pyautogui.write('90')
-pyautogui.press('enter')
+time.sleep(3)
+
+text = """
++850
+-150
++1600
++1000
+"""
+
+lines = text.split('\n')
+
+# Extract common options and number values
+positive_values = []
+negative_values = []
+options = []
+values = []
+
+for line in lines:
+    option = lines
+    value = int(lines[lines.index(line) + 1])
+
+    if value < 0:
+        value = int(value * 1.1)  # Reduce negative values by 10%
+    elif value > 0:
+        value = int(value * 0.9)  # Reduce positive values by 10%
+
+    pyautogui.press('enter')
+    pyautogui.typewrite(str(value))
+    pyautogui.press('enter')
+    pyautogui.press('down')
+
+# Print the extracted information
+print("Values:", positive_values)
+print("Values:", negative_values)
 pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('90')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('99')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('113')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('180')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('198')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('216')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('270')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('270')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('300')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('360')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('450')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('495')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('495')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('585')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('585')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('585')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('630')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('675')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('675')
-pyautogui.press('enter')
-pyautogui.press('down')
-pyautogui.press('enter')
-pyautogui.write('810')
-pyautogui.press('enter')
 pyautogui.press('down')

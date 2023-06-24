@@ -3,8 +3,8 @@ import pyautogui
 time.sleep(5)
 
 
-number = 252
-value = 561001
+number = 25
+value = 6552001
 
 
 

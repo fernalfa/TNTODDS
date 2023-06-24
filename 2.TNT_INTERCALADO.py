@@ -9,9 +9,8 @@ count = 0
 time.sleep(3)
 
 
-number = 255
 
-
+number = 85
 
 
 

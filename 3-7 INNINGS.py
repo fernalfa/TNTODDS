@@ -5,10 +5,10 @@ import pyautogui
 SPORT_SHEET = "3-7 INNINGS"
 
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=SPORT_SHEET)
-number = 14
+number = 4
 
-# Wait for 5 seconds
-pyautogui.sleep(5)
+
+pyautogui.sleep(3)
 
 # Iterate over rows in excel_data
 for _, row in excel_data.iterrows():

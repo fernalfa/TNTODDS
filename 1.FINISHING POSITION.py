@@ -6,10 +6,10 @@ import pyautogui
 sport = "LINEAL"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
-time.sleep(5)
+time.sleep(3)
 # Iterate excel rows till to finish
 
-repeat = 14
+repeat = 38
 
 for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['FP'][count]))
@@ -19,12 +19,12 @@ for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['FP1'][count]))
     pyautogui.press('tab')
     pyautogui.typewrite(str(excel_data['FP2'][count]))
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('alt', 'o')
-    time.sleep(8)
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('shift', 'tab')
+    time.sleep(15)
     # Set counter with the number of Rows
     if count == repeat - 1:
         print(count + 1)
