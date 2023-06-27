@@ -3,14 +3,12 @@ import pyautogui
 time.sleep(3)
 
 
-number = 9
-value = 6755001
-
+number = 243
+value = 7257001
 
 
 def deleteempty():
     pyautogui.press('enter')
-    pyautogui.press('end')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
     pyautogui.press('down', presses = 3)

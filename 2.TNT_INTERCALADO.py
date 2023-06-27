@@ -10,7 +10,7 @@ time.sleep(3)
 
 
 
-number = 85
+number = 27
 
 
 
@@ -56,7 +56,6 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
-        print('2 LINES JUMP')
         print('ALL BETS ACTION HEADER')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-40':
@@ -76,7 +75,6 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
-        print('NEXT TOURNAMENT')
         print('DOUBLE HEADER')
 
     else:

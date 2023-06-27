@@ -8,7 +8,7 @@ count = 0
 time.sleep(4)
 
 
-number = 32
+number = 60
 
 
 
@@ -77,7 +77,6 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
-        print('NEXT TOURNAMENT')
         print('DOUBLE HEADER')
 
     else:

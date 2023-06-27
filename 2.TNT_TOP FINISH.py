@@ -8,7 +8,7 @@ count = 0
 time.sleep(3)
 
 
-number = 154
+number = 157
 
 
 # Iterate excel r
@@ -74,7 +74,6 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('del')
         pyautogui.press('enter')
         pyautogui.press('down')
-        print('NEXT TOURNAMENT')
         print('DOUBLE HEADER')
 
     else:
