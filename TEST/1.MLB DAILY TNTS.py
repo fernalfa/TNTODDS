@@ -2,16 +2,10 @@ import time
 import pyautogui
 
 time.sleep(3)
-skip = 160
+skip = 4
 
 data = '''
-
--340
--230
--145
-+110
-+140
-
+ABC
 
 '''
 

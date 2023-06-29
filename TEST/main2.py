@@ -1,56 +1,81 @@
-import time
-import pyautogui
 import re
 
-time.sleep(3)
+# Lines data
+lines_data = """
+08:10 PM
+1961
+Cleveland Guardians
+L. Allen -L
+O 27
+-140
+1962
+Kansas City Royals
+A. Cox-L
+U 27
++110
+09:38 PM
+1963
+Chicago White Sox
+L. Giolito -R
+O 26
+-140
+1964
+Los Angeles Angels
+J. Barria -R
+U 26
++110
+09:40 PM
+1965
+New York Yankees
+D. German -R
+O 25½
++105
+1966
+Oakland Athletics
+J. Sears -L
+U 25½
+-135
+09:40 PM
+1979
+Tampa Bay Rays
+Z. Eflin -R
+O 27½
+-130
+1980
+Arizona Diamondbacks
+Z. Davies -R
+U 27½
++100
+"""
 
-text = """STL Cardinals @ CIN Reds
-Tue 23 May 18:40
-Solo HR
--150
-2-Run HR
-+175
-3-Run HR
-+700
-Grand Slam
-+3500
-No HR Scored
-+1200"""
+# Define the regex pattern
+pattern = r"(O|U)\s+((\d+)(½)?)\n(-?\d+)"
 
-lines = text.split('\n')
+# Find all matches in the lines data
+matches = re.findall(pattern, lines_data)
 
-# Extract team names and date
-teams = lines[0]
-dates = re.findall(r"[\w\s]+ \d+ [A-Za-z]+\s\d+:\d+", text)
-lines = lines[2:]  # Remove the team names and dates from lines
+# Initialize variables to store Over and Under prices
+over_price = None
+under_price = None
 
-# Extract common options and number values
-positive_values = []
-negative_values = []
-options = []
-values = []
-for i in range(0, len(lines), 2):
-    option = lines[i]
-    value = int(lines[i + 1])
+# Iterate over the matches and extract the relevant information
+for i in range(len(matches)):
+    over_under = matches[i][0]
+    number = matches[i][2]
+    line = matches[i][4]  # Updated index for line value
 
-    options.append(option)
-    if value < 0:
-        value = int(value * 1.1)  # Reduce negative values by 10%
-        negative_values.append(value)
-    elif value > 0:
-        value = int(value * 0.9)  # Reduce positive values by 10%
-        positive_values.append(value)
+    if over_under == 'O':
+        # Check if there is a next line
+        if i + 1 < len(matches):
+            next_line = matches[i + 1][4]  # Updated index for next line value
+            # Check if the next line is an Under line and negative
+            if matches[i + 1][4] == 'U' and int(next_line) < 0:
+                under_price = next_line
 
-    pyautogui.press('enter')
-    pyautogui.typewrite(str(value))
-    pyautogui.press('enter')
-    pyautogui.press('down')
-    values.append(value)
+        # Process the Over and Under prices together
+        print(f"Total: {number}")
+        print(f"Over Price: {line}")
+        print(f"under Price: {under_price}")
 
-# Print the extracted information
-print("Teams:", teams)
-print("Dates:", dates)
-print("Options:", options)
-print("Values:", values)
-pyautogui.press('down')
-pyautogui.press('down')
+        # Reset the Under price for the next iteration
+        under_price = None

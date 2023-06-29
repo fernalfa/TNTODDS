@@ -22,7 +22,6 @@ OVER = -125
 
 
 def alternate():
-
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('enter')
