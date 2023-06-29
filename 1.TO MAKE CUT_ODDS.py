@@ -8,8 +8,8 @@ count = 0
 time.sleep(3)
 
 
-extracents = 10
-number = 32
+extracents = 0
+number = 26
 
 
 # Iterate excel r

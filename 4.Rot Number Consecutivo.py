@@ -1,20 +1,20 @@
 import time
 import pyautogui
-
 time.sleep(3)
 
 
-number = 20
+number = 243
+value = 7257001
 
-value = 4401101
 
-def delete_empty():
+def deleteempty():
     pyautogui.press('enter')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
-    pyautogui.press('down', presses=3)
+    pyautogui.press('down', presses = 3)
+count = 0
 
-for count in range(1, number + 1):
-    delete_empty()
-    print(count)
-    value += 2
+while (count < number):
+    count = count + 1
+    value = value + 2
+    print(deleteempty())

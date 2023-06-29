@@ -8,7 +8,7 @@ count = 0
 time.sleep(3)
 
 
-number = 153
+number = 155
 
 
 
@@ -42,8 +42,10 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('down')
         print('NEXT TOURNAMENT')
-        print('4 LINES JUMP')
+        print('7 LINES JUMP')
 
     elif (str(int(excel_data['AdjOdds'][count]))) == '-30':
         pyautogui.press('down')

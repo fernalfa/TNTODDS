@@ -9,20 +9,19 @@ time.sleep(3)
 VALUE = 1
 # ENTER GAME TOTAL
 
-TOTAL = 7.5
+TOTAL = 12.5
 
 # ENTER SIDE ODDS
-A = -150
-B = -200
-C = -315
+A = -100
+B = -300
+C = -185
 
 # ENTER OVER/UNDER JUICE
-UNDER = -130
-OVER = -160
+UNDER = -145
+OVER = -125
 
 
 def alternate():
-
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('enter')

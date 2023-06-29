@@ -9,7 +9,7 @@ count = 0
 time.sleep(3)
 # Iterate excel rows till to finish
 
-repeat = 1
+repeat = 38
 
 for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['FP'][count]))
@@ -28,9 +28,9 @@ for column in excel_data['Row ID'].tolist():
     # Set counter with the number of Rows
     if count == repeat - 1:
         print(count + 1)
-        print(str(excel_data['FP'][count]))
+        print(str(excel_data['PLAYER'][count]))
         print('COMPLETED')
         break
     print(count + 1)
-    print(str(excel_data['FP'][count]))
+    print(str(excel_data['PLAYER'][count]))
     count = count + 1

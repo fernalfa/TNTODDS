@@ -5,7 +5,7 @@ import pyautogui
 SPORT_SHEET = "3-7 INNINGS"
 
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=SPORT_SHEET)
-number = 7
+number = 4
 
 
 pyautogui.sleep(3)
