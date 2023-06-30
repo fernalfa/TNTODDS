@@ -1,6 +1,7 @@
 import time
 import pandas
 import pyautogui
+
 # Read data from excel
 sport = "LINEAL"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
