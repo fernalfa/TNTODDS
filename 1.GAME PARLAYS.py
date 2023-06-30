@@ -3,7 +3,7 @@ import pyautogui
 
 time.sleep(3)
 
-totals = [9.5, 8.5, 8.5]  # List of different total values
+totals = [7.5]  # List of different total values
 
 def entertnt():
     pyautogui.hotkey('ctrl', 'enter')

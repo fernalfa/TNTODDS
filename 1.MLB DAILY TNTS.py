@@ -2,11 +2,28 @@ import time
 import pyautogui
 
 time.sleep(3)
-skip = 4
-
+skip = 10
 data = '''
-ABC
-
+1st Inning
+−115
+2nd Inning
++275
+3rd Inning
++500
+4th Inning
++1000
+5th Inning
++1700
+6th Inning
++2200
+7th Inning
++4000
+8th Inning
++4500
+9th Inning
++6000
+10th Inning or Later
++5500
 '''
 
 lines = data.strip().split('\n')

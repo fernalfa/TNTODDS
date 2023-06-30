@@ -49,7 +49,9 @@ Inning of Last Run
 2nd Inning
 +7500
 1st Inning
-+8000'''
++8000
+
+'''
 
 lines = data.split('\n')
 
