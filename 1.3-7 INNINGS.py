@@ -6,7 +6,7 @@ import pyautogui
 sport = "3-7 INNINGS"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
-number = 13
+number = 12
 
 time.sleep(3)
 # Iterate excel rows till to finish
