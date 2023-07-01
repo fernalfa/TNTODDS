@@ -2,10 +2,30 @@ import time
 import pyautogui
 
 time.sleep(3)
-skip = 4
+skip = 8
 
 data = '''
-ABC
+
+1st Inning
+−170
+2nd Inning
++275
+3rd Inning
++650
+4th Inning
++1300
+5th Inning
++2200
+6th Inning
++3500
+7th Inning
++5000
+8th Inning
++7000
+9th Inning
++8000
+10th Inning or Later
++8000
 
 '''
 
