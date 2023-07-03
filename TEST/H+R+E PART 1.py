@@ -100,25 +100,7 @@ for number in over_number:
 for i in range(len(over_odds)):
     if over_odds[i] > under_odds[i]:
         print(f"In game {i+1}, OVER odds are higher.")
-        pyautogui.press('enter')
-        pyautogui.typewrite(str(number))
-        pyautogui.press('enter')
-        pyautogui.press('right')
-        pyautogui.press('enter')
-        pyautogui.typewrite(str(over_odds[i]))
-        pyautogui.press('enter')
-        pyautogui.press('left')
-        pyautogui.press('down', presses=3)
+
 
     else:
         print(f"In game {i+1}, OVER and UNDER odds are the same.")
-        pyautogui.press('enter')
-        pyautogui.typewrite(str(number))
-        pyautogui.press('enter')
-        pyautogui.press('down')
-        pyautogui.press('right')
-        pyautogui.press('enter')
-        pyautogui.typewrite(str(under_odds[i]))
-        pyautogui.press('enter')
-        pyautogui.press('left')
-        pyautogui.press('down', presses=2)
