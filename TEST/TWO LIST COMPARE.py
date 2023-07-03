@@ -62,6 +62,8 @@ for name in names:
     if odd is not None:
         print(f"{name}: {odd}")
         enterodd()
+
     else:
         print(f"{name}: NONE")
         deleteodd()
+

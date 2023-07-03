@@ -9,7 +9,7 @@ time.sleep(3)
 
 
 extracents = 0
-number = 26
+number = 19
 
 
 # Iterate excel r
