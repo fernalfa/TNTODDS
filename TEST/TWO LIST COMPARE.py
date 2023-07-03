@@ -170,8 +170,10 @@ for line in lines:
 
 print(names)
 
-odds = re.findall(r'(.+)\n([-+]?\d+)', odds_data)
+with open('DATAPROVIDER', 'r') as file:
+    data = file.read()
 
+odds = re.findall(r'(.+)\n([-+]?\d+)', data)
 odds_dict = {}
 
 for name, odd in odds:
