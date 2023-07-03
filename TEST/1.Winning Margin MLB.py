@@ -3,77 +3,69 @@ import pyautogui
 time.sleep(3)
 
 data = '''
+MIA Marlins @ ATL Braves
+Sun 2 Jul 13:35
+Solo HR
+-145
+2-Run HR
++190
+3-Run HR
++800
+Grand Slam
++4000
+No HR Scored
++750
+MIL Brewers @ PIT Pirates
+Sun 2 Jul 13:35
+Solo HR
+-130
+2-Run HR
++200
+3-Run HR
++850
+Grand Slam
++3500
+No HR Scored
++550
+WAS Nationals @ PHI Phillies
+Sun 2 Jul 13:35
+Solo HR
+-170
+2-Run HR
++190
+3-Run HR
++800
+Grand Slam
++4000
+No HR Scored
++1100
+
+SD Padres @ CIN Reds
+Sun 2 Jul 13:40
+Solo HR
+-150
+2-Run HR
++170
+3-Run HR
++650
+Grand Slam
++3500
+No HR Scored
++1400
+
 SF Giants @ NY Mets
 Sun 2 Jul 19:05
- 
-1
-2
-3
-4+
-SF Giants
+Solo HR
+-145
+2-Run HR
++180
+3-Run HR
 +750
-+700
-+900
-+365
-NY Mets
-+375
-+750
-+900
-+390
-
-MIN Twins @ BAL Orioles
-Sun 2 Jul 12:05
- 
-1
-2
-3
-4+
-MIN Twins
-+650
-+700
-+850
-+310
-BAL Orioles
-+500
-+750
+Grand Slam
++3500
+No HR Scored
 +1000
-+425
 
-BOS Red Sox @ TOR Blue Jays
-Sun 2 Jul 13:37
- 
-1
-2
-3
-4+
-BOS Red Sox
-+800
-+800
-+1100
-+600
-TOR Blue Jays
-+375
-+650
-+750
-+265
-
-HOU Astros @ TEX Rangers
-Sun 2 Jul 14:35
- 
-1
-2
-3
-4+
-HOU Astros
-+800
-+750
-+900
-+390
-TEX Rangers
-+450
-+700
-+850
-+325
 
 '''
 
@@ -86,6 +78,6 @@ for line in lines:
         pyautogui.press('enter')
         pyautogui.press('down')
         count += 1
-        if count % 8 == 0:
+        if count % 5 == 0:
             pyautogui.press('down')
             pyautogui.press('down')

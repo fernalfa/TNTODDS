@@ -11,23 +11,23 @@ PM
 San Diego Padres
 M. Wacha -R
 O 30½
--120
+-1200
 1902
 Cincinnati Reds
 B. Williamson -L
 U 30½
--110
+-1100
 02:15 PM
 1921
 New York Yankees - Game #1
 L. Severino -R
 O 26½
--110
+-11000
 1922
 St. Louis Cardinals - Game #1
 J. Flaherty -R
 U 26½
--120
+-120000
 
 """
 

@@ -1,0 +1,69 @@
+import re
+
+data = """
+969	TAMPA BAY RAYS
+
+P: 1:10PM  C: 3:10PM  E: 4:10PM 
+970	SEATTLE MARINERS
+
+
+
+
+
+
+INTERLEAGUE  
+ 
+971	LOS ANGELES DODGERS
+
+P: 11:10AM  C: 1:10PM  E: 2:10PM 
+972	KANSAS CITY ROYALS
+
+
+
+
+
+
+973	NEW YORK YANKEES
+
+P: 11:15AM  C: 1:15PM  E: 2:15PM 
+974	ST. LOUIS CARDINALS
+
+
+
+
+
+
+975	CLEVELAND GUARDIANS
+
+P: 2:05PM  C: 4:05PM  E: 5:05PM 
+976	CHICAGO CUBS
+
+
+
+
+
+
+977	DETROIT TIGERS
+
+P: 12:10PM  C: 2:10PM  E: 3:10PM 
+978	COLORADO ROCKIES
+
+
+
+
+
+
+979	ARIZONA DIAMONDBACKS
+
+P: 1:07PM  C: 3:07PM  E: 4:07PM 
+980	LOS ANGELES ANGELS
+
+
+"""
+
+
+
+team_names = re.findall(r"\d+\s+(.*\S)\s*$", data, re.MULTILINE)
+team_names = [name.strip() for name in team_names]
+
+print(team_names)

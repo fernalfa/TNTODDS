@@ -3,7 +3,7 @@ import pyautogui
 time.sleep(3)
 
 
-number = 243
+number = 214
 value = 7257001
 
 
