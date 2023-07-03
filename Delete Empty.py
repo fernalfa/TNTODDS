@@ -3,7 +3,7 @@ import pyautogui
 
 time.sleep(3)
 value = 0
-number = 10
+number = 60
 
 def delete_empty():
     pyautogui.press(['tab', 'tab', 'enter', 'enter', 'up', 'down'])

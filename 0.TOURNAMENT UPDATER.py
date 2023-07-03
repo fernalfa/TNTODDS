@@ -6,547 +6,533 @@ time.sleep(3)
 surcharge_percentage = 10  # 10% surcharge
 
 data = '''
-Odds To Win - Tour De France 2023 - Jun 30
-Odds To Win - Tour De France 2023
-Odds To Win - Tour De France 2023
-Odds To Win - Tour De France 2023
-Jun 30 - 4:29 Pm
-
-Rot
-
-Description
-
-Odds
-
 
 478501
 
-** All Action **
+** ALL ACTION **
 478502
 
-Jonas Vingegaard
+JONAS VINGEGAARD
 478503
 
-Tadej Pogacar
+TADEJ POGACAR
 478504
 
-Remco Evenepoel
+REMCO EVENEPOEL
 478505
 
-Primoz Roglic
+PRIMOZ ROGLIC
 478506
 
-Enric Mas Nicolau
+ENRIC MAS NICOLAU
 478507
 
-Juan Ayuso
+JUAN AYUSO
 478508
 
-Carlos Rodriguez
+CARLOS RODRIGUEZ
 478509
 
-Richard Carapaz
+RICHARD CARAPAZ
 478510
 
-Geraint Thomas
+GERAINT THOMAS
 478511
 
-Egan Bernal
+EGAN BERNAL
 478512
 
-Jai Hindley
+JAI HINDLEY
 478513
 
-Wout Van Aert
+WOUT VAN AERT
 478514
 
-David Gaudu
+DAVID GAUDU
 478515
 
-Alexander Vlasov
+ALEXANDER VLASOV
 478516
 
-Joao Almeida
+JOAO ALMEIDA
 478517
 
-Thymen Arensman
+THYMEN ARENSMAN
 478518
 
-Daniel Martinez
+DANIEL MARTINEZ
 478519
 
-Romain Bardet
+ROMAIN BARDET
 478520
 
-Tom Pidcock
+TOM PIDCOCK
 478521
 
-Adam Yates
+ADAM YATES
 478522
 
-Ben O'connor
+BEN O'CONNOR
 478523
 
-Jack Haig
+JACK HAIG
 478524
 
-Miguel Angel Lopez
+MIGUEL ANGEL LOPEZ
 478525
 
-Jay Vine
+JAY VINE
 478526
 
-Simon Yates
+SIMON YATES
 478527
 
-Julian Alaphilippe
+JULIAN ALAPHILIPPE
 478528
 
-Mikel Landa
+MIKEL LANDA
 478529
 
-Nairo Quintana
+NAIRO QUINTANA
 478530
 
-Pavel Sivakov
+PAVEL SIVAKOV
 478531
 
-Wilco Kelderman
+WILCO KELDERMAN
 478532
 
-Chris Froome
+CHRIS FROOME
 478533
 
-Tao Geoghegan Hart
+TAO GEOGHEGAN HART
 478534
 
-Sepp Kuss
+SEPP KUSS
 478535
 
-Tobias Halland Johannessen
+TOBIAS HALLAND JOHANNESSEN
 478536
 
-Rigoberto Uran
+RIGOBERTO URAN
 478537
 
-Brandon Mcnulty
+BRANDON MCNULTY
 478538
 
-Gino Mader
+GINO MADER
 478539
 
-Alexey Lutsenko
+ALEXEY LUTSENKO
 478540
 
-Tobias Foss
+TOBIAS FOSS
 478541
 
-Mark Padun
+MARK PADUN
 478542
 
-Thibaut Pinot
+THIBAUT PINOT
 478543
 
-Damiano Caruso
+DAMIANO CARUSO
 478544
 
-Lennard Kamna
+LENNARD KAMNA
 478545
 
-Pello Bilbao
+PELLO BILBAO
 478546
 
-Sergio Higuita
+SERGIO HIGUITA
 478547
 
-Hugh Carthy
+HUGH CARTHY
 478548
 
-Johan Esteban Chaves
+JOHAN ESTEBAN CHAVES
 478549
 
-Emanuel Buchmann
+EMANUEL BUCHMANN
 478550
 
-Louis Meintjes
+LOUIS MEINTJES
 478551
 
-Guillaume Martin
+GUILLAUME MARTIN
 478552
 
-Steven Kruijswijk
+STEVEN KRUIJSWIJK
 478553
 
-Jan Hirt
+JAN HIRT
 478554
 
-Lucas Plapp
+LUCAS PLAPP
 478555
 
-Cian Uijtdebroeks
+CIAN UIJTDEBROEKS
 478556
 
-Rohan Dennis
+ROHAN DENNIS
 478557
 
-Jakob Fuglsang
+JAKOB FUGLSANG
 478558
 
-Mathieu Van Der Poel
+MATHIEU VAN DER POEL
 478559
 
-Mattias Skjelmose
+MATTIAS SKJELMOSE
 478560
 
-Ivan Ramiro Sosa
+IVAN RAMIRO SOSA
 478561
 
-Lenny Martinez
+LENNY MARTINEZ
 478562
 
-Fausto Masnada
+FAUSTO MASNADA
 478563
 
-Ruben Guerreiro
+RUBEN GUERREIRO
 478564
 
-George Bennett
+GEORGE BENNETT
 478565
 
-Ilan Van Wilder
+ILAN VAN WILDER
 478566
 
-Rafal Majka
+RAFAL MAJKA
 478567
 
-Marc Soler
+MARC SOLER
 478568
 
-Ethan Hayter
+ETHAN HAYTER
 478569
 
-Ben Tulett
+BEN TULETT
 478570
 
-Eddie Dunbar
+EDDIE DUNBAR
 478571
 
-Clement Champoussin
+CLEMENT CHAMPOUSSIN
 478572
 
-Mauri Vansevenant
+MAURI VANSEVENANT
 478573
 
-Michael Storer
+MICHAEL STORER
 478574
 
-Giulio Ciccone
+GIULIO CICCONE
 478575
 
-Michael Woods
+MICHAEL WOODS
 478576
 
-Filippo Ganna
+FILIPPO GANNA
 478577
 
-Lucas Hamilton
+LUCAS HAMILTON
 478578
 
-Max Schachmann
+MAX SCHACHMANN
 478579
 
-Laurens De Plus
+LAURENS DE PLUS
 478580
 
-Neilson Powless
+NEILSON POWLESS
 478581
 
-Mattia Cattaneo
+MATTIA CATTANEO
 478582
 
-Bob Jungels
+BOB JUNGELS
 478583
 
-Nick Schultz
+NICK SCHULTZ
 478584
 
-Domenico Pozzovivo
+DOMENICO POZZOVIVO
 478585
 
-Stephen Williams
+STEPHEN WILLIAMS
 478586
 
-Andreas Leknessund
+ANDREAS LEKNESSUND
 478587
 
-Romain Gregoire
+ROMAIN GREGOIRE
 478588
 
-Aurelien Paret-Peintre
+AURELIEN PARET-PEINTRE
 478589
 
-Wout Poels
+WOUT POELS
 478590
 
-Juan Pedro Lopez
+JUAN PEDRO LOPEZ
 478591
 
-Santiago Buitrago
+SANTIAGO BUITRAGO
 478592
 
-Valentin Madouas
+VALENTIN MADOUAS
 478593
 
-Marco Brenner
+MARCO BRENNER
 478594
 
-Pierre Latour
+PIERRE LATOUR
 478595
 
-Warren Barguil
+WARREN BARGUIL
 478596
 
-Tiesj Benoot
+TIESJ BENOOT
 478597
 
-Davide Formolo
+DAVIDE FORMOLO
 478598
 
-Ion Izagirre
+ION IZAGIRRE
 478599
 
-Marc Hirschi
+MARC HIRSCHI
 478600
 
-Finn Fisher-Black
+FINN FISHER-BLACK
 478601
 
-Sam Oomen
+SAM OOMEN
 478602
 
-Biniam Girmay
+BINIAM GIRMAY
 478603
 
-Franck Bonnamour
+FRANCK BONNAMOUR
 478604
 
-Matteo Fabbro
+MATTEO FABBRO
 478605
 
-Harm Vanhoucke
+HARM VANHOUCKE
 478606
 
-Quinn Simmons
+QUINN SIMMONS
 478607
 
-Ben Zwiehoff
+BEN ZWIEHOFF
 478608
 
-Patrick Konrad
+PATRICK KONRAD
 478609
 
-Carlos Verona
+CARLOS VERONA
 478610
 
-Jesus Herrada
+JESUS HERRADA
 478611
 
-Kasper Asgreen
+KASPER ASGREEN
 478612
 
-Reuben Thompson
+REUBEN THOMPSON
 478613
 
-Joseph Lloyd Dombrowski
+JOSEPH LLOYD DOMBROWSKI
 478614
 
-Matej Mohoric
+MATEJ MOHORIC
 478615
 
-Felix Grossschartner
+FELIX GROSSSCHARTNER
 478616
 
-Mark Donovan
+MARK DONOVAN
 478617
 
-Miguel Eduardo Florez
+MIGUEL EDUARDO FLOREZ
 478618
 
-Henri Vandenabeele
+HENRI VANDENABEELE
 478619
 
-James Knox
+JAMES KNOX
 478620
 
-Lennart Van Eetvelt
+LENNART VAN EETVELT
 478621
 
-Bauke Mollema
+BAUKE MOLLEMA
 478622
 
-Matteo Jorgenson
+MATTEO JORGENSON
 478623
 
-Michal Kwiatkowski
+MICHAL KWIATKOWSKI
 478624
 
-Alessandro Covi
+ALESSANDRO COVI
 478625
 
-Giovanni Aleotti
+GIOVANNI ALEOTTI
 478626
 
-Koen Bouwman
+KOEN BOUWMAN
 478627
 
-Vadim Pronskiy
+VADIM PRONSKIY
 478628
 
-Asbjorn Hellemose
+ASBJORN HELLEMOSE
 478629
 
-Fred Wright
+FRED WRIGHT
 478630
 
-Magnus Sheffield
+MAGNUS SHEFFIELD
 478631
 
-Felix Gall
+FELIX GALL
 '''
 
 
 odds_data = '''
-Jonas Vingegaard
-+105
-Tadej Pogacar
-+115
-Jai Hindley
-+1400
-Enric Mas Nicolau
+ADAM YATES
++2000
+MATTIAS SKJELMOSE
 +2200
-Richard Carapaz
-+2800
-Mattias Skjelmose
-+2800
-Ben O'Connor
+DAVID GAUDU
 +3300
-David Gaudu
+SIMON YATES
++3300
+TADEJ POGACAR
+-110
+JONAS VINGEGAARD
++115
+JAI HINDLEY
++1400
+MIKEL LANDA
 +4000
-Adam Yates
-+4000
-Simon Yates
+TOM PIDCOCK
 +5000
-Tom Pidcock
-+5000
-Mikel Landa
+CARLOS RODRIGUEZ
 +6600
-Felix Gall
+EGAN BERNAL
 +8000
-Romain Bardet
+ROMAIN BARDET
 +8000
-Daniel Martinez
-+8000
-Carlos Rodriguez
-+8000
-Wout Van Aert
+WOUT VAN AERT
 +10000
-Egan Bernal
+WILCO KELDERMAN
 +10000
-Wilco Kelderman
-+10000
-Julian Alaphilippe
-+15000
-Sepp Kuss
-+15000
-Pello Bilbao
-+15000
-Matteo Jorgenson
-+15000
-Marc Soler
+BEN O'CONNOR
++12500
+PELLO BILBAO
++12500
+VICTOR LAFAY
 +20000
-Torstein Traeen
+MICHAEL WOODS
++20000
+SEPP KUSS
++25000
+GIULIO CICCONE
++25000
+EMANUEL BUCHMANN
 +30000
-Thibaut Pinot
+GUILLAUME MARTIN
 +30000
-Rigoberto Uran
+LOUIS MEINTJES
 +30000
-Guillaume Martin
-+30000
-Louis Meintjes
-+30000
-Michael Woods
-+30000
-Tobias Halland Johannessen
+DANIEL MARTINEZ
 +40000
-Alexey Lutsenko
+JULIAN ALAPHILIPPE
 +40000
-Emanuel Buchmann
+JACK HAIG
 +40000
-Giulio Ciccone
+THIBAUT PINOT
 +40000
-Mathieu van der Poel
-+40000
-Jack Haig
+FELIX GALL
 +50000
-Johan Esteban Chaves
+TOBIAS HALLAND JOHANNESSEN
 +50000
-Ruben Guerreiro
+MATTEO JORGENSON
 +50000
-Rafal Majka
-+50000
-Neilson Powless
-+50000
-Valentin Madouas
-+50000
-Ion Izagirre
-+60000
-Biniam Girmay
-+60000
-Clement Champoussin
+RIGOBERTO URAN
 +75000
-Juan Pedro Lopez
+RUBEN GUERREIRO
 +75000
-Tiesj Benoot
+RAFAL MAJKA
 +75000
-Antonio Pedrero
+MARC SOLER
++75000
+NEILSON POWLESS
++75000
+ANTONIO PEDRERO
 +100000
-Wout Poels
+JOHAN ESTEBAN CHAVES
 +100000
-Pierre Latour
+JUAN PEDRO LOPEZ
 +100000
-Warren Barguil
+VALENTIN MADOUAS
 +100000
-Matej Mohoric
+FELIX GROSSSCHARTNER
 +100000
-Felix Grossschartner
+ION IZAGIRRE
 +100000
-Jonathan Castroviejo
+TORSTEIN TRAEEN
 +150000
-Aurelien Paret-Peintre
+JONATHAN CASTROVIEJO
 +150000
-Bob Jungels
+ALEXEY LUTSENKO
 +150000
-Nick Schultz
+CLEMENT CHAMPOUSSIN
 +150000
-Patrick Konrad
+AURELIEN PARET-PEINTRE
 +150000
-Michal Kwiatkowski
+WOUT POELS
 +150000
-Quinn Simmons
+BOB JUNGELS
++150000
+NICK SCHULTZ
++150000
+TIESJ BENOOT
++150000
+PATRICK KONRAD
++150000
+MATEJ MOHORIC
++150000
+MICHAL KWIATKOWSKI
++150000
+MATHIEU VAN DER POEL
++150000
+PIERRE LATOUR
 +200000
-Kasper Asgreen
+WARREN BARGUIL
 +200000
-Peter Sagan
+QUINN SIMMONS
 +250000
-Fred Wright
+KASPER ASGREEN
 +250000
-Nils Politt
+BINIAM GIRMAY
++250000
+FRED WRIGHT
++250000
+NILS POLITT
 +450000
-Magnus Cort Nielsen
+MAGNUS CORT NIELSEN
 +450000
-Mads Pedersen
+MADS PEDERSEN
 +450000
-Elmar Reinders
+ELMAR REINDERS
++450000
+PETER SAGAN
 +450000
 '''
 
