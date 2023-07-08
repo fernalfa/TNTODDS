@@ -5,54 +5,54 @@ time.sleep(3)
 
 # COPIAR Y PEGAR DE BOOKMAKER
 data = '''
-Dricus Du Plessis vrs Robert Whittaker: Will The Fight Go To Distance?
+Val Woodburn vrs Bo Nickal: Will The Fight Go To Distance?
 Yes
-+155
++750
 No
--205
-Dricus Du Plessis vrs Robert Whittaker: Fight Distance
+-1650
+Val Woodburn vrs Bo Nickal: Fight Distance
 Fight ends In Rd-1
-+235
+-325
 Fight ends In Rd-2
-+325
++540
 Fight ends In Rd-3
-+405
++925
 Fight By Decision
-+155
-Dricus Du Plessis vrs Robert Whittaker: Who Will Win And When?
-Dricus Du Plessis wins in round 1
-+875
-Dricus Du Plessis wins in round 2
-+1350
-Dricus Du Plessis wins in round 3
-+1750
-Dricus Du Plessis by decisions
-+700
-Robert Whittaker wins in round 1
-+350
-Robert Whittaker wins in round 2
-+425
-Robert Whittaker wins in round 3
-+500
-Robert Whittaker by decisions
-+175
++775
+Val Woodburn vrs Bo Nickal: Who Will Win And When?
+Val Woodburn wins in round 1
++2541
+Val Woodburn wins in round 2
++3120
+Val Woodburn wins in round 3
++4580
+Val Woodburn by decisions
++2897
+Bo Nickal wins in round 1
+-477
+Bo Nickal wins in round 2
++626
+Bo Nickal wins in round 3
++1115
+Bo Nickal by decisions
++1166
 Draw
-+6500
-Dricus Du Plessis vrs Robert Whittaker:Fight Outcome
-Dricus Du Plessis By KO,TKO OR DQ
-+450
-Dricus Du Plessis By Submission
-+1375
-Dricus Du Plessis By Decision
-+700
-Robert Whittaker By KO,TKO OR DQ
-+135
-Robert Whittaker By Submission
-+1150
-Robert Whittaker By Decision
-+175
++6624
+Val Woodburn vrs Bo Nickal:Fight Outcome
+Val Woodburn By KO,TKO OR DQ
++1800
+Val Woodburn By Submission
++4050
+Val Woodburn By Decision
++2950
+Bo Nickal By KO,TKO OR DQ
++225
+Bo Nickal By Submission
+-280
+Bo Nickal By Decision
++1200
 Draw
-+6500
++6950
 '''
 
 numbers = re.findall(r'[+-]?\d{2,}', data)
