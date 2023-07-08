@@ -10,7 +10,7 @@ time.sleep(3)
 
 
 
-number = 29
+number = 14
 
 
 

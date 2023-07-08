@@ -5,19 +5,8 @@ time.sleep(3)
 
 totals = [8.5,
           8.5,
-          9.5,
-          10.5,
-          8.5,
-          8.5,
-          7.5,
-          8.5,
-          10.5,
-          7.5,
-          9.5,
-          7.5,
-          7.5,
-          11.5,
-          8.5]  # List of different total values
+          7.5
+          ]  # List of different total values
 
 def entertnt():
     pyautogui.hotkey('ctrl', 'enter')

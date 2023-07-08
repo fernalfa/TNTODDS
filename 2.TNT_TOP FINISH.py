@@ -8,7 +8,7 @@ count = 0
 time.sleep(3)
 
 
-number = 49
+number = 150
 
 
 # Iterate excel r

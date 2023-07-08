@@ -55,6 +55,7 @@ print("First List:")
 for name in names:
     print(name)
 
+
 # Print the second list of names and odds
 print("\nSecond List:")
 for name in names:
@@ -62,8 +63,17 @@ for name in names:
     if odd is not None:
         print(f"{name}: {odd}")
         enterodd()
-
     else:
         print(f"{name}: NONE")
         deleteodd()
 
+# Create a third list with missing teams
+print("\nThird List - Missing Teams:")
+missing_teams = []
+for name in odds_dict:
+    if name not in names:
+        missing_teams.append(name)
+        print(name)
+
+# Alternatively, you can use a list comprehension to achieve the same result:
+# missing_teams = [name for name in odds_dict if name not in names]

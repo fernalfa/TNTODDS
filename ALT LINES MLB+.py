@@ -5,50 +5,44 @@ time.sleep(3)
 
 # PEGAR SCHEDULE DE DBS
 data1 = """
-951	MIAMI MARLINS
+MAJOR LEAGUE BASEBALL  
+Tuesday, July 4th  
+NATIONAL LEAGUE  
+ 
+953	ST. LOUIS CARDINALS
 
-P: 10:35AM  C: 12:35PM  E: 1:35PM 
-952	ATLANTA BRAVES
-
-
-
-
-
-
-953	MILWAUKEE BREWERS
-
-P: 10:35AM  C: 12:35PM  E: 1:35PM 
-954	PITTSBURGH PIRATES
+P: 10:10AM  C: 12:10PM  E: 1:10PM 
+954	MIAMI MARLINS
 
 
 
 
 
 
-955	WASHINGTON NATIONALS
+955	NEW YORK METS
 
-P: 10:35AM  C: 12:35PM  E: 1:35PM 
-956	PHILADELPHIA PHILLIES
-
-
-
-
-
-
-957	SAN DIEGO PADRES
-
-P: 10:40AM  C: 12:40PM  E: 1:40PM 
-958	CINCINNATI REDS
+P: 1:10PM  C: 3:10PM  E: 4:10PM 
+956	ARIZONA DIAMONDBACKS
 
 
 
 
 
 
-959	SAN FRANCISCO GIANTS
+957	CHICAGO CUBS
 
-P: 4:10PM  C: 6:10PM  E: 7:10PM 
-960	NEW YORK METS
+P: 1:10PM  C: 3:10PM  E: 4:10PM 
+958	MILWAUKEE BREWERS
+
+
+
+
+
+
+959	PITTSBURGH PIRATES
+
+P: 6:10PM  C: 8:10PM  E: 9:10PM 
+960	LOS ANGELES DODGERS
 
 
 
@@ -57,50 +51,50 @@ P: 4:10PM  C: 6:10PM  E: 7:10PM
 
 AMERICAN LEAGUE  
  
-961	MINNESOTA TWINS
+961	BALTIMORE ORIOLES
 
-P: 9:05AM  C: 11:05AM  E: 12:05PM 
-962	BALTIMORE ORIOLES
-
-
-
-
-
-
-963	BOSTON RED SOX
-
-P: 10:37AM  C: 12:37PM  E: 1:37PM 
-964	TORONTO BLUE JAYS
+P: 10:05AM  C: 12:05PM  E: 1:05PM 
+962	NEW YORK YANKEES
 
 
 
 
 
 
-965	HOUSTON ASTROS
+963	TEXAS RANGERS
 
-P: 11:35AM  C: 1:35PM  E: 2:35PM 
-966	TEXAS RANGERS
-
-
-
-
-
-
-967	CHICAGO WHITE SOX
-
-P: 1:07PM  C: 3:07PM  E: 4:07PM 
-968	OAKLAND ATHLETICS
+P: 10:35AM  C: 12:35PM  E: 1:35PM 
+964	BOSTON RED SOX
 
 
 
 
 
 
-969	TAMPA BAY RAYS
+965	KANSAS CITY ROYALS
 
-P: 1:10PM  C: 3:10PM  E: 4:10PM 
-970	SEATTLE MARINERS
+P: 11:10AM  C: 1:10PM  E: 2:10PM 
+966	MINNESOTA TWINS
+
+
+
+
+
+
+967	OAKLAND ATHLETICS
+
+P: 3:40PM  C: 5:40PM  E: 6:40PM 
+968	DETROIT TIGERS
+
+
+
+
+
+
+969	TORONTO BLUE JAYS
+
+P: 5:10PM  C: 7:10PM  E: 8:10PM 
+970	CHICAGO WHITE SOX
 
 
 
@@ -109,58 +103,50 @@ P: 1:10PM  C: 3:10PM  E: 4:10PM
 
 INTERLEAGUE  
  
-971	LOS ANGELES DODGERS
+971	SEATTLE MARINERS
 
-P: 11:10AM  C: 1:10PM  E: 2:10PM 
-972	KANSAS CITY ROYALS
-
-
-
-
-
-
-973	NEW YORK YANKEES
-
-P: 11:15AM  C: 1:15PM  E: 2:15PM 
-974	ST. LOUIS CARDINALS
+P: 1:35PM  C: 3:35PM  E: 4:35PM 
+972	SAN FRANCISCO GIANTS
 
 
 
 
 
 
-975	CLEVELAND GUARDIANS
+973	COLORADO ROCKIES
 
-P: 2:05PM  C: 4:05PM  E: 5:05PM 
-976	CHICAGO CUBS
-
-
-
-
-
-
-977	DETROIT TIGERS
-
-P: 12:10PM  C: 2:10PM  E: 3:10PM 
-978	COLORADO ROCKIES
+P: 1:10PM  C: 3:10PM  E: 4:10PM 
+974	HOUSTON ASTROS
 
 
 
 
 
 
-979	ARIZONA DIAMONDBACKS
+975	PHILADELPHIA PHILLIES
 
-P: 1:07PM  C: 3:07PM  E: 4:07PM 
-980	LOS ANGELES ANGELS
-
-
+P: 1:10PM  C: 3:10PM  E: 4:10PM 
+976	TAMPA BAY RAYS
 
 
 
 
 
 
+977	LOS ANGELES ANGELS
+
+P: 3:40PM  C: 5:40PM  E: 6:40PM 
+978	SAN DIEGO PADRES
+
+
+
+
+
+
+979	ATLANTA BRAVES
+
+P: 4:10PM  C: 6:10PM  E: 7:10PM 
+980	CLEVELAND GUARDIANS
 """
 
 team_names = re.findall(r"\d+\s+(.*\S)\s*$", data1, re.MULTILINE)
@@ -168,7 +154,160 @@ team_names = [name.strip() for name in team_names]
 
 # PEGAR ALT DE BETONLINE
 data2 = '''
-
+01:05 PM
+2961
+Baltimore Orioles
+K. Gibson -R
++2½
+-325
+2962
+New York Yankees
+C. Schmidt -R
+-2½
++250
+01:10 PM
+2953
+St. Louis Cardinals
+A. Wainwright -R
++2½
+-240
+2954
+Miami Marlins
+J. Luzardo -L
+-2½
++190
+01:35 PM
+2963
+Texas Rangers
+D. Dunning -R
+-2½
++195
+2964
+Boston Red Sox
+B. Bernardino -L
++2½
+-245
+02:10 PM
+2965
+Kansas City Royals
+Z. Greinke -R
++2½
+-200
+2966
+Minnesota Twins
+K. Maeda -R
+-2½
++160
+04:10 PM
+2955
+New York Mets
+K. Senga -R
+-2½
++205
+2956
+Arizona Diamondbacks
+Z. Davies -R
++2½
+-265
+04:10 PM
+2957
+Chicago Cubs
+K. Hendricks -R
++2½
+-300
+2958
+Milwaukee Brewers
+W. Miley -L
+-2½
++240
+04:10 PM
+2973
+Colorado Rockies
+K. Freeland -L
++2½
+-200
+2974
+Houston Astros
+B. Bielak -R
+-2½
++160
+04:10 PM
+2975
+Philadelphia Phillies
+A. Nola -R
++2½
+-290
+2976
+Tampa Bay Rays
+Z. Eflin -R
+-2½
++230
+04:35 PM
+2971
+Seattle Mariners
+L. Gilbert -R
+-2½
++250
+2972
+San Francisco Giants
+K. Winn -R
++2½
+-325
+06:40 PM
+2967
+Oakland Athletics
+J. Sears -L
++2½
+-225
+2968
+Detroit Tigers
+T. Skubal -L
+-2½
++185
+06:40 PM
+2977
+Los Angeles Angels
+S. Ohtani -R
++2½
+-340
+2978
+San Diego Padres
+J. Musgrove -R
+-2½
++265
+07:10 PM
+2979
+Atlanta Braves
+K. Allard -R
+-2½
++200
+2980
+Cleveland Guardians
+S. Bieber -R
++2½
+-260
+08:10 PM
+2969
+Toronto Blue Jays
+C. Bassitt -R
+-2½
++215
+2970
+Chicago White Sox
+L. Giolito -R
++2½
+-275
+09:10 PM
+2959
+Pittsburgh Pirates
+L. Ortiz -R
++2½
+-165
+2960
+Los Angeles Dodgers
+E. Sheehan -R
+-2½
++135
 '''
 
 team_order = team_names
@@ -274,3 +413,5 @@ else:
             Alt4(float(team2_run_line), int(team1_odds))
 
         print()
+
+
