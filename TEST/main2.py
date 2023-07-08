@@ -1,33 +1,45 @@
-text = """
-CLE Guardians
-+120
-+135
-+175
-+230
-+325
-+450
-CHI Cubs
--150
--150
--115
-+120
-+180
-+260
-Neither
-+4000
-+1100
-+400
-+180
--105
--190
-"""
+import time
+import pandas
+import pyautogui
 
-lines = text.strip().split("\n")
-expressions = []
+with open('DATAPROVIDER', 'r') as file:
+    lines = file.readlines()
 
-for i in range(0, len(lines), 3):
-    if i + 2 < len(lines):
-        expression = lines[i + 2].strip()
-        expressions.append(expression)
+names = []
 
-print(expressions)
+for line in lines:
+    if line.strip().isdigit():
+        continue
+    if line.strip():
+        names.append(line.strip())
+
+count = 0
+time.sleep(3)
+
+# Iterate through player data
+number = 3
+
+VALUE = "OVER"
+VALUE1 = "UNDER"
+
+for player in names:
+    player = player.strip()  # Remove leading/trailing whitespace and newlines
+
+    pyautogui.typewrite(player)
+    pyautogui.press('tab', presses=2)
+    pyautogui.typewrite(str(VALUE))
+    pyautogui.press('tab')
+    pyautogui.typewrite(str(VALUE1))
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('shift', 'tab')
+    pyautogui.hotkey('alt', 'o')
+    time.sleep(20)
+
+    if count == number - 1:
+        print(player)
+        print(count + 1)
+        print('COMPLETED')
+        break
+    print(f"{player}: {count}")
+    count += 1
