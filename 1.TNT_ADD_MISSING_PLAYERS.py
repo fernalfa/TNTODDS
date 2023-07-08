@@ -18,7 +18,5 @@ for player in player_info:
 
     print(player)
 
-    # Add any additional logic or actions you need here
-    time.sleep(1)  # Add a delay if needed between iterations
 
 
