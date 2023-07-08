@@ -1,116 +1,62 @@
-data = """
-LA Dodgers-logoLA Dodgers
+import time
+import pyautogui
+time.sleep(3)
+
+data = '''CIN Reds-logoCIN Reds
 at
-KC Royals-logoKC Royals
-TODAY 2:10PM
+BAL Orioles-logoBAL Orioles
+TODAY 7:05PM
 Inning of First Run
 
 1st Inning
-−160
+−195
 2nd Inning
-+270
++285
 3rd Inning
-+600
++650
 4th Inning
-+1300
++1400
 5th Inning
-+2200
++2500
 6th Inning
-+3500
++4500
 7th Inning
-+5000
-9th Inning
-+7000
++5500
 8th Inning
++7000
+9th Inning
 +7500
 10th Inning or Later
 +8000
 Inning of Last Run
 
 9th Inning
-+105
++135
 8th Inning
-+265
++220
 7th Inning
 +550
 10th Inning or Later
 +800
 6th Inning
-+1100
-5th Inning
-+2200
-4th Inning
-+3500
-3rd Inning
-+5000
-2nd Inning
-+6500
-1st Inning
-+8000
-NY Yankees-logoNY Yankees
-at
-STL Cardinals-logoSTL Cardinals
-TODAY 2:15PM
-Inning of First Run
-
-1st Inning
-−115
-2nd Inning
-+265
-3rd Inning
-+500
-4th Inning
-+950
++900
 5th Inning
 +1800
-6th Inning
-+2500
-7th Inning
-+4500
-8th Inning
-+5500
-9th Inning
-+5500
-10th Inning or Later
-+6000
-Inning of Last Run
-
-9th Inning
-+150
-8th Inning
-+245
-7th Inning
-+550
-10th Inning or Later
-+700
-6th Inning
-+850
-5th Inning
-+1600
 4th Inning
-+2500
++3000
 3rd Inning
-+3500
++4500
 2nd Inning
-+5000
++7500
 1st Inning
-+6000
-"""
++8000'''
 
-lines = data.strip().split("\n")
+lines = data.split('\n')
 
-inning_data = []
-game_data = []
-
-for i, line in enumerate(lines):
-    if "Inning of First Run" in line:
-        start_index = i + 1
-    elif "Inning of Last Run" in line:
-        end_index = i
-        game_data.append(inning_data)
-        inning_data = []
-    elif line.startswith("+") or line.startswith("-") or line.startswith("−"):
-        inning_data.append(line)
-
-print(game_data)
-print(inning_data)
+for i in range(14, 24):
+    inning_line = lines[i].split()
+    value_line = lines[i+1].split()
+    inning = inning_line[0]
+    value = value_line[0]
+    code = f"pyautogui.press('enter')\npyautogui.write('{value}')\npyautogui.press('enter')\npyautogui.press('down')"
+    print(code)
