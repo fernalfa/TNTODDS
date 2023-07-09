@@ -3,7 +3,7 @@ import pyautogui
 
 time.sleep(3)
 value = 0
-number = 6
+number = 14
 
 def delete_empty():
     pyautogui.press(['tab', 'tab', 'enter', 'enter', 'up', 'down'])

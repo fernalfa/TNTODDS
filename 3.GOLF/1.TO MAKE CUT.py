@@ -2,7 +2,7 @@ import time
 import pyautogui
 
 # Read player names from text file
-with open('0.INFO', 'r') as file:
+with open('../0.INFO', 'r') as file:
     player_names = file.readlines()
 
 time.sleep(3)

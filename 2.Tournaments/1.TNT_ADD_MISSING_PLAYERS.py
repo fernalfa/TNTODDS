@@ -3,7 +3,7 @@ import pyautogui
 time.sleep(3)  # Starting delay
 
 # Read player info from text file
-with open('0.INFO', 'r') as file:
+with open('../0.INFO', 'r') as file:
     player_info = file.readlines()
 
 # Iterate through player info
