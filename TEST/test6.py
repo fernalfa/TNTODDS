@@ -1,5 +1,5 @@
 # Read the code from a text file
-with open("DATAPROVIDER", "r") as file:
+with open("../2.Tournaments/DATAPROVIDER", "r") as file:
     code = file.read()
 
 # Split the code into lines

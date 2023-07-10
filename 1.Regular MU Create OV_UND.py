@@ -1,24 +1,18 @@
 import time
-import pandas
 import pyautogui
 
-# Read data from excel
-sport = "Regular MU Create"
-excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
-count = 0
+# Read data from text file
+with open('0.INFO', 'r') as file:
+    names = file.read().splitlines()
+
 time.sleep(3)
 
-
-# Iterate excel rows till to finish
-number = 3
-
-
+# Iterate through the names
 VALUE = "OVER"
 VALUE1 = "UNDER"
 
-for column in excel_data['Row ID'].tolist():
-
-    pyautogui.typewrite(str(excel_data['PLAYER'][count]))
+for name in names:
+    pyautogui.typewrite(str(name))
     pyautogui.press('tab', presses=2)
     pyautogui.typewrite(str(VALUE))
     pyautogui.press('tab')
@@ -26,14 +20,10 @@ for column in excel_data['Row ID'].tolist():
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
+    time.sleep(20)
     pyautogui.hotkey('alt', 'o')
-    time.sleep(15)
-    # Set counter with the number of Rows
-    if count == number - 1:
-        print(str(excel_data['PLAYER'][count]))
-        print(count+1)
-        print('COMPLETED')
-        break
-    print(str(excel_data['PLAYER'][count]))
-    count = count + 1
-    print(count)
+    time.sleep(20)
+
+    print(name)
+
+print('COMPLETED')

@@ -12,7 +12,7 @@ def remove_expression_from_text(text, expression):
     return text.replace(expression, "")
 
 
-with open('DATAPROVIDER', 'r') as file:
+with open('../2.Tournaments/DATAPROVIDER', 'r') as file:
     input_text = file.read()
 
 expression_to_remove = '''

@@ -2,7 +2,7 @@ import time
 import pandas
 import pyautogui
 
-with open('DATAPROVIDER', 'r') as file:
+with open('../2.Tournaments/DATAPROVIDER', 'r') as file:
     lines = file.readlines()
 
 names = []

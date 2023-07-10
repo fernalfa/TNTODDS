@@ -5,7 +5,7 @@ import pyautogui
 time.sleep(3)
 
 
-with open('DATA IBET', 'r') as file:
+with open('../2.Tournaments/DATAIBET', 'r') as file:
     lines = file.readlines()
 
 names = []

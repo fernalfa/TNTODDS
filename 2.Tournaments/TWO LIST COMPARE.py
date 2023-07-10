@@ -18,7 +18,7 @@ def deleteodd():
     pyautogui.press('down')
 
 
-with open('DATA IBET', 'r') as file:
+with open('DATAIBET', 'r') as file:
     lines = file.readlines()
 
 names = []

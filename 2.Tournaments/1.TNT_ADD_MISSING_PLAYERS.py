@@ -1,6 +1,6 @@
 import time
 import pyautogui
-time.sleep(3)  # Starting delay
+time.sleep(4)  # Starting delay
 
 # Read player info from text file
 with open('../0.INFO', 'r') as file:
