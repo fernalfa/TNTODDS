@@ -1,14 +1,21 @@
 import time
 import pandas
 import pyautogui
+import os
+
+# Construct the file path
+file_path = os.path.join(os.path.dirname(__file__), '..', 'Tools.xlsx')
+
+
 # Read data from excel
 sport = "Regular MU Create"
-excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
+excel_data = pandas.read_excel(file_path, sheet_name=sport)
+
 count = 0
 time.sleep(3)
 
 
-extracents = 10
+extracents = 0
 number = 32
 
 
@@ -54,6 +61,5 @@ for column in excel_data['Row ID'].tolist():
         print(str(int(excel_data['YES'][count])))
         print('COMPLETED, PLEASE CHECK')
         break
-    print(count + 1)
     print(str(int(excel_data['YES'][count])))
     count = count + 1
