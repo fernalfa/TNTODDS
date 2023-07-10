@@ -10,6 +10,8 @@ file_path = os.path.join(os.path.dirname(__file__), '..', 'Tools.xlsx')
 # Read data from excel
 sport = "LINEAL"
 excel_data = pandas.read_excel(file_path, sheet_name=sport)
+
+
 count = 0
 time.sleep(3)
 
