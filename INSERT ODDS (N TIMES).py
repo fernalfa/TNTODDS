@@ -4,7 +4,7 @@ time.sleep(5)
 times = 0
 
 
-number = 40
+number = 30
 value = "-115"
 
 
