@@ -2,10 +2,10 @@ import time
 import pyautogui
 time.sleep(3)
 
-jump = 4
-header = 2
+jump = 3
+header = 1
 
-skip = 8
+skip = 4
 
 
 def jumper():
@@ -13,7 +13,6 @@ def jumper():
         for _ in range(header):
             pyautogui.press('down', presses= (jump - header))
             for _ in range(header):
-                print("HEADERS")
                 enter_odd()
 
 def enter_odd():
@@ -26,7 +25,7 @@ def enter_odd():
     pyautogui.press('down')
 
 # Open the text file
-with open('0.INFO', 'r') as file:
+with open('TEST', 'r') as file:
     data = file.read()
 
 lines = data.strip().split('\n')
