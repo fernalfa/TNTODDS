@@ -15,8 +15,8 @@ count = 0
 time.sleep(3)
 
 
-extracents = 10
-number = 25
+extracents = 0
+number = 17
 
 
 # Iterate excel r
@@ -53,7 +53,7 @@ for column in excel_data['Row ID'].tolist():
         pyautogui.press('down')
         pyautogui.press('down')
         pyautogui.press('down')
-        pyautogui.press('down')
+
 
     # Set counter with the number of Rows
     if count == number - 1:

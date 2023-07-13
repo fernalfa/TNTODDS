@@ -5,9 +5,9 @@ import pyautogui
 sport = "BET365 MU Create"
 excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
 count = 0
-time.sleep(3)
+time.sleep(5)
 
-number = 9
+number = 17
 
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():

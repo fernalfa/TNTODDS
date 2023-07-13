@@ -37,7 +37,6 @@ with open('DATAPROVIDER', 'r') as file:
 odds = re.findall(r'(.+)\n([-+]?\d+)', data)
 
 odds_dict = {}
-
 for name, odd in odds:
     if 100 <= int(odd) <= 110:
         surcharged_odd = min(int(odd) + int(odd) * (surcharge_percentage / 100), 10000) * -1
@@ -49,6 +48,7 @@ for name, odd in odds:
         else:
             surcharged_odd = (int(odd) * -1) * (surcharge_percentage / 100)
     odds_dict[name] = surcharged_odd
+
 
 # Print the first list of names
 print("First List:")
