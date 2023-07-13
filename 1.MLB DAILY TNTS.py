@@ -1,29 +1,8 @@
 import time
 import pyautogui
+
 time.sleep(3)
-
-jump = 4
-header = 2
-
-skip = 8
-
-
-def jumper():
-    if header > 0:  # Check if header is greater than 0
-        for _ in range(header):
-            pyautogui.press('down', presses= (jump - header))
-            for _ in range(header):
-                print("HEADERS")
-                enter_odd()
-
-def enter_odd():
-    pyautogui.press('enter')
-    pyautogui.write('-125')
-    pyautogui.press('enter')
-    pyautogui.press('enter')
-    pyautogui.press('del')
-    pyautogui.press('enter')
-    pyautogui.press('down')
+skip = 14
 
 # Open the text file
 with open('0.INFO', 'r') as file:
@@ -42,8 +21,8 @@ for line in lines:
         pyautogui.press('down')
         count += 1
         if count % skip == 0:
-            jumper()
-
+            pyautogui.press('down')
+            pyautogui.press('down')
     elif line.startswith('-') or line.startswith('−'):
         # Remove the minus sign from the line
         line = line.lstrip('−-')
@@ -57,4 +36,5 @@ for line in lines:
         pyautogui.press('down')
         count += 1
         if count % skip == 0:
-            jumper()
+            pyautogui.press('down')
+            pyautogui.press('down')
