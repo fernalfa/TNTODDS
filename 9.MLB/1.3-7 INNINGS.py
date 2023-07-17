@@ -1,12 +1,17 @@
 import time
 import pandas
 import pyautogui
+import os
+
+# Construct the file path
+file_path = os.path.join(os.path.dirname(__file__), '..', 'Tools.xlsx')
+
 
 # Read data from excel
 sport = "3-7 INNINGS"
-excel_data = pandas.read_excel('Tools.xlsx', sheet_name=sport)
+excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
-number = 13
+number = 17
 
 time.sleep(3)
 # Iterate excel rows till to finish

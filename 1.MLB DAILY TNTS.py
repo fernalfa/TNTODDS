@@ -2,7 +2,7 @@ import time
 import pyautogui
 
 time.sleep(3)
-skip = 14
+skip = 3
 
 # Open the text file
 with open('0.INFO', 'r') as file:
