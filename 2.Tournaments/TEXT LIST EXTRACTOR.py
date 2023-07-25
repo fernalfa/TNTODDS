@@ -1,7 +1,7 @@
 import re
 
 # Read the code from a text file
-with open("DATAIBET", "r") as file:
+with open("../0.INFO", "r") as file:
     text = file.read()
 
 

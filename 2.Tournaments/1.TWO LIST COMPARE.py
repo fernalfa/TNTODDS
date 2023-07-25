@@ -2,9 +2,8 @@ import re
 import time
 import pyautogui
 
-time.sleep(3)
+time.sleep(4)
 surcharge_percentage = 10  # 10% surcharge
-
 
 def enterodd():
     pyautogui.press('enter')
@@ -62,6 +61,14 @@ missing_teams = []
 for name in odds_dict:
     if name not in names:
         missing_teams.append(name)
+        print(name)
+
+# Create a fourth list with names having NONE odds
+print("\nFourth List - Names with NONE Odds:")
+none_odds_teams = []
+for name in names:
+    if odds_dict.get(name.strip()) is None:
+        none_odds_teams.append(name.strip())
         print(name)
 
 

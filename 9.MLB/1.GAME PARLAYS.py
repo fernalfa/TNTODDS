@@ -3,8 +3,11 @@ import pyautogui
 
 time.sleep(3)
 
-totals = [7.5,
-          7.5,
+totals = [8.5,
+          8.5,
+          8.5,
+          8.5,
+          8.5,
           ]  # List of different total values
 
 def entertnt():

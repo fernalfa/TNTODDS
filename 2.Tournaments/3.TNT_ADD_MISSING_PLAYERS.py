@@ -1,6 +1,6 @@
 import time
 import pyautogui
-time.sleep(4)  # Starting delay
+time.sleep(5)  # Starting delay
 
 # Read player info from text file
 with open('../0.INFO', 'r') as file:
@@ -15,8 +15,9 @@ for player in player_info:
     pyautogui.typewrite('-150')
     pyautogui.press('tab', presses=2)
     pyautogui.press('enter')
-
     print(player)
+    time.sleep(2)
+
 
 
 
