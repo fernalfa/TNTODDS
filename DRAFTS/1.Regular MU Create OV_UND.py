@@ -2,7 +2,7 @@ import time
 import pyautogui
 
 # Read data from text file
-with open('0.INFO', 'r') as file:
+with open('../0.INFO', 'r') as file:
     names = file.read().splitlines()
 
 time.sleep(3)

@@ -3,8 +3,9 @@ import pyautogui
 time.sleep(3)
 
 
-number = 200
-value = 6001101
+number = 50
+value = 300623
+
 
 def deleteempty():
     pyautogui.press('enter')

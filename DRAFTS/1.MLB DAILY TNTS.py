@@ -5,7 +5,7 @@ time.sleep(3)
 skip = 4
 
 # Open the text file
-with open('0.INFO', 'r') as file:
+with open('../0.INFO', 'r') as file:
     data = file.read()
 
 lines = data.strip().split('\n')
