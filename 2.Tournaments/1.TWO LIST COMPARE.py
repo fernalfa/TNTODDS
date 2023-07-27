@@ -50,13 +50,18 @@ for name, odd in odds:
 
 
 # Print the first list of names
-print("First List:")
+print("\n************:")
+print("CONTENDERS LIST:")
+print("************:")
 for name in names:
     print(name)
 
 
 # Create a second list with missing teams
-print("\nSecond List - Missing Teams:")
+print("\n************:")
+print("MISSING CONTENDERS:")
+print("************:")
+
 missing_teams = []
 for name in odds_dict:
     if name not in names:
@@ -64,7 +69,11 @@ for name in odds_dict:
         print(name)
 
 # Create a fourth list with names having NONE odds
-print("\nFourth List - Names with NONE Odds:")
+
+print("\n************:")
+print("CONTENDERS TO BE DELETED:")
+print("************:")
+
 none_odds_teams = []
 for name in names:
     if odds_dict.get(name.strip()) is None:
@@ -73,7 +82,10 @@ for name in names:
 
 
 # Print the third list of names and odds
-print("\nThird List:")
+
+print("\n************:")
+print("TOURNAMENT ADJUSTED ODDS:")
+print("************:")
 for name in names:
     odd = odds_dict.get(name.strip())
     if odd is not None:
