@@ -13,7 +13,7 @@ excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
 time.sleep(4)
 
-number = 1
+number = 4
 
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():

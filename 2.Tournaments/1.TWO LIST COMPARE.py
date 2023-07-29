@@ -2,7 +2,7 @@ import re
 import time
 import pyautogui
 
-time.sleep(4)
+time.sleep(5)
 surcharge_percentage = 10  # 10% surcharge
 
 def enterodd():
@@ -23,10 +23,11 @@ with open('DATAIBET', 'r') as file:
 names = []
 
 for line in lines:
-    if line.strip().isdigit():
+    line = line.strip()
+    if line.isdigit() or line.startswith('+') or line.startswith('-'):
         continue
-    if line.strip():
-        names.append(line.strip())
+    if line:
+        names.append(line)
 
 print(names)
 

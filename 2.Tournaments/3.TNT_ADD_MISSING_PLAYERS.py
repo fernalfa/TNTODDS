@@ -16,7 +16,6 @@ for player in player_info:
     pyautogui.press('tab', presses=2)
     pyautogui.press('enter')
     print(player)
-    time.sleep(2)
 
 
 

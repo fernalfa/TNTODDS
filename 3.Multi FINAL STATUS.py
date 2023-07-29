@@ -1,9 +1,9 @@
 import time
 import pyautogui
 
-time.sleep(3)
+time.sleep(5)
 
-number = 20
+number = 2
 
 
 def deleteempty():
