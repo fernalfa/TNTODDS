@@ -3,7 +3,7 @@ import pyautogui
 time.sleep(4)
 times = 0
 
-number = 300
+number = 350
 
 def deleteempty():
     pyautogui.press('tab')
@@ -13,6 +13,6 @@ count = 0
 
 while (count < number):
     count = count + 1
-    print(deleteempty())
+    deleteempty()
     times = times + 1
     print(times)

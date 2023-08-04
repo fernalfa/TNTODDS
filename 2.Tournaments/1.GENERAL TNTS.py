@@ -1,8 +1,8 @@
 import time
 import pyautogui
 
-time.sleep(3)
-skip = 4
+time.sleep(5)
+skip = 10
 
 # Open the text file
 with open('../0.INFO', 'r') as file:
@@ -24,13 +24,10 @@ for line in lines:
             pyautogui.press('down')
             pyautogui.press('down')
     elif line.startswith('-') or line.startswith('−'):
-        # Remove the minus sign from the line
-        line = line.lstrip('−-')
         value = int(line)
         if value > 10000:
             value = 10000
         pyautogui.press('enter')
-        pyautogui.write('-')
         pyautogui.write(str(value))
         pyautogui.press('enter')
         pyautogui.press('down')

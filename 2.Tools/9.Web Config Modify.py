@@ -3,9 +3,9 @@ import pyautogui
 time.sleep(3)
 
 
-number = 8
-ORDER = 1100
-add = 10
+number = 6
+ORDER = 100
+add = 0
 
 
 def WebConfigMod():
@@ -21,7 +21,6 @@ def WebConfigMod():
     pyautogui.press('enter')
     pyautogui.press('tab', presses = 4)
     pyautogui.press('down')
-    time.sleep(1)
 
 
 
