@@ -3,10 +3,8 @@ import time
 import pyautogui
 time.sleep(3)
 
-# COPIAR Y PEGAR DE BOOKMAKER
-data = '''
-
-'''
+with open('../0.INFO', 'r') as file:
+    data = file.read()
 
 numbers = re.findall(r'[+-]?\d{2,}', data)
 

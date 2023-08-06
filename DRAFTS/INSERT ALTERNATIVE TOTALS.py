@@ -8,21 +8,7 @@ def modify_values(data):
     return modified_values
 
 # Totales de MLB
-data = [10.5,
-        8,
-        9.5,
-        8.5,
-        9.5,
-        9,
-        9,
-        10,
-        8,
-        9.5,
-        9.5,
-        9,
-        8.5,
-        8.5,
-        8]
+data = [8.5, 9]
 
 
 modified_data = modify_values(data)
