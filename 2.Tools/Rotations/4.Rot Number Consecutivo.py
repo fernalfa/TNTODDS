@@ -3,8 +3,8 @@ import pyautogui
 time.sleep(5)
 
 
-number = 14
-value = 4511001
+number = 100
+value = 5701101
 
 
 def deleteempty():
