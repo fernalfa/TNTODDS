@@ -3,85 +3,19 @@ import pyautogui
 import time
 time.sleep(3)
 
+rot_number = 1001001
 
 
-
-data = """
-*AMERICAN
-Brooks Koepka
-+550
-Bryson DeChambeau
-+600
-Dustin Johnson
-+650
-Patrick Reed
-+650
-Talor Gooch
-+700
-Harold Varner III
-+1000
-Cameron Tringale
-+1200
-Jason Kokrak
-+1400
-Kevin Na
-+1400
-Peter Uihlein
-+1600
-Brendan Steele
-+1600
-Charles Howell III
-+2000
-Pat Perez
-+2200
-Bubba Watson
-+3000
-Matthew Wolff
-+4500
-Phil Mickelson
-+5500
-James Piot
-+27500
-Chase Koepka
-+27500
-Sihwan Kim
-+70000
-
-*AUSTRALASIAN
-Cameron Smith
--130
-Marc Leishman
-+350
-Danny Lee
-+425
-Matt Jones
-+600
-Jediah Morgan
-+4000
-
-*AUSTRALIAN
-Cameron Smith
--190
-Marc Leishman
-+275
-Matt Jones
-+450
-Jediah Morgan
-+3000
-"""
+with open('../0.INFO', 'r') as file:
+    data = file.read()
 
 
 def run_additional_function():
     pyautogui.press('tab', presses=4)
     pyautogui.press('enter')
-    time.sleep(10)
+    time.sleep(25)
     pyautogui.keyDown('shift')
-    pyautogui.press('tab', presses=5)
-    pyautogui.keyUp('shift')
-    pyautogui.typewrite('rot number')
-    pyautogui.keyDown('shift')
-    pyautogui.press('tab', presses=2)
-    pyautogui.keyUp('shift')
+    pyautogui.press('tab', presses=7)
     print("Running additional function for the current category...")
 
 def extract_players(data):
@@ -117,8 +51,22 @@ def process_category(category):
     pyautogui.press('TAB')
     pyautogui.write(f"TOP {category} test test")
     pyautogui.press('TAB')
+    pyautogui.write(str(rot_number))
     pyautogui.press('TAB')
+    pyautogui.write(f"**MUST TEE OFF FOR ACTION**")
+    pyautogui.press('TAB')
+    pyautogui.write(str(-120))
+    pyautogui.press('TAB')
+    pyautogui.press('TAB')
+    pyautogui.press('ENTER')
+    pyautogui.write(f"**DEAD HEAT RULE APPLIES**")
+    pyautogui.press('TAB')
+    pyautogui.write(str(-120))
+    pyautogui.press('TAB')
+    pyautogui.press('TAB')
+    pyautogui.press('ENTER')
     print(f"Processing category: {category}")
+
 
 def process_player(player):
     pyautogui.write(player)
@@ -151,7 +99,7 @@ for category, players in players_by_category.items():
 
     run_additional_function()
 
-
+    rot_number = rot_number + 1000
 
 
 
@@ -161,3 +109,4 @@ for category, players in players_by_category.items():
 print("Calculated Surcharged Odds:")
 for player, surcharged_odd in odds_dict.items():
     print(f"{player}: {surcharged_odd}")
+

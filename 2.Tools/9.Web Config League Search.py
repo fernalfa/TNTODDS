@@ -2,7 +2,7 @@ import time
 import pyautogui
 time.sleep(5)
 
-value = 'RUGBY - GAME '
+value = 'F1 - CONSTRUCTORS CHAM '
 
 def searchleague():
     pyautogui.write(value)
