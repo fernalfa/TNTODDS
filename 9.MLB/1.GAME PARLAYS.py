@@ -1,7 +1,7 @@
 import time
 import pyautogui
 
-time.sleep(3)
+time.sleep(5)
 
 totals = [9.5,
           9.5,

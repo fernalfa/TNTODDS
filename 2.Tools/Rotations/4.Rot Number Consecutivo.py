@@ -4,7 +4,7 @@ time.sleep(5)
 
 
 number = 100
-value = 5701101
+value = 6035001
 
 
 def deleteempty():

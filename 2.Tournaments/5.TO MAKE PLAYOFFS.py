@@ -9,9 +9,9 @@ count = 0
 time.sleep(5)
 # Iterate excel rows till to finish
 
-repeat = 32
+repeat = 30
 rotation = 5001001
-description = " TO MAKE NFL 2023/24 PLAYOFFS"
+description = " TO MAKE NBA 2023/24 PLAYOFFS"
 
 for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['PLAYER'][count]))
