@@ -10,11 +10,13 @@ def enterodd():
     pyautogui.typewrite(str(int(odd)))
     pyautogui.press('enter')
     pyautogui.press('down')
+    time.sleep(4)
 def deleteodd():
     pyautogui.press('enter')
     pyautogui.press('del')
     pyautogui.press('enter')
     pyautogui.press('down')
+    time.sleep(4)
 
 
 with open('DATAIBET', 'r') as file:

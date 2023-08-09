@@ -1,27 +1,33 @@
+import re
 import pyautogui
 import time
+time.sleep(5)
 
-def modify_values(data):
+# COPIAR Y PEGAR DE BULLWAGER
+text = """
+
+"""
+
+text = re.sub(r'(\d+)½', r'\1.5', text)
+
+pattern = r'o(\d*\.?\d+)'
+matches = re.findall(pattern, text)
+
+values = [float(match) for match in matches]
+
+def modify_values(matches):
     modified_values = []
-    for value in data:
+    for value in matches:
         modified_values.extend([value + 0.5, value - 0.5])
     return modified_values
 
-# Totales de MLB
-data = [8.5, 9]
-
-
-modified_data = modify_values(data)
-
-time.sleep(3)
+modified_data = modify_values(values)
 
 for value in modified_data:
     print(value)
     pyautogui.press('down')
     pyautogui.press('enter')
     pyautogui.write(str(value))
-    time.sleep(1)  # Add a slight delay after writing the value
     pyautogui.press('enter')
     pyautogui.press('down')
     pyautogui.press('down')
-

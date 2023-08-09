@@ -1,23 +1,18 @@
-import time
+import re
 import pyautogui
-
+import time
 time.sleep(5)
 
-totals = [9.5,
-          9.5,
-          9.5,
-          9.5,
-          10.5,
-          8.5,
-          7.5,
-          8.5,
-          9.5,
-          7.5,
-          8.5,
-          9.5,
-          7.5,
-          9.5
-          ]  # List of different total values
+with open('../0.INFO', 'r') as file:
+    data = file.read()
+
+pattern = r"Moneyline / Total Runs\n\n.*?(\d+\.\d+)\n"
+
+matches = re.findall(pattern, data)
+
+for match in matches:
+    print(match)
+
 
 def entertnt():
     pyautogui.hotkey('ctrl', 'enter')
@@ -36,12 +31,12 @@ def delete_empty(total):
     pyautogui.press('enter')
     pyautogui.press('down')
 
-for total in totals:
+for match in matches:
     entertnt()
-    delete_empty(total)
-    delete_empty(total)
-    delete_empty(total)
-    delete_empty(total)
+    delete_empty(match)
+    delete_empty(match)
+    delete_empty(match)
+    delete_empty(match)
     pyautogui.hotkey('alt', 'o')
     pyautogui.press('tab')
     pyautogui.press('down', presses=6)

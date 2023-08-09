@@ -1,9 +1,9 @@
 import re
 import pyautogui
 import time
-time.sleep(3)
+time.sleep(5)
 
-rot_number = 1001001
+rot_number = 4801401
 
 
 with open('../0.INFO', 'r') as file:
@@ -13,7 +13,7 @@ with open('../0.INFO', 'r') as file:
 def run_additional_function():
     pyautogui.press('tab', presses=4)
     pyautogui.press('enter')
-    time.sleep(25)
+    time.sleep(90)
     pyautogui.keyDown('shift')
     pyautogui.press('tab', presses=7)
     print("Running additional function for the current category...")
@@ -47,9 +47,9 @@ def calculate_surcharged_odd(odd):
 
     return surcharged_odd
 def process_category(category):
-    pyautogui.write(f"TOP {category} test test")
+    pyautogui.write(f"{category}")
     pyautogui.press('TAB')
-    pyautogui.write(f"TOP {category} test test")
+    pyautogui.write(f"{category}")
     pyautogui.press('TAB')
     pyautogui.write(str(rot_number))
     pyautogui.press('TAB')
@@ -99,7 +99,7 @@ for category, players in players_by_category.items():
 
     run_additional_function()
 
-    rot_number = rot_number + 1000
+    rot_number = rot_number + 200
 
 
 
