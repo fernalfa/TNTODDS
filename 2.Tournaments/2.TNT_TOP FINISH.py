@@ -10,10 +10,10 @@ file_path = os.path.join(os.path.dirname(__file__), '..', 'Tools.xlsx')
 sport = "TOP FINISH"
 excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
-time.sleep(3)
+time.sleep(5)
 
 
-number = 151
+number = 152
 
 
 # Iterate excel r

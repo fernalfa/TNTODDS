@@ -2,7 +2,7 @@ import time
 import pyautogui
 
 time.sleep(5)
-skip = 4
+skip = 10
 
 
 # Open the text file

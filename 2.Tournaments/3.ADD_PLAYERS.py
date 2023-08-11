@@ -9,7 +9,6 @@ with open('../0.INFO', 'r') as file:
 # Iterate through player info
 for player in player_info:
     player = player.strip()  # Remove leading/trailing whitespaces
-
     pyautogui.typewrite(player)
     pyautogui.press('tab')
     pyautogui.typewrite('-150')

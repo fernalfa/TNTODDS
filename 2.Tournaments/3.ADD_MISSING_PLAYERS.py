@@ -50,13 +50,6 @@ for name, odd in odds:
     odds_dict[name] = surcharged_odd
 
 
-# Print the first list of names
-print("\n************:")
-print("CONTENDERS LIST:")
-print("************:")
-for name in names:
-    print(name)
-
 
 # Create a second list with missing teams
 print("\n************:")
@@ -68,34 +61,8 @@ for name in odds_dict:
     if name not in names:
         missing_teams.append(name)
         print(name)
-
-# Create a fourth list with names having NONE odds
-
-print("\n************:")
-print("CONTENDERS TO BE DELETED:")
-print("************:")
-
-none_odds_teams = []
-for name in names:
-    if odds_dict.get(name.strip()) is None:
-        none_odds_teams.append(name.strip())
-        print(name)
-
-
-# Print the third list of names and odds
-
-print("\n************:")
-print("TOURNAMENT ADJUSTED ODDS:")
-print("************:")
-for name in names:
-    odd = odds_dict.get(name.strip())
-    if odd is not None:
-        print(f"{name}: {odd}")
-        enterodd()
-    else:
-        print(f"{name}: NONE")
-        deleteodd()
-
-
-# Alternatively, you can use a list comprehension to achieve the same result:
-# missing_teams = [name for name in odds_dict if name not in names]
+        pyautogui.typewrite(name)
+        pyautogui.press('tab')
+        pyautogui.typewrite('-150')
+        pyautogui.press('tab', presses=2)
+        pyautogui.press('enter')

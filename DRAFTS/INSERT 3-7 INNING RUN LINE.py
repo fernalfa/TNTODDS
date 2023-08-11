@@ -3,6 +3,9 @@ import pyautogui
 import time
 time.sleep(5)
 
+with open('../0.INFO', 'r') as file:
+    data = file.read()
+
 
 # Define the two functions
 def process_lowest_as_first(lowest_value):
@@ -30,8 +33,7 @@ def process_lowest_as_second(lowest_value):
     print("Processing lowest as second:", lowest_value)
     # Your logic for the second case goes here
 
-with open('../0.INFO', 'r') as file:
-    data = file.read()
+
 
 
 
