@@ -1,185 +1,151 @@
 text = """
-Sun 13 Aug
-12:05
-DET Tigers
-BOS Red Sox
-3
-13:35
-CIN Reds - Game 1
-PIT Pirates - Game 1
-13:35
-MIN Twins
-PHI Phillies
-3
-13:35
-OAK Athletics
-WAS Nationals
-3
-13:37
-CHI Cubs
-TOR Blue Jays
-3
-13:40
-CLE Guardians
-TB Rays
-4
-13:40
-NY Yankees
-MIA Marlins
-3
-14:10
-LA Angels
-HOU Astros
-4
-14:10
-MIL Brewers
-CHI White Sox
-3
-16:05
-TEX Rangers
-SF Giants
-3
+Mon 07 Aug
 16:10
-BAL Orioles
-SEA Mariners
-3
-16:10
-COL Rockies
 LA Dodgers
-4
-16:10
 SD Padres
-ARI Diamondbacks
-3
-18:05
-CIN Reds - Game 2
-PIT Pirates - Game 2
-19:10
+2
+18:40
+MIA Marlins
+CIN Reds
+4
+18:40
+MIN Twins
+DET Tigers
+4
+18:40
+WAS Nationals
+PHI Phillies
+5
+19:05
 ATL Braves
+PIT Pirates
+5
+19:10
+CHI Cubs
 NY Mets
-3
+5
+19:10
+KC Royals
+BOS Red Sox
+4
+19:10
+TOR Blue Jays
+CLE Guardians
+4
+20:10
+COL Rockies
+MIL Brewers
+4
+20:10
+NY Yankees
+CHI White Sox
+4
+21:38
+SF Giants
+LA Angels
+4
+21:40
+TEX Rangers
+OAK Athletics
+4
 Total
-O 6.5
--135
-U 6.5
--105
-O 6.5
+O 7.5
+-110
+U 7.5
 -130
-U 6.5
+O 7.5
+-130
+U 7.5
 -110
 O 6.5
++105
+U 6.5
+-145
+O 7.5
+-135
+U 7.5
+-105
+O 6.5
 -120
 U 6.5
 -120
+O 6.5
+-135
+U 6.5
+-105
 O 7.5
 -120
 U 7.5
 -120
-O 7.5
--105
-U 7.5
--135
-O 5.5
--135
-U 5.5
--105
-O 5.5
+O 6.5
 -120
-U 5.5
+U 6.5
 -120
 O 6.5
--135
+-120
 U 6.5
--105
+-120
 O 5.5
--135
+-130
 U 5.5
--105
-O 6.5
-+100
-U 6.5
--140
-O 6.5
--110
-U 6.5
--130
-O 6.5
--130
-U 6.5
 -110
 O 6.5
+-105
+U 6.5
+-135
+O 6.5
 -135
 U 6.5
 -105
-O 7.5
--115
-U 7.5
--125
-O 7.5
--115
-U 7.5
--125
 Run Line
 0.0
-+100
-0.0
--140
-0.0
 +115
 0.0
 -155
 0.0
--105
+-160
 0.0
--135
++120
 0.0
-+105
+-190
 0.0
--145
++145
 0.0
-+100
++195
 0.0
--140
+-250
 0.0
-+170
+-340
 0.0
--220
++250
 0.0
--140
+-120
 0.0
-+100
+-120
 0.0
-+115
++155
 0.0
--155
-0.0
--140
-0.0
-+100
-0.0
-+115
+-205
 0.0
 -155
 0.0
--125
++115
 0.0
--115
++200
 0.0
-+285
+-260
 0.0
--380
+-190
 0.0
--145
++145
 0.0
-+105
+-130
 0.0
--115
+-110
 0.0
--125
+-230
 0.0
--145
-0.0
-+105
++180
 """
 import pyautogui
 import time

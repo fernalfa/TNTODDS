@@ -27,8 +27,6 @@ def move_and_click(x, y, delay=0.5):
 
 
 
-pyautogui.moveTo(3762,140)
-time.sleep(1)
 pyautogui.click()
 move_and_click(x_coordinate, y_coordinate, delay=1.5)
 pyautogui.click()

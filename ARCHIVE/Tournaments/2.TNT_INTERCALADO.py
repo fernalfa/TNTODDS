@@ -4,7 +4,7 @@ import pyautogui
 import os
 
 # Construct the file path
-file_path = os.path.join(os.path.dirname(__file__), '..', 'Tools.xlsx')
+file_path = os.path.join(os.path.dirname(__file__), '../..', 'Tools.xlsx')
 
 
 # Read data from excel

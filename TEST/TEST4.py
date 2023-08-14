@@ -3,172 +3,73 @@ import pyautogui
 import time
 time.sleep(5)
 
-text = """
-2:10:00 P.M.
 
-LogoLA DODGERS
-+1½-162
-o9-125
-+130
-@
-LogoSD PADRES
--1½+142
-u9+105
--142
- Live Streaming Live Betting 36 Props
-4:40:00 P.M.
-
-LogoWAS NATIONALS
-+1½-101
-o10-112
-+206
-@
-LogoPHI PHILLIES
--1½-119
-u10-108
--230
- Live Streaming Live Betting 36 Props
-4:40:00 P.M.
-
-LogoMIA MARLINS
--1½+102
-o10½-110
--148
-@
-LogoCIN REDS
-+1½-122
-u10½-110
-+136
- Live Streaming Live Betting 36 Props
-5:05:00 P.M.
-
-LogoATL BRAVES
--1½-170
-o8½-130
--285
-@
-LogoPIT PIRATES
-+1½+150
-u8½+110
-+250
- Live Streaming Live Betting 36 Props
-5:10:00 P.M.
-
-LogoCHI CUBS
-+1½-193
-o9-105
-+102
-@
-LogoNY METS
--1½+168
-u9-115
--112
- Live Streaming Live Betting 36 Props
-6:10:00 P.M.
-
-LogoCOL ROCKIES
-+1½-105
-o8½-106
-+202
-@
-LogoMIL BREWERS
--1½-115
-u8½-114
--225
- Live Streaming Live Betting 36 Props
-4:40:00 P.M.
-
-LogoMIN TWINS
--1½-110
-o8½-102
--169
-@
-LogoDET TIGERS
-+1½-110
-u8½-118
-+155
- Live Streaming Live Betting 36 Props
-5:10:00 P.M.
-
-LogoKC ROYALS
-+1½-118
-o10-105
-+174
-@
-LogoBOS RED SOX
--1½-102
-u10-115
--190
- Live Streaming Live Betting 36 Props
-5:10:00 P.M.
-
-LogoTOR BLUE JAYS
--1½+115
-o8½-106
--132
-@
-LogoCLE GUARDIANS
-+1½-135
-u8½-114
-+121
- Live Streaming Live Betting 36 Props
-6:10:00 P.M.
-
-LogoNY YANKEES
--1½-104
-o8-105
--162
-@
-LogoCHI WHITE SOX
-+1½-116
-u8-115
-+148
- Live Streaming Live Betting 36 Props
-7:40:00 P.M.
-
-LogoTEX RANGERS
--1½-135
-o8½-128
--215
-@
-LogoOAK ATHLETICS
-+1½+115
-u8½+108
-+194
- Live Streaming Live Betting 36 Props
-7:38:00 P.M.
-
-LogoSF GIANTS
--1½+139
-o8½-105
--115
-@
-LogoLA ANGELS
-+1½-159
-u8½-115
-+105
-"""
-
-text = re.sub(r'(\d+)½', r'\1.5', text)
-
-pattern = r'o(\d*\.?\d+)'
-matches = re.findall(pattern, text)
-
-values = [float(match) for match in matches]
-
-def modify_values(matches):
-    modified_values = []
-    for value in matches:
-        modified_values.extend([value + 0.5, value - 0.5])
-    return modified_values
-
-modified_data = modify_values(values)
-
-for value in modified_data:
-    print(value)
+# Define the two functions
+def process_lowest_as_first(lowest_value):
     pyautogui.press('down')
+    pyautogui.press('right')
     pyautogui.press('enter')
-    pyautogui.write(str(value))
+    pyautogui.write(str(lowest_value))
     pyautogui.press('enter')
+    pyautogui.press('left')
     pyautogui.press('down')
     pyautogui.press('down')
+    print("Processing lowest as first:", lowest_value)
+    # Your logic for the first case goes here
+
+
+def process_lowest_as_second(lowest_value):
+    pyautogui.press('down')
+    pyautogui.press('down')
+    pyautogui.press('right')
+    pyautogui.press('enter')
+    pyautogui.write(str(lowest_value))
+    pyautogui.press('enter')
+    pyautogui.press('left')
+    pyautogui.press('down')
+    print("Processing lowest as second:", lowest_value)
+    # Your logic for the second case goes here
+
+with open('../0.INFO', 'r') as file:
+    data = file.read()
+
+
+
+lines = data.split('\n')  # Split the data into lines
+run_line_index = lines.index("Run Line")  # Find the index of the line containing "Run Line"
+
+extracted_values = []
+
+# Iterate through the lines after the "Run Line" line and extract values with '+' or '-' sign
+for line in lines[run_line_index + 1:]:
+    if line.strip():  # Ignore empty lines
+        if line.startswith('+') or line.startswith('-'):
+            extracted_values.append(int(line.strip()))
+
+# Compare the values in pairs, get the lowest value and call the appropriate function
+for i in range(0, len(extracted_values), 2):
+    value1 = extracted_values[i]
+    value2 = extracted_values[i + 1]
+
+    if value1 < 0 and value2 < 0:
+        lowest_value = min(value1, value2)
+        lowest_position = "first" if lowest_value == value1 else "second"
+    elif value1 >= 0 and value2 >= 0:
+        lowest_value = min(value1, value2)
+        lowest_position = "first" if lowest_value == value1 else "second"
+    else:
+        if value1 < value2:
+            lowest_value = value1
+            lowest_position = "first"
+        else:
+            lowest_value = value2
+            lowest_position = "second"
+
+    print("Pair:", value1, value2)
+    print("Lowest value:", lowest_value)
+    print("Lowest value is the", lowest_position, "value of the pair")
+
+    if lowest_position == "first":
+        process_lowest_as_first(lowest_value)
+    else:
+        process_lowest_as_second(lowest_value)
