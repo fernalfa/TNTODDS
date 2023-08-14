@@ -1,151 +1,185 @@
 text = """
-Mon 07 Aug
-16:10
-LA Dodgers
-SD Padres
-2
-18:40
-MIA Marlins
-CIN Reds
-4
-18:40
-MIN Twins
+Sun 13 Aug
+12:05
 DET Tigers
-4
-18:40
-WAS Nationals
-PHI Phillies
-5
-19:05
-ATL Braves
-PIT Pirates
-5
-19:10
-CHI Cubs
-NY Mets
-5
-19:10
-KC Royals
 BOS Red Sox
-4
-19:10
-TOR Blue Jays
-CLE Guardians
-4
-20:10
-COL Rockies
-MIL Brewers
-4
-20:10
-NY Yankees
-CHI White Sox
-4
-21:38
-SF Giants
-LA Angels
-4
-21:40
-TEX Rangers
+3
+13:35
+CIN Reds - Game 1
+PIT Pirates - Game 1
+13:35
+MIN Twins
+PHI Phillies
+3
+13:35
 OAK Athletics
+WAS Nationals
+3
+13:37
+CHI Cubs
+TOR Blue Jays
+3
+13:40
+CLE Guardians
+TB Rays
 4
+13:40
+NY Yankees
+MIA Marlins
+3
+14:10
+LA Angels
+HOU Astros
+4
+14:10
+MIL Brewers
+CHI White Sox
+3
+16:05
+TEX Rangers
+SF Giants
+3
+16:10
+BAL Orioles
+SEA Mariners
+3
+16:10
+COL Rockies
+LA Dodgers
+4
+16:10
+SD Padres
+ARI Diamondbacks
+3
+18:05
+CIN Reds - Game 2
+PIT Pirates - Game 2
+19:10
+ATL Braves
+NY Mets
+3
 Total
-O 7.5
--110
-U 7.5
--130
-O 7.5
--130
-U 7.5
--110
-O 6.5
-+105
-U 6.5
--145
-O 7.5
--135
-U 7.5
--105
-O 6.5
--120
-U 6.5
--120
 O 6.5
 -135
 U 6.5
 -105
+O 6.5
+-130
+U 6.5
+-110
+O 6.5
+-120
+U 6.5
+-120
 O 7.5
 -120
 U 7.5
 -120
-O 6.5
--120
-U 6.5
--120
-O 6.5
--120
-U 6.5
--120
+O 7.5
+-105
+U 7.5
+-135
 O 5.5
--130
+-135
 U 5.5
+-105
+O 5.5
+-120
+U 5.5
+-120
+O 6.5
+-135
+U 6.5
+-105
+O 5.5
+-135
+U 5.5
+-105
+O 6.5
++100
+U 6.5
+-140
+O 6.5
+-110
+U 6.5
+-130
+O 6.5
+-130
+U 6.5
 -110
 O 6.5
--105
-U 6.5
--135
-O 6.5
 -135
 U 6.5
 -105
+O 7.5
+-115
+U 7.5
+-125
+O 7.5
+-115
+U 7.5
+-125
 Run Line
 0.0
++100
+0.0
+-140
+0.0
 +115
 0.0
 -155
 0.0
--160
+-105
 0.0
-+120
+-135
 0.0
--190
++105
 0.0
-+145
+-145
 0.0
-+195
++100
 0.0
--250
+-140
 0.0
--340
++170
 0.0
-+250
+-220
 0.0
--120
+-140
 0.0
--120
-0.0
-+155
-0.0
--205
-0.0
--155
++100
 0.0
 +115
 0.0
-+200
+-155
 0.0
--260
+-140
 0.0
--190
++100
 0.0
-+145
++115
 0.0
--130
+-155
 0.0
--110
+-125
 0.0
--230
+-115
 0.0
-+180
++285
+0.0
+-380
+0.0
+-145
+0.0
++105
+0.0
+-115
+0.0
+-125
+0.0
+-145
+0.0
++105
 """
 import pyautogui
 import time

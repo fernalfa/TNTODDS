@@ -39,7 +39,7 @@ if __name__ == "__main__":
     label = tk.Label(root, text="Select a list:")
     label.pack(pady=5)
 
-    list_dropdown = ttk.Combobox(root, textvariable=list_var, values=list_names)
+    list_dropdown = ttk.Combobox(root, textvariable=list_var, values=list_names, width=45)
     list_dropdown.pack(pady=5)
 
     list_dropdown.bind("<<ComboboxSelected>>", on_list_selected)

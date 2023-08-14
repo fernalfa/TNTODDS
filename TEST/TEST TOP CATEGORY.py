@@ -3,7 +3,7 @@ import pyautogui
 import time
 time.sleep(5)
 
-rot_number = 4801401
+rot_number = 5701001
 
 
 with open('../0.INFO', 'r') as file:
@@ -53,13 +53,13 @@ def process_category(category):
     pyautogui.press('TAB')
     pyautogui.write(str(rot_number))
     pyautogui.press('TAB')
-    pyautogui.write(f"**MUST TEE OFF FOR ACTION**")
+    pyautogui.write(f"**ALL BETS ACTION**")
     pyautogui.press('TAB')
     pyautogui.write(str(-120))
     pyautogui.press('TAB')
     pyautogui.press('TAB')
     pyautogui.press('ENTER')
-    pyautogui.write(f"**DEAD HEAT RULE APPLIES**")
+    pyautogui.write(f"************")
     pyautogui.press('TAB')
     pyautogui.write(str(-120))
     pyautogui.press('TAB')

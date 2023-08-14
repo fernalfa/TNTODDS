@@ -2,62 +2,46 @@ import re
 from openpyxl import load_workbook, Workbook
 
 teams_data = """
-USA W
-+250
-Spain W
-+300
-England W
-+550
-Germany W
-+650
-France W
+Man City
+-138
+Arsenal
++450
+Liverpool
++700
+Man Utd
++1100
+Chelsea
 +1400
-Brazil W
-+1600
-Japan W
-+2100
-Netherlands W
-+2100
-Sweden W
-+2500
-Australia W
-+2500
-Canada W
+Newcastle
++1400
+Tottenham
 +5000
-Nigeria W
+Brighton
 +8000
-Denmark W
-+10000
-Italy W
+Aston Villa
 +12000
-Norway W
-+12000
-Colombia W
-+19000
-Switzerland W
-+23000
-New Zealand W
-+36000
-China W
-+43000
-Jamaica W
-+43000
-Argentina W
-+43000
-South Korea W
-+43000
-Morocco W
-+43000
-Philippines W
-+43000
-South Africa W
-+43000
-Haiti W
-+43000
-Panama W
-+43000
-Portugal W
-+43000
+West Ham
++25000
+Brentford
++40000
+Crystal Palace
++50000
+Everton
++50000
+Wolverhampton
++75000
+Fulham
++100000
+Nottm Forest
++100000
+Burnley
++100000
+Bournemouth
++150000
+Sheff Utd
++250000
+Luton
++300000
 """
 
 def extract_teams(data):
