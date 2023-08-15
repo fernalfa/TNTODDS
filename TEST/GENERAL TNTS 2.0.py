@@ -1,16 +1,16 @@
 import time
 import pyautogui
-
 time.sleep(5)
+count = 0
+
+
 skip = 4
 
 
 # Open the text file
 with open('../0.INFO', 'r') as file:
     data = file.read()
-
 lines = data.strip().split('\n')
-count = 0
 
 def jump():
     pyautogui.press('down', presses = skip)
@@ -20,7 +20,7 @@ def jump():
 
 
 for line in lines:
-    if line == "SKIP GAME":
+    if line == "SKIP":
         jump()  # Call the skip() function
         continue
 
