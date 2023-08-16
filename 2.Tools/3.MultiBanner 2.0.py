@@ -13,7 +13,7 @@ excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
 time.sleep(4)
 
-number = 6
+number = 1
 
 # Iterate excel rows till to finish
 for column in excel_data['Row ID'].tolist():
@@ -81,13 +81,10 @@ for column in excel_data['Row ID'].tolist():
     pyautogui.hotkey('shift', 'tab')
     pyautogui.press('del')
 
-    print(str(excel_data['BANNER'][count]))
-
-
     # Set counter with the number of Rows
     if count == number - 1:
-        print(str(excel_data['BANNER'][count]))
+        print(f"{(str(excel_data['BANNER'][count]))}:{(count+1)}")
         print('BANNERS COMPLETED, PLEASE CHECK!!')
         break
+    print(f"{(str(excel_data['BANNER'][count]))}:{(count+1)}")
     count = count + 1
-    print(count)

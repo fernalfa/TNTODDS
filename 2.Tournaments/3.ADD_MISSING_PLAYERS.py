@@ -53,7 +53,7 @@ for name, odd in odds:
 
 # Create a second list with missing teams
 print("\n************:")
-print("MISSING CONTENDERS:")
+print("CREATED CONTENDERS:")
 print("************:")
 
 missing_teams = []
