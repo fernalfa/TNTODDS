@@ -47,9 +47,8 @@ for game in games:
     move_and_click(x_coordinate, y_coordinate)
     pyautogui.move(-230,315,1)
     pyautogui.click()
-    time.sleep(1)
+    time.sleep(2)
     pyautogui.press('esc')
     print(f"Processed Successfully")
     print(f"*****************************")
-    time.sleep(2)
 

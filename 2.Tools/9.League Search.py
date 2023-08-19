@@ -1,8 +1,8 @@
 import time
 import pyautogui
-time.sleep(3)
+time.sleep(5)
 
-value = 'NCAAF (F) - DOAK WALKER AWARD 2023/24 WINNER'
+value = 'ODDS TO WIN- TH'
 
 def searchleague():
     pyautogui.write(value)
