@@ -1,4 +1,5 @@
 import re
+from tqdm import tqdm
 import time
 import pyautogui
 
@@ -87,7 +88,9 @@ for name in names:
 print("\n************:")
 print("TOURNAMENT ADJUSTED ODDS:")
 print("************:")
-for name in names:
+
+# Assuming `names` is a list of names
+for name in tqdm(names, desc="Progress", ncols=100):
     odd = odds_dict.get(name.strip())
     if odd is not None:
         print(f"{name}: {odd}")

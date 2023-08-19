@@ -3,8 +3,9 @@ import pyautogui
 time.sleep(5)
 
 
-number = 20
-value = 3301301
+number = 250
+value = 7732101
+add = 2
 
 
 def deleteempty():
@@ -19,4 +20,4 @@ while (count < number):
     count = count + 1
     print(count)
     deleteempty()
-    value = value + 2
+    value = value + add

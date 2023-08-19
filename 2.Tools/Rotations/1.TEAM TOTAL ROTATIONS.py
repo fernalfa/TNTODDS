@@ -5,7 +5,7 @@ c = 902999
 
 # Specify GAME ROTATION NUMBER
 
-ROT = 107
+ROT = 655
 
 
 # Multiply the variable by the multiplier and add the three values

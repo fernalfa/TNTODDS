@@ -28,7 +28,9 @@ def delete_empty(total):
     pyautogui.press('enter')
     pyautogui.press('down')
 
-for match in matches:
+
+for line_number, match in enumerate(matches, start=1):
+    print(f"Processing line: {line_number} / Total lines: {len(matches)}")
     entertnt()
     delete_empty(match)
     delete_empty(match)
