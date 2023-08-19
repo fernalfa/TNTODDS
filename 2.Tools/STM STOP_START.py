@@ -33,22 +33,27 @@ def move_and_click(x, y, delay=0.5):
 
 
 for game in games:
+    # Enter Game ID on search bar
     print(f"Processing: {game}")
-    pyautogui.moveTo(3300,-30,1)
+    pyautogui.moveTo(3300,-40,1)
     pyautogui.doubleClick()
     pyautogui.press("del")
     pyautogui.write(str(game))
     pyautogui.press("enter")
+    # Enter game
     pyautogui.moveTo(3757,140, 1)
     pyautogui.click()
+    # Hit STOP button
     move_and_click(x_coordinate, y_coordinate,1)
     pyautogui.moveTo(3450,465,1)
     pyautogui.click()
+    # Hit START button
     move_and_click(x_coordinate, y_coordinate)
     pyautogui.move(-230,315,1)
     pyautogui.click()
     time.sleep(2)
     pyautogui.press('esc')
+    # Exit Game ID
     print(f"Processed Successfully")
     print(f"*****************************")
 

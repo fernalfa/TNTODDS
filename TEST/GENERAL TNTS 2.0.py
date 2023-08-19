@@ -1,17 +1,6 @@
 import time
 import pyautogui
 time.sleep(5)
-count = 0
-
-
-skip = 10
-
-
-# Open the text file
-with open('../0.INFO', 'r') as file:
-    data = file.read()
-lines = data.strip().split('\n')
-
 def jump():
     pyautogui.press('down', presses = skip)
     pyautogui.press('down')
@@ -19,11 +8,22 @@ def jump():
     print("GAME SKIPPED")
 
 
-for line in lines:
-    if line == "SKIP":
-        jump()  # Call the skip() function
-        continue
+# Open the text file
+with open('../0.INFO', 'r') as file:
+    data = file.read()
+lines = data.strip().split('\n')
 
+
+# Initialize variables
+count = 0
+skip = 10       # You can adjust the skip value as needed
+
+
+
+for line_number, line in enumerate(lines, start=1):
+    if line == "SKIP":
+        jump()  # Call the jump() function
+        continue
     if line.startswith('+'):
         value = int(line[1:])
         if value > 10000:
@@ -32,6 +32,7 @@ for line in lines:
         pyautogui.write(str(value))
         pyautogui.press('enter')
         pyautogui.press('down')
+        print(f"Processing line: {line_number} / Total lines: {len(lines)}")
         count += 1
         if count % skip == 0:
             pyautogui.press('down')
@@ -44,6 +45,7 @@ for line in lines:
         pyautogui.write(str(value))
         pyautogui.press('enter')
         pyautogui.press('down')
+        print(f"Processing line: {line_number} / Total lines: {len(lines)}")
         count += 1
         if count % skip == 0:
             pyautogui.press('down')
