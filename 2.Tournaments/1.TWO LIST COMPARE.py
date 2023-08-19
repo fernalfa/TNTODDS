@@ -3,7 +3,7 @@ import time
 import pyautogui
 
 time.sleep(5)
-surcharge_percentage = 0  # 10% surcharge
+surcharge_percentage = 10  # 10% surcharge
 
 def enterodd():
     pyautogui.press('enter')

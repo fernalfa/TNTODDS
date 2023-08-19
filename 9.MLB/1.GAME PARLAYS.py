@@ -10,9 +10,6 @@ pattern = r"Moneyline / Total Runs\n\n.*?(\d+\.\d+)\n"
 
 matches = re.findall(pattern, data)
 
-for match in matches:
-    print(match)
-
 
 def entertnt():
     pyautogui.hotkey('ctrl', 'enter')

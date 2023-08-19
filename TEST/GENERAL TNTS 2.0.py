@@ -1,17 +1,29 @@
 import time
 import pyautogui
-
 time.sleep(5)
-skip = 25
+count = 0
+
+
+skip = 4
 
 
 # Open the text file
 with open('../0.INFO', 'r') as file:
     data = file.read()
-
 lines = data.strip().split('\n')
-count = 0
+
+def jump():
+    pyautogui.press('down', presses = skip)
+    pyautogui.press('down')
+    pyautogui.press('down')
+    print("GAME SKIPPED")
+
+
 for line in lines:
+    if line == "SKIP":
+        jump()  # Call the skip() function
+        continue
+
     if line.startswith('+'):
         value = int(line[1:])
         if value > 10000:
