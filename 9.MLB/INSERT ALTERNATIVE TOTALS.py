@@ -3,10 +3,10 @@ import pyautogui
 import time
 time.sleep(5)
 
-# COPIAR Y PEGAR DE BULLWAGER
-text = """
+# Open the text file
+with open('../0.INFO', 'r') as file:
+    text = file.read()
 
-"""
 
 text = re.sub(r'(\d+)½', r'\1.5', text)
 
