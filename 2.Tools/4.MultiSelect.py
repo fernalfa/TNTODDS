@@ -6,7 +6,6 @@ time.sleep(4)
 times = 0
 
 number = 250
-
 def deleteempty():
     pyautogui.press('tab')
     pyautogui.press('space')

@@ -41,7 +41,7 @@ for game in games:
     pyautogui.write(str(game))
     pyautogui.press("enter")
     # Enter game
-    pyautogui.moveTo(3757,140, 1)
+    pyautogui.moveTo(3760,140, 1)
     pyautogui.click()
     # Hit STOP button
     move_and_click(x_coordinate, y_coordinate,1)
@@ -49,9 +49,9 @@ for game in games:
     pyautogui.click()
     # Hit START button
     move_and_click(x_coordinate, y_coordinate)
-    pyautogui.move(-230,315,1)
+    pyautogui.move(-240,315,1)
     pyautogui.click()
-    time.sleep(2)
+    time.sleep(4)
     pyautogui.press('esc')
     # Exit Game ID
     print(f"Processed Successfully")

@@ -1,10 +1,11 @@
 import time
+from tqdm import tqdm
 import pyautogui
 time.sleep(5)
 
 
 number = 250
-value = 7732101
+value = 7707001
 add = 2
 
 
@@ -16,8 +17,10 @@ def deleteempty():
     pyautogui.press('down', presses = 3)
 count = 0
 
-while (count < number):
-    count = count + 1
-    print(count)
-    deleteempty()
-    value = value + add
+# Wrap your loop with tqdm
+with tqdm(total=number) as pbar:
+    while count < number:
+        count = count + 1
+        deleteempty()
+        value = value + add
+        pbar.update(1)  # Update the progress bar
