@@ -14,11 +14,10 @@ excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
 time.sleep(4)
 
-number = 5
+number = 9
 
 # Wrap your loop with tqdm
-with tqdm(total=len(excel_data)) as pbar:
-
+with tqdm(total=number) as pbar:
     # Iterate excel rows till to finish
     for column in excel_data['Row ID'].tolist():
         pyautogui.write((str(int(excel_data['ROT1'][count]))))
@@ -87,9 +86,10 @@ with tqdm(total=len(excel_data)) as pbar:
 
         # Set counter with the number of Rows
         if count == number - 1:
-            print(f"{(str(excel_data['BANNER'][count]))}:{(count+1)}")
+            pbar.update(1)  # Update the progress bar
+            print(f"{(str(excel_data['BANNER'][count]))}")
             print('BANNERS COMPLETED, PLEASE CHECK!!')
             break
-        print(f"{(str(excel_data['BANNER'][count]))}:{(count+1)}")
+        print(f"{(str(excel_data['BANNER'][count]))}")
         count = count + 1
         pbar.update(1)  # Update the progress bar

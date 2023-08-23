@@ -1,4 +1,5 @@
 import pyautogui
+from tqdm import tqdm
 import time
 
 # Example usage:
@@ -32,8 +33,10 @@ def move_and_click(x, y, delay=0.5):
 
 
 
-for game in games:
-    # Enter Game ID on search bar
+# Modify the loop to use tqdm for the progress bar
+
+for game in tqdm(games, desc="Processing games"):
+    # Rest of your code within the loop...
     print(f"Processing: {game}")
     pyautogui.moveTo(3300,-40,1)
     pyautogui.doubleClick()
@@ -51,9 +54,7 @@ for game in games:
     move_and_click(x_coordinate, y_coordinate)
     pyautogui.move(-240,315,1)
     pyautogui.click()
-    time.sleep(4)
+    print(f"3 SECONDS TO CANCEL IF NEEDED")
+    time.sleep(3)
     pyautogui.press('esc')
     # Exit Game ID
-    print(f"Processed Successfully")
-    print(f"*****************************")
-

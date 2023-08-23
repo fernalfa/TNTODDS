@@ -13,7 +13,7 @@ count = 0
 time.sleep(5)
 
 
-number = 152
+number = 20
 
 
 # Iterate excel r

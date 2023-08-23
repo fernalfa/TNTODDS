@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python File Selector</title>
+</head>
+<body>
+    <h1>Python File Selector</h1>
+
+    <input type="file" id="fileInput" accept=".py" multiple>
+    <button id="processButton">Process Selected Files</button>
+
+    <div id="output"></div>
+
+    <script>
+        document.getElementById("processButton").addEventListener("click", function() {
+            const fileInput = document.getElementById("fileInput");
+            const outputDiv = document.getElementById("output");
+
+            const selectedFiles = fileInput.files;
+            outputDiv.innerHTML = "";
+
+            for (let i = 0; i < selectedFiles.length; i++) {
+                const file = selectedFiles[i];
+                const fileReader = new FileReader();
+
+                fileReader.onload = function(event) {
+                    const content = event.target.result;
+                    const pre = document.createElement("pre");
+                    pre.textContent = content;
+                    outputDiv.appendChild(pre);
+                };
+
+                fileReader.readAsText(file);
+            }
+        });
+    </script>
+</body>
+</html>

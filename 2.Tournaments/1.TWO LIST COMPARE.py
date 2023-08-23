@@ -58,20 +58,7 @@ print("************:")
 for name in names:
     print(name)
 
-
-# Create a second list with missing teams
-print("\n************:")
-print("MISSING CONTENDERS:")
-print("************:")
-
-missing_teams = []
-for name in odds_dict:
-    if name not in names:
-        missing_teams.append(name)
-        print(name)
-
 # Create a fourth list with names having NONE odds
-
 print("\n************:")
 print("CONTENDERS TO BE DELETED:")
 print("************:")
@@ -100,5 +87,13 @@ for name in tqdm(names, desc="Progress", ncols=100):
         deleteodd()
 
 
-# Alternatively, you can use a list comprehension to achieve the same result:
-# missing_teams = [name for name in odds_dict if name not in names]
+# Create a second list with missing teams
+print("\n************:")
+print("MISSING CONTENDERS:")
+print("************:")
+
+missing_teams = []
+for name in odds_dict:
+    if name not in names:
+        missing_teams.append(name)
+        print(name)

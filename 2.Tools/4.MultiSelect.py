@@ -4,10 +4,11 @@ from tqdm import tqdm  # Import tqdm
 
 time.sleep(4)
 times = 0
+press = 3
 
-number = 250
+number = 19
 def deleteempty():
-    pyautogui.press('tab')
+    pyautogui.press('tab', presses = press)
     pyautogui.press('space')
 
 count = 0

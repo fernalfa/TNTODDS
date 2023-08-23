@@ -2,7 +2,7 @@ import time
 import pyautogui
 time.sleep(5)
 
-value = 'ODDS TO WIN- TH'
+value = 'VOLLEYBALL - PAN AMERICAN WOMENS CUP'
 
 def searchleague():
     pyautogui.write(value)
