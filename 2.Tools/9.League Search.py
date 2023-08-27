@@ -1,8 +1,8 @@
 import time
 import pyautogui
-time.sleep(5)
+time.sleep(3)
 
-value = 'VOLLEYBALL - PAN AMERICAN WOMENS CUP'
+value = 'NFL - DAIL'
 
 def searchleague():
     pyautogui.write(value)

@@ -1,5 +1,12 @@
 import time
 import pyautogui
+from tqdm import tqdm  # Import tqdm
+
+# Function to type slowly
+def slow_typewrite(text, delay=0.1):
+    for char in text:
+        pyautogui.write(char)
+        time.sleep(delay)
 
 with open('../0.INFO', 'r') as file:
     lines = file.readlines()
@@ -18,20 +25,21 @@ time.sleep(5)
 VALUE = "OVER"
 VALUE1 = "UNDER"
 
-for line in lines:
-    player = line.strip()  # Remove leading/trailing whitespace and newlines
+# Wrap the lines iteration with tqdm
+for line in tqdm(lines, desc="Processing", unit="player"):
+    player = line.strip()
 
-    pyautogui.typewrite(player)
+    slow_typewrite(player)
     pyautogui.press('tab', presses=2)
-    pyautogui.typewrite(str(VALUE))
+    slow_typewrite(str(VALUE))
     pyautogui.press('tab')
     time.sleep(3)
-    pyautogui.typewrite(str(VALUE1))
+    slow_typewrite(str(VALUE1))
     time.sleep(3)
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
-    time.sleep(5)
+    time.sleep(10)
     pyautogui.hotkey('alt', 'o')
 
     if count == len(lines) - 1:

@@ -6,29 +6,172 @@ time.sleep(3)
 
 
 text = """
-PM
-1901
-San Diego Padres
-M. Wacha -R
-O 30½
--1200
-1902
-Cincinnati Reds
-B. Williamson -L
-U 30½
--1100
-02:15 PM
-1921
-New York Yankees - Game #1
-L. Severino -R
+Aug 27 Sun 2023
+12:05 PM
+1975
+Los Angeles Angels
+G. Canning -R
 O 26½
--11000
-1922
-St. Louis Cardinals - Game #1
++100
+1976
+New York Mets
+D. Peterson -L
+U 26½
+-130
+01:35 PM
+1951
+St. Louis Cardinals
+D. Rom -L
+O 27½
+-115
+1952
+Philadelphia Phillies
+A. Nola -R
+U 27½
+-115
+01:35 PM
+1953
+Chicago Cubs
+J. Assad -R
+O 27
+-110
+1954
+Pittsburgh Pirates
+B. Falter -L
+U 27
+-120
+01:35 PM
+1977
+Los Angeles Dodgers
+C. Ferguson -L
+O 28½
+-105
+1978
+Boston Red Sox
+T. Houck -R
+U 28½
+-125
+01:35 PM
+1979
+Colorado Rockies
+T. Blach -L
+O 26½
+-110
+1980
+Baltimore Orioles
 J. Flaherty -R
 U 26½
--120000
-
+-120
+01:37 PM
+1963
+Cleveland Guardians
+N. Syndergaard -R
+O 27½
++110
+1964
+Toronto Blue Jays
+Y. Kikuchi -L
+U 27½
+-140
+01:40 PM
+1955
+Washington Nationals
+T. Williams -R
+O 26
+-110
+1956
+Miami Marlins
+J. Chargois -R
+U 26
+-120
+01:40 PM
+1965
+Houston Astros
+J. Verlander -R
+O 26
+-145
+1966
+Detroit Tigers
+A. Faedo -R
+U 26
++115
+01:40 PM
+1967
+New York Yankees
+C. Rodon -L
+O 25½
+-114
+1968
+Tampa Bay Rays
+Z. Littell -R
+U 25½
+-116
+02:10 PM
+1957
+San Diego Padres
+M. Wacha -R
+O 26½
+-125
+1958
+Milwaukee Brewers
+A. Houser -R
+U 26½
+-105
+02:10 PM
+1969
+Oakland Athletics
+P. Blackburn -R
+O 27
+-106
+1970
+Chicago White Sox
+M. Clevinger -R
+U 27
+-124
+02:10 PM
+1971
+Texas Rangers
+J. Montgomery -L
+O 25½
+-123
+1972
+Minnesota Twins
+B. Ober -R
+U 25½
+-107
+04:10 PM
+1961
+Cincinnati Reds
+G. Ashcraft -R
+O 27½
+-110
+1962
+Arizona Diamondbacks
+S. Cecconi -R
+U 27½
+-120
+04:10 PM
+1973
+Kansas City Royals
+A. Marsh -R
+O 25
+-120
+1974
+Seattle Mariners
+L. Castillo -R
+U 25
+-110
+07:10 PM
+1959
+Atlanta Braves
+J. Shuster -L
+O 28
+-115
+1960
+San Francisco Giants
+T. Beck -R
+U 28
+-115
 """
 
 def enteroverodd():

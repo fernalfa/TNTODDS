@@ -4,8 +4,8 @@ import pyautogui
 time.sleep(5)
 
 
-number = 200
-value = 8801601
+number = 40
+value = 5563001
 add = 2
 
 
