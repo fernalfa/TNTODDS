@@ -57,12 +57,13 @@ print("CREATED CONTENDERS:")
 print("************:")
 
 missing_teams = []
-for name in odds_dict:
+for name, surcharged_odd in odds_dict.items():
     if name not in names:
         missing_teams.append(name)
         print(name)
         pyautogui.typewrite(name)
         pyautogui.press('tab')
-        pyautogui.typewrite('-150')
+        pyautogui.typewrite(str(int(surcharged_odd)))
         pyautogui.press('tab', presses=2)
         pyautogui.press('enter')
+

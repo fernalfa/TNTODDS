@@ -5,8 +5,9 @@ time.sleep(4)
 times = 0
 tab = 3
 
+repeat = 39
 
-repeat = 35
+
 def deleteempty():
     pyautogui.press('tab', presses = tab)
     pyautogui.press('space')

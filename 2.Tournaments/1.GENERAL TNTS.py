@@ -3,7 +3,7 @@ import pyautogui
 from tqdm import tqdm
 
 time.sleep(5)
-skip = 4
+skip = 156
 
 # Open the text file
 with open('../0.INFO', 'r') as file:

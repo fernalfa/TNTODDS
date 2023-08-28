@@ -5,7 +5,7 @@ time.sleep(5)
 
 
 number = 40
-value = 5563001
+value = 3304101
 add = 2
 
 
