@@ -3,8 +3,8 @@ import pyautogui
 time.sleep(3)
 
 
-number = 6
-ORDER = 100
+number = 9
+ORDER = 205
 add = 0
 
 

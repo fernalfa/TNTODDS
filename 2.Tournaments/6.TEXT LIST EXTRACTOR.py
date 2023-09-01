@@ -1,19 +1,19 @@
 import re
 
 # Read the code from a text file
-with open("DATAIBET", "r") as file:
-    text = file.read()
-
-
-player_names = re.findall(r"^[A-Z\s'.-]+", text, re.MULTILINE)
+with open('DATAIBET', 'r') as file:
+    lines = file.readlines()
 
 names = []
 
-for line in player_names:
-    if line.strip().isdigit():
+for line in lines:
+    line = line.strip()
+    if line.isdigit() or line.startswith('+') or line.startswith('-'):
         continue
-    if line.strip():
-        names.append(line.strip())
+    if line:
+        names.append(line)
+
+print(names)
 
 # Print the first list of names
 print("First List:")

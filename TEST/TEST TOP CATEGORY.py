@@ -3,10 +3,11 @@ import pyautogui
 import time
 time.sleep(5)
 
-rot_number = 5502201
-add = 100
-description = " - GROUP BETTING VERIZON"
+rot_number = 2263321
+add = 10
+delay = 30
 
+DESCRIPTION = " WINNER - UEFA CHAMPIONS LEAGUE 2023/2024"
 
 with open('../0.INFO', 'r') as file:
     data = file.read()
@@ -14,9 +15,10 @@ with open('../0.INFO', 'r') as file:
 def run_additional_function():
     pyautogui.press('tab', presses=4)
     pyautogui.press('enter')
-    time.sleep(45)
+    time.sleep(delay)
     pyautogui.keyDown('shift')
     pyautogui.press('tab', presses=7)
+    pyautogui.keyUp('shift')
     print("Running additional function for the current category...")
 
 def extract_players(data):
@@ -48,9 +50,9 @@ def calculate_surcharged_odd(odd):
 
     return surcharged_odd
 def process_category(category):
-    pyautogui.write(f"{category}{description}")
+    pyautogui.write(f"{category}{DESCRIPTION}")
     pyautogui.press('TAB')
-    pyautogui.write(f"{category}{description}")
+    pyautogui.write(f"{category}{DESCRIPTION}")
     pyautogui.press('TAB')
     pyautogui.write(str(rot_number))
     pyautogui.press('TAB')

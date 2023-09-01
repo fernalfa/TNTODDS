@@ -1,23 +1,20 @@
 import time
 import pyautogui
-from tqdm import tqdm  # Import tqdm
+from tqdm import tqdm
+
+# Wait for 4 seconds
 time.sleep(4)
-times = 0
+
+# Precomputed values
+repeat = 60
 tab = 3
 
-repeat = 39
-
-
-def deleteempty():
-    pyautogui.press('tab', presses = tab)
+def delete_empty():
+    pyautogui.press('tab', presses=tab)
     pyautogui.press('space')
-
-count = 0
 
 # Wrap your loop with tqdm
 with tqdm(total=repeat) as pbar:
-    while (count < repeat):
-        count = count + 1
-        deleteempty()
-        times = times + 1
-        pbar.update(1)  # Update the progress bar
+    for _ in range(repeat):
+        delete_empty()
+        pbar.update(1)
