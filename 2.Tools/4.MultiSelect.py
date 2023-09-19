@@ -6,8 +6,8 @@ from tqdm import tqdm
 time.sleep(4)
 
 # Precomputed values
-repeat = 60
-tab = 3
+repeat = 300
+tab = 1
 
 def delete_empty():
     pyautogui.press('tab', presses=tab)

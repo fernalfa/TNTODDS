@@ -23,7 +23,7 @@ for count, player in enumerate(player_names, start=1):
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('alt', 'o')
-    time.sleep(8)
+    time.sleep(20)
 
     print(f"{count}: {player}")
 

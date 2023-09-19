@@ -4,9 +4,13 @@ import pyautogui
 time.sleep(5)
 
 
-number = 9
-value = 1471001
+number = 50
+value = 8996501
+
+
 add = 2
+
+
 
 
 def deleteempty():
@@ -15,7 +19,9 @@ def deleteempty():
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
     pyautogui.press('down', presses = 3)
+
 count = 0
+
 
 # Wrap your loop with tqdm
 with tqdm(total=number) as pbar:

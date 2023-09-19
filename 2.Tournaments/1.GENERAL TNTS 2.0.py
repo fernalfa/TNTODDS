@@ -4,7 +4,8 @@ time.sleep(5)
 count = 0
 
 
-skip = 8
+skip = 4
+
 
 
 # Open the text file

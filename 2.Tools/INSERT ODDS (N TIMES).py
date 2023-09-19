@@ -4,8 +4,8 @@ time.sleep(5)
 times = 0
 
 
-number = 40
-value = "-115"
+number = 30
+value = "-120"
 
 
 def deleteempty():

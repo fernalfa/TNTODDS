@@ -9,42 +9,42 @@ def parse_data(data):
     top10_start = lines.index("Top 10") + 1
     top20_start = lines.index("Top 20") + 1
 
-
     top5_odds = lines[top5_start:top10_start - 1]
     top10_odds = lines[top10_start:top20_start - 1]
     top20_odds = lines[top20_start:]
 
-
-    odds_info = {
-        "Top 5": top5_odds,
-        "Top 10": top10_odds,
-        "Top 20": top20_odds,
-    }
-
     players = lines[1:top5_start - 1]
 
-    player_odds = {}
+    top5_list = []
+    top10_list = []
+    top20_list = []
+
     for i, player in enumerate(players):
-        player_odds[player] = {
-            "Top 5": odds_info["Top 5"][i],
-            "Top 10": odds_info["Top 10"][i],
-            "Top 20": odds_info["Top 20"][i],
-        }
+        top5_list.append({"Player": player, "Odds": top5_odds[i]})
+        top10_list.append({"Player": player, "Odds": top10_odds[i]})
+        top20_list.append({"Player": player, "Odds": top20_odds[i]})
 
-    return player_odds, odds_info
+    return top5_list, top10_list, top20_list
 
-parsed_players, parsed_odds = parse_data(data)
+top5_players, top10_players, top20_players = parse_data(data)
 
-# Now, you can access the odds for each player like this:
-for player, odds in parsed_players.items():
-    print(player)
-    print("Top 5:", odds["Top 5"])
-    print("Top 10:", odds["Top 10"])
-    print("Top 20:", odds["Top 20"])
+# Output for Top 5
+print("Top 5:")
+for player_info in top5_players:
+    print("Player:", player_info["Player"])
+    print("Odds:", player_info["Odds"])
     print()
 
-# You can also access the overall odds information:
-print("Overall Odds:")
-print("Top 5:", parsed_odds["Top 5"])
-print("Top 10:", parsed_odds["Top 10"])
-print("Top 20:", parsed_odds["Top 20"])
+# Output for Top 10
+print("Top 10:")
+for player_info in top10_players:
+    print("Player:", player_info["Player"])
+    print("Odds:", player_info["Odds"])
+    print()
+
+# Output for Top 20
+print("Top 20:")
+for player_info in top20_players:
+    print("Player:", player_info["Player"])
+    print("Odds:", player_info["Odds"])
+    print()

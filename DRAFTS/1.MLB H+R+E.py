@@ -6,172 +6,172 @@ time.sleep(3)
 
 text = """
 
-Aug 13 Sun 2023
-12:05 PM
-1959
-Detroit Tigers
-E. Rodriguez -L
-O 27½
--115
-1960
-Boston Red Sox
-K. Crawford -R
-U 27½
--115
-01:35 PM
-1951
-Cincinnati Reds - Game #1
-B. Williamson -L
-O 26½
--105
-1952
-Pittsburgh Pirates - Game #1
-M. Keller -R
-U 26½
--125
-01:35 PM
-1967
-Oakland Athletics
-K. Waldichuk -L
-O 28½
--115
-1968
-Washington Nationals
-T. Williams -R
-U 28½
--115
-01:35 PM
-1969
-Minnesota Twins
-S. Gray -R
-O 26½
--115
-1970
-Philadelphia Phillies
-R. Suarez -L
-U 26½
--115
-01:37 PM
-1971
-Chicago Cubs
-J. Taillon -R
-O 27½
--115
-1972
-Toronto Blue Jays
-H. Ryu -L
-U 27½
--115
-01:40 PM
-1961
-Cleveland Guardians
-T. Bibee -R
-O 25
-+100
-1962
-Tampa Bay Rays
-Z. Eflin -R
-U 25
--130
-01:40 PM
-1973
+Sep 15 Fri 2023
+06:35 PM
+1925
 New York Yankees
 G. Cole -R
-O 24½
-+100
-1974
-Miami Marlins
-E. Perez -R
-U 24½
--130
-02:10 PM
-1963
-Los Angeles Angels
-C. Silseth -R
-O 27½
-+115
-1964
-Houston Astros
-J. Urquidy -R
-U 27½
--145
-02:10 PM
-1975
-Milwaukee Brewers
-F. Peralta -R
 O 25½
--115
-1976
-Chicago White Sox
-D. Cease -R
++105
+1926
+Pittsburgh Pirates
+J. Oviedo -R
 U 25½
+-135
+06:40 PM
+1901
+Atlanta Braves
+B. Elder -R
+O 27
 -115
-04:05 PM
-1977
-Texas Rangers
-D. Dunning -R
+1902
+Miami Marlins
+J. Cueto -R
+U 27
+-115
+07:05 PM
+1913
+Tampa Bay Rays
+Z. Eflin -R
+O 26
+-120
+1914
+Baltimore Orioles
+J. Flaherty -R
+U 26
+-110
+07:07 PM
+1915
+Boston Red Sox
+B. Bello -R
+O 26
++100
+1916
+Toronto Blue Jays
+J. Berrios -R
+U 26
+-130
+07:10 PM
+1903
+Cincinnati Reds
+H. Greene -R
 O 25½
--115
-1978
++105
+1904
+New York Mets
+D. Peterson -L
+U 25½
+-135
+07:10 PM
+1917
+Texas Rangers
+J. Gray -R
+O 26½
++130
+1918
+Cleveland Guardians
+L. Giolito -R
+U 26½
+-160
+07:40 PM
+1919
+Minnesota Twins
+B. Ober -R
+O 26½
+-109
+1920
+Chicago White Sox
+J. Scholtens -R
+U 26½
+-121
+08:10 PM
+1905
+Washington Nationals
+J. Irvin -R
+O 26
+-114
+1906
+Milwaukee Brewers
+W. Miley -L
+U 26
+-116
+08:10 PM
+1921
+Houston Astros
+C. Javier -R
+O 28
+-155
+1922
+Kansas City Royals
+Z. Greinke -R
+U 28
++125
+08:15 PM
+1907
+Philadelphia Phillies
+A. Nola -R
+O 26
+-117
+1908
+St. Louis Cardinals
+Z. Thompson -L
+U 26
+-113
+08:40 PM
+1909
 San Francisco Giants
 L. Webb -R
-U 25½
--115
-04:10 PM
-1955
+O 29½
+-121
+1910
 Colorado Rockies
-K. Freeland -L
-O 27
-+120
-1956
-Los Angeles Dodgers
-J. Urias -L
-U 27
--150
-04:10 PM
-1957
-San Diego Padres
-S. Lugo -R
-O 28
-+105
-1958
+C. Anderson -R
+U 29½
+-109
+09:38 PM
+1923
+Detroit Tigers
+T. Skubal -L
+O 25
++100
+1924
+Los Angeles Angels
+G. Canning -R
+U 25
+-130
+09:40 PM
+1911
+Chicago Cubs
+J. Steele -L
+O 26
+-105
+1912
 Arizona Diamondbacks
 B. Pfaadt -R
-U 28
--135
-04:10 PM
-1965
-Baltimore Orioles
-K. Bradish -R
-O 25½
-+100
-1966
-Seattle Mariners
+U 26
+-125
+09:40 PM
+1927
+San Diego Padres
+S. Lugo -R
+O 26
+-112
+1928
+Oakland Athletics
+S. Newcomb -L
+U 26
+-118
+10:10 PM
+1929
+Los Angeles Dodgers
 B. Miller -R
-U 25½
--130
-06:05 PM
-1979
-Cincinnati Reds - Game #2
-L. Weaver -R
-O 27½
--120
-1980
-Pittsburgh Pirates - Game #2
-A. Jackson -R
-U 27½
--110
-07:10 PM
-1953
-Atlanta Braves
-Y. Chirinos -R
-O 28
--120
-1954
-New York Mets
-K. Senga -R
-U 28
--110
+O 25
+-117
+1930
+Seattle Mariners
+G. Kirby -R
+U 25
+-113
 
 """
 def enterodds():

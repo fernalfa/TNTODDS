@@ -1,39 +1,26 @@
-import re
 import pyautogui
 import time
+
+# Your list of values
+values = [
+    -1200, -1200, -1200, -700, -600, -600, -500, -500, -450, -450,
+    -400, -334, -334, -334, -334, -334, -334, -334, -334, -300, -300,
+    -275, -275, -250, -225, -225, -225, -225, -225, -225, -200, -200,
+    -200, -200, -188, -175
+]
+
+# Delay before starting
 time.sleep(5)
-def entertnt():
-    pyautogui.hotkey('ctrl', 'enter')
-    time.sleep(3)
-    pyautogui.press('tab', presses=15)
-    pyautogui.press('down')
 
-def delete_empty(total):
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('shift', 'tab')
-    pyautogui.hotkey('ctrl', 'end')
-    pyautogui.press('backspace')
-    pyautogui.write(str(total))
-    pyautogui.press('tab', presses=3)
+# Loop through the values
+for value in values:
+    # Press Enter
     pyautogui.press('enter')
+    # Type the current value
+    pyautogui.typewrite(str(value))
+    # Press Enter again
+    pyautogui.press('enter')
+    # Press Down key three times
     pyautogui.press('down')
-
-
-
-with open('../0.INFO', 'r') as file:
-    data = file.read()
-
-pattern = r"Moneyline / Total Runs\n\n.*?(\d+\.\d+)\n"
-
-matches = re.findall(pattern, data)
-
-for match in matches:
-    print(match)
-    entertnt()
-    delete_empty(match)
-    delete_empty(match)
-    delete_empty(match)
-    delete_empty(match)
-    pyautogui.hotkey('alt', 'o')
-    pyautogui.press('tab')
-    pyautogui.press('down', presses=6)
+    pyautogui.press('down')
+    pyautogui.press('down')

@@ -14,7 +14,7 @@ excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
 time.sleep(4)
 
-number = 3
+number = 15
 
 # Wrap your loop with tqdm
 with tqdm(total=number) as pbar:

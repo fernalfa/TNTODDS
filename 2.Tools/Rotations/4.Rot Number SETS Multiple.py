@@ -3,8 +3,8 @@ import pyautogui
 
 time.sleep(5)
 
-sets = [101, 233, 232, 233, 188, 233, 232]  # List of sets
-values = [7401001, 7402001, 7403001, 7404001, 7405001, 7406001, 7407001]  # List of values for each set
+sets = [109, 196, 203, 195, 156, 197, 197]  # List of sets
+values = [7801001, 7802001, 7803001, 7804001, 7805001, 7806001, 7807001]  # List of values for each set
 
 def deleteempty():
     pyautogui.press('enter')

@@ -11,6 +11,7 @@ def enterodd():
     pyautogui.typewrite(str(int(odd)))
     pyautogui.press('enter')
     pyautogui.press('down')
+
 def deleteodd():
     pyautogui.press('enter')
     pyautogui.press('del')
