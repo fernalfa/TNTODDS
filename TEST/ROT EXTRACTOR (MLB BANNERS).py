@@ -1,8 +1,12 @@
 import re
 
 text = """
+
+MLB - PLAYER TOTAL SINGLES - Sep 25
+ANTHONY VOLPE - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
 MLB - PLAYER TOTAL SINGLES
-WILLIAM CONTRERAS - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -15,3075 +19,17 @@ M Line
 Total
 
 Run Line
-7403003
+7453003
 
 OVER
-7403004
+7453004
 
 UNDER
-Sep 09 2:05 PM
-Stream
+OSWALD PERAZA - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-OSWALD PERAZA - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403005
-
-OVER
-7403006
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-KYLE HIGASHIOKA - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403007
-
-OVER
-7403008
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANDRUW MONASTERIO - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403009
-
-OVER
-7403010
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-CHRISTIAN YELICH - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403011
-
-OVER
-7403012
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-TYRONE TAYLOR - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403013
-
-OVER
-7403014
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANTHONY VOLPE - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403015
-
-OVER
-7403016
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403017
-
-OVER
-7403018
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GLEYBER TORRES - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403019
-
-OVER
-7403020
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GIANCARLO STANTON - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403021
-
-OVER
-7403022
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-SAL FRELICK - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403023
-
-OVER
-7403024
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AARON JUDGE - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403025
-
-OVER
-7403026
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JASSON DOMINGUEZ - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403027
-
-OVER
-7403028
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-BRICE TURANG - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403029
-
-OVER
-7403030
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLY ADAMES - UNDER/OVER PLAYER SINGLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403031
-
-OVER
-7403032
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JORGE POLANCO - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403033
-
-OVER
-7403034
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-WILLI CASTRO - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403035
-
-OVER
-7403036
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRANDON NIMMO - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403037
-
-OVER
-7403038
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRETT BATY - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403039
-
-OVER
-7403040
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-KYLE FARMER - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403041
-
-OVER
-7403042
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-OMAR NARVAEZ - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403043
-
-OVER
-7403044
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEFF MCNEIL - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403045
-
-OVER
-7403046
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RAFAEL ORTEGA - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403047
-
-OVER
-7403048
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CARLOS CORREA - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403049
-
-OVER
-7403050
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORDAN LUPLOW - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403051
-
-OVER
-7403052
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MARK VIENTOS - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403053
-
-OVER
-7403054
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RONNY MAURICIO - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403055
-
-OVER
-7403056
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MATT WALLNER - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403057
-
-OVER
-7403058
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RYAN JEFFERS - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403059
-
-OVER
-7403060
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-ROYCE LEWIS - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403061
-
-OVER
-7403062
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-FRANCISCO LINDOR - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403063
-
-OVER
-7403064
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-DONOVAN SOLANO - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403065
-
-OVER
-7403066
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-PETER ALONSO - UNDER/OVER PLAYER SINGLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403067
-
-OVER
-7403068
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-LOURDES GURRIEL - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403069
-
-OVER
-7403070
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EVAN LONGORIA - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403071
-
-OVER
-7403072
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EMMANUEL RIVERA - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403073
-
-OVER
-7403074
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CHRISTIAN WALKER - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403075
-
-OVER
-7403076
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-TOMMY PHAM - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403077
-
-OVER
-7403078
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JEIMER CANDELARIO - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403079
-
-OVER
-7403080
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-YAN GOMES - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403081
-
-OVER
-7403082
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CORBIN CARROLL - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403083
-
-OVER
-7403084
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-IAN HAPP - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403085
-
-OVER
-7403086
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CODY BELLINGER - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403087
-
-OVER
-7403088
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-MIKE TAUCHMAN - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403089
-
-OVER
-7403090
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICK MADRIGAL - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403091
-
-OVER
-7403092
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GABRIEL MORENO - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403093
-
-OVER
-7403094
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DANSBY SWANSON - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403095
-
-OVER
-7403096
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICO HOERNER - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403097
-
-OVER
-7403098
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-KETEL MARTE - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403099
-
-OVER
-7403100
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-SEIYA SUZUKI - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403101
-
-OVER
-7403102
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GERALDO PERDOMO - UNDER/OVER PLAYER SINGLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403103
-
-OVER
-7403104
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JASON HEYWARD - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403105
-
-OVER
-7403106
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-FREDDIE FREEMAN - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403107
-
-OVER
-7403108
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CARTER KIEBOOM - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403109
-
-OVER
-7403110
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIGUEL ROJAS - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403111
-
-OVER
-7403112
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-WILL SMITH - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403113
-
-OVER
-7403114
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ALEX CALL - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403115
-
-OVER
-7403116
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAMES OUTMAN - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403117
-
-OVER
-7403118
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC SMITH - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403119
-
-OVER
-7403120
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DAVID PERALTA - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403121
-
-OVER
-7403122
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-KEIBERT RUIZ - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403123
-
-OVER
-7403124
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ENRIQUE HERNANDEZ - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403125
-
-OVER
-7403126
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOEY MENESES - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403127
-
-OVER
-7403128
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LANE THOMAS - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403129
-
-OVER
-7403130
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JACOB YOUNG - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403131
-
-OVER
-7403132
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.D. MARTINEZ - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403133
-
-OVER
-7403134
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CJ ABRAMS - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403135
-
-OVER
-7403136
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE ALU - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403137
-
-OVER
-7403138
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MAX MUNCY - UNDER/OVER PLAYER SINGLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403139
-
-OVER
-7403140
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-EUGENIO SUAREZ - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403141
-
-OVER
-7403142
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TY FRANCE - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403143
-
-OVER
-7403144
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSH LOWE - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403145
-
-OVER
-7403146
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ISAAC PAREDES - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403147
-
-OVER
-7403148
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-RANDY AROZARENA - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403149
-
-OVER
-7403150
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TAYLOR WALLS - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403151
-
-OVER
-7403152
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CHRISTIAN BETHANCOURT - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403153
-
-OVER
-7403154
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BRANDON LOWE - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403155
-
-OVER
-7403156
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403157
-
-OVER
-7403158
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSHUA ROJAS - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403159
-
-OVER
-7403160
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC CANZONE - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403161
-
-OVER
-7403162
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-YANDY DIAZ - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403163
-
-OVER
-7403164
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.P. CRAWFORD - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403165
-
-OVER
-7403166
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LUKE RALEY - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403167
-
-OVER
-7403168
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JULIO RODRIGUEZ - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403169
-
-OVER
-7403170
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIKE FORD - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403171
-
-OVER
-7403172
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CAL RALEIGH - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403173
-
-OVER
-7403174
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSE SIRI - UNDER/OVER PLAYER SINGLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403175
-
-OVER
-7403176
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ANTHONY SANTANDER - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403177
-
-OVER
-7403178
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAMON URIAS - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403179
-
-OVER
-7403180
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JORGE MATEO - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403181
-
-OVER
-7403182
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RYAN MOUNTCASTLE - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403183
-
-OVER
-7403184
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AARON HICKS - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403185
-
-OVER
-7403186
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-GUNNAR HENDERSON - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403187
-
-OVER
-7403188
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ALEX VERDUGO - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403189
-
-OVER
-7403190
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAFAEL DEVERS - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403191
-
-OVER
-7403192
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TRISTON CASAS - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403193
-
-OVER
-7403194
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CONNOR WONG - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403195
-
-OVER
-7403196
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AUSTIN HAYS - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403197
-
-OVER
-7403198
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JAMES MCCANN - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403199
-
-OVER
-7403200
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADAM DUVALL - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403201
-
-OVER
-7403202
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-MASATAKA YOSHIDA - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403203
-
-OVER
-7403204
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JUSTIN TURNER - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403205
-
-OVER
-7403206
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADLEY RUTSCHMAN - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403207
-
-OVER
-7403208
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TREVOR STORY - UNDER/OVER PLAYER SINGLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403209
-
-OVER
-7403210
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-KYLE SCHWARBER - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403211
-
-OVER
-7403212
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYCE HARPER - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403213
-
-OVER
-7403214
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYAN DE LA CRUZ - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403215
-
-OVER
-7403216
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOSHUA EVAN BELL - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403217
-
-OVER
-7403218
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAKE CAVE - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403219
-
-OVER
-7403220
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-J.T. REALMUTO - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403221
-
-OVER
-7403222
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOEY WENDLE - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403223
-
-OVER
-7403224
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRANDON MARSH - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403225
-
-OVER
-7403226
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK FORTES - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403227
-
-OVER
-7403228
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYSON STOTT - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403229
-
-OVER
-7403230
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JACOB MICHAEL BURGER - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403231
-
-OVER
-7403232
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LUIS ARRAEZ - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403233
-
-OVER
-7403234
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-ALEC BOHM - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403235
-
-OVER
-7403236
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK CASTELLANOS - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403237
-
-OVER
-7403238
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JESUS SANCHEZ - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403239
-
-OVER
-7403240
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-TREA TURNER - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403241
-
-OVER
-7403242
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAZZ CHISHOLM - UNDER/OVER PLAYER SINGLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403243
-
-OVER
-7403244
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JORDAN WALKER - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403245
-
-OVER
-7403246
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-LARS NOOTBAAR - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403247
-
-OVER
-7403248
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER STEPHENSON - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403249
-
-OVER
-7403250
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER O'NEILL - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403251
-
-OVER
-7403252
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-PAUL GOLDSCHMIDT - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403253
-
-OVER
-7403254
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TOMMY EDMAN - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403255
-
-OVER
-7403256
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NICK SENZEL - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403257
-
-OVER
-7403258
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HARRISON BADER - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403259
-
-OVER
-7403260
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN GORMAN - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403261
-
-OVER
-7403262
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-STUART FAIRCHILD - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403263
-
-OVER
-7403264
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-WILLSON CONTRERAS - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403265
-
-OVER
-7403266
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MASYN WINN - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403267
-
-OVER
-7403268
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ELLY DE LA CRUZ - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403269
-
-OVER
-7403270
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN ARENADO - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403271
-
-OVER
-7403272
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-SPENCER STEER - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403273
-
-OVER
-7403274
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HUNTER RENFROE - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403275
-
-OVER
-7403276
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CHRISTIAN ENCARNACION-STRAND - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403277
-
-OVER
-7403278
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOELVI MARTE - UNDER/OVER PLAYER SINGLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403279
-
-OVER
-7403280
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TRENT GRISHAM - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7403281
-
-OVER
-7403282
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ALTUVE - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3095,17 +41,17 @@ M Line
 Total
 
 Run Line
-7403283
+7453005
 
 OVER
-7403284
+7453006
 
 UNDER
-Sep 09 7:10 PM
-Stream
+GIANCARLO STANTON - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JEREMY PENA - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3117,16 +63,16 @@ M Line
 Total
 
 Run Line
-7403285
+7453007
 
 OVER
-7403286
+7453008
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-FERNANDO TATIS JR. - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+KETEL MARTE - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3139,17 +85,17 @@ M Line
 Total
 
 Run Line
-7403287
+7453009
 
 OVER
-7403288
+7453010
 
 UNDER
-Sep 09 7:10 PM
-Stream
+LOURDES GURRIEL - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-XANDER BOGAERTS - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3161,16 +107,16 @@ M Line
 Total
 
 Run Line
-7403289
+7453011
 
 OVER
-7403290
+7453012
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-GARRETT COOPER - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+ESTEVAN FLORIAL - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3183,17 +129,17 @@ M Line
 Total
 
 Run Line
-7403291
+7453013
 
 OVER
-7403292
+7453014
 
 UNDER
-Sep 09 7:10 PM
-Stream
+AARON JUDGE - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MAURICIO DUBÓN - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3205,16 +151,16 @@ M Line
 Total
 
 Run Line
-7403293
+7453015
 
 OVER
-7403294
+7453016
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-YORDAN ALVAREZ - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+ALEK THOMAS - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3227,17 +173,17 @@ M Line
 Total
 
 Run Line
-7403295
+7453017
 
 OVER
-7403296
+7453018
 
 UNDER
-Sep 09 7:10 PM
-Stream
+EMMANUEL RIVERA - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JUAN SOTO - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3249,16 +195,16 @@ M Line
 Total
 
 Run Line
-7403297
+7453019
 
 OVER
-7403298
+7453020
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MARTIN MALDONADO - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+CHRISTIAN WALKER - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3271,17 +217,17 @@ M Line
 Total
 
 Run Line
-7403299
+7453021
 
 OVER
-7403300
+7453022
 
 UNDER
-Sep 09 7:10 PM
-Stream
+GLEYBER TORRES - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MANNY MACHADO - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3293,16 +239,16 @@ M Line
 Total
 
 Run Line
-7403301
+7453023
 
 OVER
-7403302
+7453024
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MICHAEL BRANTLEY - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3315,17 +261,17 @@ M Line
 Total
 
 Run Line
-7403303
+7453025
 
 OVER
-7403304
+7453026
 
 UNDER
-Sep 09 7:10 PM
-Stream
+TOMMY PHAM - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ALEX BREGMAN - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3337,16 +283,16 @@ M Line
 Total
 
 Run Line
-7403305
+7453027
 
 OVER
-7403306
+7453028
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-HA-SEONG KIM - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+AUSTIN WELLS - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3359,17 +305,17 @@ M Line
 Total
 
 Run Line
-7403307
+7453029
 
 OVER
-7403308
+7453030
 
 UNDER
-Sep 09 7:10 PM
-Stream
+GABRIEL MORENO - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JOSE ABREU - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3381,16 +327,16 @@ M Line
 Total
 
 Run Line
-7403309
+7453031
 
 OVER
-7403310
+7453032
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-KYLE TUCKER - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
+OSWALDO CABRERA - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3403,17 +349,17 @@ M Line
 Total
 
 Run Line
-7403311
+7453033
 
 OVER
-7403312
+7453034
 
 UNDER
-Sep 09 7:10 PM
-Stream
+JORDAN LAWLAR - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-LUIS CAMPUSANO - UNDER/OVER PLAYER SINGLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -3425,16 +371,16 @@ M Line
 Total
 
 Run Line
-7403313
+7453035
 
 OVER
-7403314
+7453036
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-RONALD ACUNA - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+CORBIN CARROLL - UNDER/OVER PLAYER SINGLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -3447,17 +393,17 @@ M Line
 Total
 
 Run Line
-7403315
+7453037
 
 OVER
-7403316
+7453038
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MITCH GARVER - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-OZZIE ALBIES - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3469,16 +415,16 @@ M Line
 Total
 
 Run Line
-7403317
+7453039
 
 OVER
-7403318
+7453040
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ALIKA WILLIAMS - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+EZEQUIEL DURÁN - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3491,17 +437,17 @@ M Line
 Total
 
 Run Line
-7403319
+7453041
 
 OVER
-7403320
+7453042
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JARED WALSH - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-CONNOR JOE - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3513,16 +459,16 @@ M Line
 Total
 
 Run Line
-7403321
+7453043
 
 OVER
-7403322
+7453044
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-JI-HWAN BAE - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+JOSH JUNG - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3535,17 +481,17 @@ M Line
 Total
 
 Run Line
-7403323
+7453045
 
 OVER
-7403324
+7453046
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JONAH HEIM - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-ENDY RODRIGUEZ - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3557,16 +503,16 @@ M Line
 Total
 
 Run Line
-7403325
+7453047
 
 OVER
-7403326
+7453048
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ORLANDO ARCIA - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+JO ADELL - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3579,17 +525,17 @@ M Line
 Total
 
 Run Line
-7403327
+7453049
 
 OVER
-7403328
+7453050
 
 UNDER
-Sep 09 7:20 PM
-Stream
+LEODY TAVERAS - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-TRAVIS D'ARNAUD - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3601,16 +547,16 @@ M Line
 Total
 
 Run Line
-7403329
+7453051
 
 OVER
-7403330
+7453052
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-KE'BRYAN HAYES - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+ZACH NETO - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3623,17 +569,17 @@ M Line
 Total
 
 Run Line
-7403331
+7453053
 
 OVER
-7403332
+7453054
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MARCUS SEMIEN - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MARCELL OZUNA - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3645,16 +591,16 @@ M Line
 Total
 
 Run Line
-7403333
+7453055
 
 OVER
-7403334
+7453056
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MICHAEL HARRIS - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+MIKE MOUSTAKAS - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3667,17 +613,17 @@ M Line
 Total
 
 Run Line
-7403335
+7453057
 
 OVER
-7403336
+7453058
 
 UNDER
-Sep 09 7:20 PM
-Stream
+COREY SEAGER - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MATT OLSON - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3689,16 +635,16 @@ M Line
 Total
 
 Run Line
-7403337
+7453059
 
 OVER
-7403338
+7453060
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-AUSTIN RILEY - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+DAVID FLETCHER - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3711,17 +657,17 @@ M Line
 Total
 
 Run Line
-7403339
+7453061
 
 OVER
-7403340
+7453062
 
 UNDER
-Sep 09 7:20 PM
-Stream
+RANDAL GRICHUK - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-BRYAN REYNOLDS - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3733,16 +679,16 @@ M Line
 Total
 
 Run Line
-7403341
+7453063
 
 OVER
-7403342
+7453064
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MIGUEL ANDÚJAR - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+ADOLIS GARCIA - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3755,17 +701,17 @@ M Line
 Total
 
 Run Line
-7403343
+7453065
 
 OVER
-7403344
+7453066
 
 UNDER
-Sep 09 7:20 PM
-Stream
+NOLAN SCHANUEL - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-EDDIE ROSARIO - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3777,16 +723,16 @@ M Line
 Total
 
 Run Line
-7403345
+7453067
 
 OVER
-7403346
+7453068
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-JARED TRIOLO - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
+LOGAN O'HOPPE - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3799,17 +745,17 @@ M Line
 Total
 
 Run Line
-7403347
+7453069
 
 OVER
-7403348
+7453070
 
 UNDER
-Sep 09 7:20 PM
-Stream
+BRANDON DRURY - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-LIOVER PEGUERO - UNDER/OVER PLAYER SINGLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -3821,16 +767,16 @@ M Line
 Total
 
 Run Line
-7403349
+7453071
 
 OVER
-7403350
+7453072
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-JOC PEDERSON - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+NATHANIEL LOWE - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -3843,17 +789,17 @@ M Line
 Total
 
 Run Line
-7403351
+7453073
 
 OVER
-7403352
+7453074
 
 UNDER
-Sep 09 9:05 PM
-Stream
+CHAS MCCORMICK - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRENDAN RODGERS - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -3865,16 +811,16 @@ M Line
 Total
 
 Run Line
-7403353
+7453075
 
 OVER
-7403354
+7453076
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-LAMONTE WADE - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+JOSE ALTUVE - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -3887,17 +833,17 @@ M Line
 Total
 
 Run Line
-7403355
+7453077
 
 OVER
-7403356
+7453078
 
 UNDER
-Sep 09 9:05 PM
-Stream
+MAURICIO DUBÓN - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-ELEHURIS MONTERO - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -3909,16 +855,16 @@ M Line
 Total
 
 Run Line
-7403357
+7453079
 
 OVER
-7403358
+7453080
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-EZEQUIEL TOVAR - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+TY FRANCE - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -3931,17 +877,17 @@ M Line
 Total
 
 Run Line
-7403359
+7453081
 
 OVER
-7403360
+7453082
 
 UNDER
-Sep 09 9:05 PM
-Stream
+YAINER DIAZ - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-CHARLIE BLACKMON - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -3953,16 +899,16 @@ M Line
 Total
 
 Run Line
-7403361
+7453083
 
 OVER
-7403362
+7453084
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRANDON CRAWFORD - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+JEREMY PENA - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -3975,17 +921,17 @@ M Line
 Total
 
 Run Line
-7403363
+7453085
 
 OVER
-7403364
+7453086
 
 UNDER
-Sep 09 9:05 PM
-Stream
+EUGENIO SUAREZ - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -3997,16 +943,16 @@ M Line
 Total
 
 Run Line
-7403365
+7453087
 
 OVER
-7403366
+7453088
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MIKE YASTRZEMSKI - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+JARRED KELENIC - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -4019,17 +965,17 @@ M Line
 Total
 
 Run Line
-7403367
+7453089
 
 OVER
-7403368
+7453090
 
 UNDER
-Sep 09 9:05 PM
-Stream
+ALEX BREGMAN - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRENTON DOYLE - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -4041,16 +987,16 @@ M Line
 Total
 
 Run Line
-7403369
+7453091
 
 OVER
-7403370
+7453092
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-WILMER FLORES - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+CAL RALEIGH - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -4063,17 +1009,17 @@ M Line
 Total
 
 Run Line
-7403371
+7453093
 
 OVER
-7403372
+7453094
 
 UNDER
-Sep 09 9:05 PM
-Stream
+TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-RYAN MCMAHON - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -4085,16 +1031,16 @@ M Line
 Total
 
 Run Line
-7403373
+7453095
 
 OVER
-7403374
+7453096
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MITCHELL HANIGER - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+YORDAN ALVAREZ - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -4107,17 +1053,17 @@ M Line
 Total
 
 Run Line
-7403375
+7453097
 
 OVER
-7403376
+7453098
 
 UNDER
-Sep 09 9:05 PM
-Stream
+J.P. CRAWFORD - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-ELIAS DIAZ - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -4129,16 +1075,16 @@ M Line
 Total
 
 Run Line
-7403377
+7453099
 
 OVER
-7403378
+7453100
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-NOLAN JONES - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+JOSE ABREU - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -4151,17 +1097,17 @@ M Line
 Total
 
 Run Line
-7403379
+7453101
 
 OVER
-7403380
+7453102
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JULIO RODRIGUEZ - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-THAIRO ESTRADA - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -4173,16 +1119,16 @@ M Line
 Total
 
 Run Line
-7403381
+7453103
 
 OVER
-7403382
+7453104
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BLAKE SABOL - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs Colorado Rockies) -
+MIKE FORD - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -4195,17 +1141,17 @@ M Line
 Total
 
 Run Line
-7403383
+7453105
 
 OVER
-7403384
+7453106
 
 UNDER
-Sep 09 9:05 PM
-Stream
+DYLAN MOORE - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-GABRIEL ARIAS - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4217,16 +1163,16 @@ M Line
 Total
 
 Run Line
-7403385
+7453107
 
 OVER
-7403386
+7453108
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-ANDRES GIMENEZ - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+KYLE TUCKER - UNDER/OVER PLAYER SINGLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -4239,17 +1185,17 @@ M Line
 Total
 
 Run Line
-7403387
+7453109
 
 OVER
-7403388
+7453110
 
 UNDER
-Sep 09 9:07 PM
-Stream
+TRENT GRISHAM - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KYREN PARIS - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4261,16 +1207,16 @@ M Line
 Total
 
 Run Line
-7403389
+7453111
 
 OVER
-7403390
+7453112
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RAMON LAUREANO - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+JI-MAN CHOI - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4283,17 +1229,17 @@ M Line
 Total
 
 Run Line
-7403391
+7453113
 
 OVER
-7403392
+7453114
 
 UNDER
-Sep 09 9:07 PM
-Stream
+WILMER FLORES - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-JOSE RAMIREZ - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4305,16 +1251,16 @@ M Line
 Total
 
 Run Line
-7403393
+7453115
 
 OVER
-7403394
+7453116
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-NOLAN SCHANUEL - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+MARCO LUCIANO - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4327,17 +1273,17 @@ M Line
 Total
 
 Run Line
-7403395
+7453117
 
 OVER
-7403396
+7453118
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MATTHEW BATTEN - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MYLES STRAW - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4349,16 +1295,16 @@ M Line
 Total
 
 Run Line
-7403397
+7453119
 
 OVER
-7403398
+7453120
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-JOSH NAYLOR - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+FERNANDO TATIS JR. - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4371,17 +1317,17 @@ M Line
 Total
 
 Run Line
-7403399
+7453121
 
 OVER
-7403400
+7453122
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MITCHELL HANIGER - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MIKE MOUSTAKAS - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4393,16 +1339,16 @@ M Line
 Total
 
 Run Line
-7403401
+7453123
 
 OVER
-7403402
+7453124
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-BRANDON DRURY - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+XANDER BOGAERTS - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4415,17 +1361,17 @@ M Line
 Total
 
 Run Line
-7403403
+7453125
 
 OVER
-7403404
+7453126
 
 UNDER
-Sep 09 9:07 PM
-Stream
+LUIS CAMPUSANO - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KOLE CALHOUN - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4437,16 +1383,16 @@ M Line
 Total
 
 Run Line
-7403405
+7453127
 
 OVER
-7403406
+7453128
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-STEVEN KWAN - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+JUAN SOTO - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4459,17 +1405,17 @@ M Line
 Total
 
 Run Line
-7403407
+7453129
 
 OVER
-7403408
+7453130
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MANNY MACHADO - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-RANDAL GRICHUK - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -4481,16 +1427,16 @@ M Line
 Total
 
 Run Line
-7403409
+7453131
 
 OVER
-7403410
+7453132
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-LOGAN O'HOPPE - UNDER/OVER PLAYER SINGLES (Los Angeles Angels vs Cleveland Guardians) -
+HA-SEONG KIM - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4503,17 +1449,17 @@ M Line
 Total
 
 Run Line
-7403411
+7453133
 
 OVER
-7403412
+7453134
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MJ MELENDEZ - UNDER/OVER PLAYER SINGLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -4525,16 +1471,16 @@ M Line
 Total
 
 Run Line
-7403413
+7453135
 
 OVER
-7403414
+7453136
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-MAIKEL GARCIA - UNDER/OVER PLAYER SINGLES (Toronto Blue Jays vs Kansas City Royals) -
+HELIOT RAMOS - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4547,17 +1493,17 @@ M Line
 Total
 
 Run Line
-7403415
+7453137
 
 OVER
-7403416
+7453138
 
 UNDER
-Sep 09 3:07 PM
-Stream
+LUIS MATOS - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MICHAEL MASSEY - UNDER/OVER PLAYER SINGLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -4569,16 +1515,16 @@ M Line
 Total
 
 Run Line
-7403417
+7453139
 
 OVER
-7403418
+7453140
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-BOBBY WITT JR. - UNDER/OVER PLAYER SINGLES (Toronto Blue Jays vs Kansas City Royals) -
+THAIRO ESTRADA - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -4591,17 +1537,17 @@ M Line
 Total
 
 Run Line
-7403419
+7453141
 
 OVER
-7403420
+7453142
 
 UNDER
-Sep 09 3:07 PM
-Stream
+PATRICK BAILEY - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-SALVADOR PEREZ - UNDER/OVER PLAYER SINGLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -4613,17 +1559,17 @@ M Line
 Total
 
 Run Line
-7403421
+7453143
 
 OVER
-7403422
+7453144
 
 UNDER
-Sep 09 3:07 PM
-Stream
+AUSTIN SLATER - UNDER/OVER PLAYER SINGLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL SINGLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-DREW WATERS - UNDER/OVER PLAYER SINGLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -4635,17 +1581,17 @@ M Line
 Total
 
 Run Line
-7403423
+7453145
 
 OVER
-7403424
+7453146
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
+MLB - PLAYER TOTAL DOUBLES - Sep 25
+GLEYBER TORRES - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
 MLB - PLAYER TOTAL DOUBLES
-BRICE TURANG - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -4658,3075 +1604,17 @@ M Line
 Total
 
 Run Line
-7404003
+7454003
 
 OVER
-7404004
+7454004
 
 UNDER
-Sep 09 2:05 PM
-Stream
+OSWALDO CABRERA - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404005
-
-OVER
-7404006
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JASSON DOMINGUEZ - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404007
-
-OVER
-7404008
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-OSWALD PERAZA - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404009
-
-OVER
-7404010
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-SAL FRELICK - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404011
-
-OVER
-7404012
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLY ADAMES - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404013
-
-OVER
-7404014
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GIANCARLO STANTON - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404015
-
-OVER
-7404016
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANDRUW MONASTERIO - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404017
-
-OVER
-7404018
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANTHONY VOLPE - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404019
-
-OVER
-7404020
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AARON JUDGE - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404021
-
-OVER
-7404022
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLIAM CONTRERAS - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404023
-
-OVER
-7404024
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-CHRISTIAN YELICH - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404025
-
-OVER
-7404026
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-KYLE HIGASHIOKA - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404027
-
-OVER
-7404028
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-TYRONE TAYLOR - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404029
-
-OVER
-7404030
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GLEYBER TORRES - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404031
-
-OVER
-7404032
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-BRETT BATY - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404033
-
-OVER
-7404034
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORGE POLANCO - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404035
-
-OVER
-7404036
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-WILLI CASTRO - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404037
-
-OVER
-7404038
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RAFAEL ORTEGA - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404039
-
-OVER
-7404040
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MATT WALLNER - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404041
-
-OVER
-7404042
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEFF MCNEIL - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404043
-
-OVER
-7404044
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RONNY MAURICIO - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404045
-
-OVER
-7404046
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRANDON NIMMO - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404047
-
-OVER
-7404048
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MARK VIENTOS - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404049
-
-OVER
-7404050
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-FRANCISCO LINDOR - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404051
-
-OVER
-7404052
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORDAN LUPLOW - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404053
-
-OVER
-7404054
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-PETER ALONSO - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404055
-
-OVER
-7404056
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-DONOVAN SOLANO - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404057
-
-OVER
-7404058
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-KYLE FARMER - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404059
-
-OVER
-7404060
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-OMAR NARVAEZ - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404061
-
-OVER
-7404062
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RYAN JEFFERS - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404063
-
-OVER
-7404064
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CARLOS CORREA - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404065
-
-OVER
-7404066
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-ROYCE LEWIS - UNDER/OVER PLAYER DOUBLES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404067
-
-OVER
-7404068
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEIMER CANDELARIO - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404069
-
-OVER
-7404070
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CORBIN CARROLL - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404071
-
-OVER
-7404072
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-IAN HAPP - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404073
-
-OVER
-7404074
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-LOURDES GURRIEL - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404075
-
-OVER
-7404076
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GABRIEL MORENO - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404077
-
-OVER
-7404078
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-TOMMY PHAM - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404079
-
-OVER
-7404080
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-YAN GOMES - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404081
-
-OVER
-7404082
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CODY BELLINGER - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404083
-
-OVER
-7404084
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-MIKE TAUCHMAN - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404085
-
-OVER
-7404086
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GERALDO PERDOMO - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404087
-
-OVER
-7404088
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CHRISTIAN WALKER - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404089
-
-OVER
-7404090
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EVAN LONGORIA - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404091
-
-OVER
-7404092
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-SEIYA SUZUKI - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404093
-
-OVER
-7404094
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICO HOERNER - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404095
-
-OVER
-7404096
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EMMANUEL RIVERA - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404097
-
-OVER
-7404098
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-KETEL MARTE - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404099
-
-OVER
-7404100
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DANSBY SWANSON - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404101
-
-OVER
-7404102
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICK MADRIGAL - UNDER/OVER PLAYER DOUBLES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404103
-
-OVER
-7404104
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CJ ABRAMS - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404105
-
-OVER
-7404106
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DAVID PERALTA - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404107
-
-OVER
-7404108
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ENRIQUE HERNANDEZ - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404109
-
-OVER
-7404110
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LANE THOMAS - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404111
-
-OVER
-7404112
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JACOB YOUNG - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404113
-
-OVER
-7404114
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.D. MARTINEZ - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404115
-
-OVER
-7404116
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ALEX CALL - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404117
-
-OVER
-7404118
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MAX MUNCY - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404119
-
-OVER
-7404120
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-KEIBERT RUIZ - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404121
-
-OVER
-7404122
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC SMITH - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404123
-
-OVER
-7404124
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAMES OUTMAN - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404125
-
-OVER
-7404126
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIGUEL ROJAS - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404127
-
-OVER
-7404128
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CARTER KIEBOOM - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404129
-
-OVER
-7404130
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE ALU - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404131
-
-OVER
-7404132
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-WILL SMITH - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404133
-
-OVER
-7404134
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JASON HEYWARD - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404135
-
-OVER
-7404136
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-FREDDIE FREEMAN - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404137
-
-OVER
-7404138
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOEY MENESES - UNDER/OVER PLAYER DOUBLES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404139
-
-OVER
-7404140
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ISAAC PAREDES - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404141
-
-OVER
-7404142
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JULIO RODRIGUEZ - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404143
-
-OVER
-7404144
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSHUA ROJAS - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404145
-
-OVER
-7404146
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC CANZONE - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404147
-
-OVER
-7404148
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIKE FORD - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404149
-
-OVER
-7404150
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSH LOWE - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404151
-
-OVER
-7404152
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BRANDON LOWE - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404153
-
-OVER
-7404154
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-EUGENIO SUAREZ - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404155
-
-OVER
-7404156
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CHRISTIAN BETHANCOURT - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404157
-
-OVER
-7404158
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LUKE RALEY - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404159
-
-OVER
-7404160
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-YANDY DIAZ - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404161
-
-OVER
-7404162
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404163
-
-OVER
-7404164
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.P. CRAWFORD - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404165
-
-OVER
-7404166
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TAYLOR WALLS - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404167
-
-OVER
-7404168
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-RANDY AROZARENA - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404169
-
-OVER
-7404170
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSE SIRI - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404171
-
-OVER
-7404172
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CAL RALEIGH - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404173
-
-OVER
-7404174
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TY FRANCE - UNDER/OVER PLAYER DOUBLES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404175
-
-OVER
-7404176
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-AUSTIN HAYS - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404177
-
-OVER
-7404178
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JAMES MCCANN - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404179
-
-OVER
-7404180
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAMON URIAS - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404181
-
-OVER
-7404182
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JUSTIN TURNER - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404183
-
-OVER
-7404184
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADAM DUVALL - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404185
-
-OVER
-7404186
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADLEY RUTSCHMAN - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404187
-
-OVER
-7404188
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RYAN MOUNTCASTLE - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404189
-
-OVER
-7404190
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TREVOR STORY - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404191
-
-OVER
-7404192
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CONNOR WONG - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404193
-
-OVER
-7404194
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAFAEL DEVERS - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404195
-
-OVER
-7404196
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ANTHONY SANTANDER - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404197
-
-OVER
-7404198
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-GUNNAR HENDERSON - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404199
-
-OVER
-7404200
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AARON HICKS - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404201
-
-OVER
-7404202
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TRISTON CASAS - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404203
-
-OVER
-7404204
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JORGE MATEO - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404205
-
-OVER
-7404206
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-MASATAKA YOSHIDA - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404207
-
-OVER
-7404208
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ALEX VERDUGO - UNDER/OVER PLAYER DOUBLES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404209
-
-OVER
-7404210
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-BRYAN DE LA CRUZ - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404211
-
-OVER
-7404212
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-ALEC BOHM - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404213
-
-OVER
-7404214
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LUIS ARRAEZ - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404215
-
-OVER
-7404216
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-KYLE SCHWARBER - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404217
-
-OVER
-7404218
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-J.T. REALMUTO - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404219
-
-OVER
-7404220
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRANDON MARSH - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404221
-
-OVER
-7404222
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOSHUA EVAN BELL - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404223
-
-OVER
-7404224
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-TREA TURNER - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404225
-
-OVER
-7404226
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYSON STOTT - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404227
-
-OVER
-7404228
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JESUS SANCHEZ - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404229
-
-OVER
-7404230
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK CASTELLANOS - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404231
-
-OVER
-7404232
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JACOB MICHAEL BURGER - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404233
-
-OVER
-7404234
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAKE CAVE - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404235
-
-OVER
-7404236
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK FORTES - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404237
-
-OVER
-7404238
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAZZ CHISHOLM - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404239
-
-OVER
-7404240
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYCE HARPER - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404241
-
-OVER
-7404242
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOEY WENDLE - UNDER/OVER PLAYER DOUBLES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404243
-
-OVER
-7404244
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-STUART FAIRCHILD - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404245
-
-OVER
-7404246
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN ARENADO - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404247
-
-OVER
-7404248
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER O'NEILL - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404249
-
-OVER
-7404250
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HARRISON BADER - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404251
-
-OVER
-7404252
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN GORMAN - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404253
-
-OVER
-7404254
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-SPENCER STEER - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404255
-
-OVER
-7404256
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOELVI MARTE - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404257
-
-OVER
-7404258
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MASYN WINN - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404259
-
-OVER
-7404260
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-WILLSON CONTRERAS - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404261
-
-OVER
-7404262
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TOMMY EDMAN - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404263
-
-OVER
-7404264
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HUNTER RENFROE - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404265
-
-OVER
-7404266
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-LARS NOOTBAAR - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404267
-
-OVER
-7404268
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CHRISTIAN ENCARNACION-STRAND - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404269
-
-OVER
-7404270
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ELLY DE LA CRUZ - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404271
-
-OVER
-7404272
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-PAUL GOLDSCHMIDT - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404273
-
-OVER
-7404274
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NICK SENZEL - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404275
-
-OVER
-7404276
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-JORDAN WALKER - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404277
-
-OVER
-7404278
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER STEPHENSON - UNDER/OVER PLAYER DOUBLES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404279
-
-OVER
-7404280
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MAURICIO DUBÓN - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7404281
-
-OVER
-7404282
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MICHAEL BRANTLEY - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7738,17 +1626,17 @@ M Line
 Total
 
 Run Line
-7404283
+7454005
 
 OVER
-7404284
+7454006
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ANTHONY VOLPE - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-LUIS CAMPUSANO - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7760,16 +1648,16 @@ M Line
 Total
 
 Run Line
-7404285
+7454007
 
 OVER
-7404286
+7454008
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ABREU - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+TOMMY PHAM - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -7782,17 +1670,17 @@ M Line
 Total
 
 Run Line
-7404287
+7454009
 
 OVER
-7404288
+7454010
 
 UNDER
-Sep 09 7:10 PM
-Stream
+GIANCARLO STANTON - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-KYLE TUCKER - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7804,16 +1692,16 @@ M Line
 Total
 
 Run Line
-7404289
+7454011
 
 OVER
-7404290
+7454012
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-TRENT GRISHAM - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+AUSTIN WELLS - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -7826,17 +1714,17 @@ M Line
 Total
 
 Run Line
-7404291
+7454013
 
 OVER
-7404292
+7454014
 
 UNDER
-Sep 09 7:10 PM
-Stream
+KETEL MARTE - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-HA-SEONG KIM - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7848,16 +1736,16 @@ M Line
 Total
 
 Run Line
-7404293
+7454015
 
 OVER
-7404294
+7454016
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-JEREMY PENA - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -7870,17 +1758,17 @@ M Line
 Total
 
 Run Line
-7404295
+7454017
 
 OVER
-7404296
+7454018
 
 UNDER
-Sep 09 7:10 PM
-Stream
+AARON JUDGE - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-YORDAN ALVAREZ - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7892,16 +1780,16 @@ M Line
 Total
 
 Run Line
-7404297
+7454019
 
 OVER
-7404298
+7454020
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MARTIN MALDONADO - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+EMMANUEL RIVERA - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -7914,17 +1802,17 @@ M Line
 Total
 
 Run Line
-7404299
+7454021
 
 OVER
-7404300
+7454022
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ALEK THOMAS - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-XANDER BOGAERTS - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7936,16 +1824,16 @@ M Line
 Total
 
 Run Line
-7404301
+7454023
 
 OVER
-7404302
+7454024
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-GARRETT COOPER - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+ESTEVAN FLORIAL - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -7958,17 +1846,17 @@ M Line
 Total
 
 Run Line
-7404303
+7454025
 
 OVER
-7404304
+7454026
 
 UNDER
-Sep 09 7:10 PM
-Stream
+OSWALD PERAZA - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MANNY MACHADO - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -7980,16 +1868,16 @@ M Line
 Total
 
 Run Line
-7404305
+7454027
 
 OVER
-7404306
+7454028
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-ALEX BREGMAN - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+LOURDES GURRIEL - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -8002,17 +1890,17 @@ M Line
 Total
 
 Run Line
-7404307
+7454029
 
 OVER
-7404308
+7454030
 
 UNDER
-Sep 09 7:10 PM
-Stream
+CORBIN CARROLL - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-FERNANDO TATIS JR. - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -8024,16 +1912,16 @@ M Line
 Total
 
 Run Line
-7404309
+7454031
 
 OVER
-7404310
+7454032
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ALTUVE - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
+CHRISTIAN WALKER - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -8046,17 +1934,17 @@ M Line
 Total
 
 Run Line
-7404311
+7454033
 
 OVER
-7404312
+7454034
 
 UNDER
-Sep 09 7:10 PM
-Stream
+GABRIEL MORENO - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JUAN SOTO - UNDER/OVER PLAYER DOUBLES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -8068,16 +1956,16 @@ M Line
 Total
 
 Run Line
-7404313
+7454035
 
 OVER
-7404314
+7454036
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-ENDY RODRIGUEZ - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+JORDAN LAWLAR - UNDER/OVER PLAYER DOUBLES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -8090,17 +1978,17 @@ M Line
 Total
 
 Run Line
-7404315
+7454037
 
 OVER
-7404316
+7454038
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JONAH HEIM - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-JI-HWAN BAE - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8112,16 +2000,16 @@ M Line
 Total
 
 Run Line
-7404317
+7454039
 
 OVER
-7404318
+7454040
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-AUSTIN RILEY - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+RANDAL GRICHUK - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8134,17 +2022,17 @@ M Line
 Total
 
 Run Line
-7404319
+7454041
 
 OVER
-7404320
+7454042
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JO ADELL - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-KE'BRYAN HAYES - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8156,16 +2044,16 @@ M Line
 Total
 
 Run Line
-7404321
+7454043
 
 OVER
-7404322
+7454044
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MATT OLSON - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+MITCH GARVER - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8178,17 +2066,17 @@ M Line
 Total
 
 Run Line
-7404323
+7454045
 
 OVER
-7404324
+7454046
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JOSH JUNG - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MICHAEL HARRIS - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8200,16 +2088,16 @@ M Line
 Total
 
 Run Line
-7404325
+7454047
 
 OVER
-7404326
+7454048
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-TRAVIS D'ARNAUD - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+COREY SEAGER - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8222,17 +2110,17 @@ M Line
 Total
 
 Run Line
-7404327
+7454049
 
 OVER
-7404328
+7454050
 
 UNDER
-Sep 09 7:20 PM
-Stream
+DAVID FLETCHER - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-LIOVER PEGUERO - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8244,16 +2132,16 @@ M Line
 Total
 
 Run Line
-7404329
+7454051
 
 OVER
-7404330
+7454052
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MIGUEL ANDÚJAR - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+ZACH NETO - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8266,17 +2154,17 @@ M Line
 Total
 
 Run Line
-7404331
+7454053
 
 OVER
-7404332
+7454054
 
 UNDER
-Sep 09 7:20 PM
-Stream
+BRANDON DRURY - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-JARED TRIOLO - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8288,16 +2176,16 @@ M Line
 Total
 
 Run Line
-7404333
+7454055
 
 OVER
-7404334
+7454056
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MARCELL OZUNA - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+LEODY TAVERAS - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8310,17 +2198,17 @@ M Line
 Total
 
 Run Line
-7404335
+7454057
 
 OVER
-7404336
+7454058
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MARCUS SEMIEN - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-OZZIE ALBIES - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8332,16 +2220,16 @@ M Line
 Total
 
 Run Line
-7404337
+7454059
 
 OVER
-7404338
+7454060
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ORLANDO ARCIA - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+ADOLIS GARCIA - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8354,17 +2242,17 @@ M Line
 Total
 
 Run Line
-7404339
+7454061
 
 OVER
-7404340
+7454062
 
 UNDER
-Sep 09 7:20 PM
-Stream
+NOLAN SCHANUEL - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-ALIKA WILLIAMS - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8376,16 +2264,16 @@ M Line
 Total
 
 Run Line
-7404341
+7454063
 
 OVER
-7404342
+7454064
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-CONNOR JOE - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+LOGAN O'HOPPE - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8398,17 +2286,17 @@ M Line
 Total
 
 Run Line
-7404343
+7454065
 
 OVER
-7404344
+7454066
 
 UNDER
-Sep 09 7:20 PM
-Stream
+NATHANIEL LOWE - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-EDDIE ROSARIO - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8420,16 +2308,16 @@ M Line
 Total
 
 Run Line
-7404345
+7454067
 
 OVER
-7404346
+7454068
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-RONALD ACUNA - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
+JARED WALSH - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8442,17 +2330,17 @@ M Line
 Total
 
 Run Line
-7404347
+7454069
 
 OVER
-7404348
+7454070
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MIKE MOUSTAKAS - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-BRYAN REYNOLDS - UNDER/OVER PLAYER DOUBLES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -8464,16 +2352,16 @@ M Line
 Total
 
 Run Line
-7404349
+7454071
 
 OVER
-7404350
+7454072
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MIKE YASTRZEMSKI - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+EZEQUIEL DURÁN - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -8486,17 +2374,17 @@ M Line
 Total
 
 Run Line
-7404351
+7454073
 
 OVER
-7404352
+7454074
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JARRED KELENIC - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-CHARLIE BLACKMON - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8508,16 +2396,16 @@ M Line
 Total
 
 Run Line
-7404353
+7454075
 
 OVER
-7404354
+7454076
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+JOSE ALTUVE - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8530,17 +2418,17 @@ M Line
 Total
 
 Run Line
-7404355
+7454077
 
 OVER
-7404356
+7454078
 
 UNDER
-Sep 09 9:05 PM
-Stream
+EUGENIO SUAREZ - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRENTON DOYLE - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8552,16 +2440,16 @@ M Line
 Total
 
 Run Line
-7404357
+7454079
 
 OVER
-7404358
+7454080
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-THAIRO ESTRADA - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+YAINER DIAZ - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8574,17 +2462,17 @@ M Line
 Total
 
 Run Line
-7404359
+7454081
 
 OVER
-7404360
+7454082
 
 UNDER
-Sep 09 9:05 PM
-Stream
+CAL RALEIGH - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-RYAN MCMAHON - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8596,16 +2484,16 @@ M Line
 Total
 
 Run Line
-7404361
+7454083
 
 OVER
-7404362
+7454084
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-JOC PEDERSON - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+CHAS MCCORMICK - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8618,17 +2506,17 @@ M Line
 Total
 
 Run Line
-7404363
+7454085
 
 OVER
-7404364
+7454086
 
 UNDER
-Sep 09 9:05 PM
-Stream
+MIKE FORD - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRANDON CRAWFORD - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8640,16 +2528,16 @@ M Line
 Total
 
 Run Line
-7404365
+7454087
 
 OVER
-7404366
+7454088
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-ELEHURIS MONTERO - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+MAURICIO DUBÓN - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8662,17 +2550,17 @@ M Line
 Total
 
 Run Line
-7404367
+7454089
 
 OVER
-7404368
+7454090
 
 UNDER
-Sep 09 9:05 PM
-Stream
+ALEX BREGMAN - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-NOLAN JONES - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8684,16 +2572,16 @@ M Line
 Total
 
 Run Line
-7404369
+7454091
 
 OVER
-7404370
+7454092
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BLAKE SABOL - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+KYLE TUCKER - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8706,17 +2594,17 @@ M Line
 Total
 
 Run Line
-7404371
+7454093
 
 OVER
-7404372
+7454094
 
 UNDER
-Sep 09 9:05 PM
-Stream
+DYLAN MOORE - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-LAMONTE WADE - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8728,16 +2616,16 @@ M Line
 Total
 
 Run Line
-7404373
+7454095
 
 OVER
-7404374
+7454096
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MITCHELL HANIGER - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+JOSE ABREU - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8750,17 +2638,17 @@ M Line
 Total
 
 Run Line
-7404375
+7454097
 
 OVER
-7404376
+7454098
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JULIO RODRIGUEZ - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-EZEQUIEL TOVAR - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8772,16 +2660,16 @@ M Line
 Total
 
 Run Line
-7404377
+7454099
 
 OVER
-7404378
+7454100
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-ELIAS DIAZ - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+TY FRANCE - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8794,17 +2682,17 @@ M Line
 Total
 
 Run Line
-7404379
+7454101
 
 OVER
-7404380
+7454102
 
 UNDER
-Sep 09 9:05 PM
-Stream
+TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRENDAN RODGERS - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -8816,16 +2704,16 @@ M Line
 Total
 
 Run Line
-7404381
+7454103
 
 OVER
-7404382
+7454104
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-WILMER FLORES - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs Colorado Rockies) -
+JEREMY PENA - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8838,17 +2726,17 @@ M Line
 Total
 
 Run Line
-7404383
+7454105
 
 OVER
-7404384
+7454106
 
 UNDER
-Sep 09 9:05 PM
-Stream
+YORDAN ALVAREZ - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JOSH NAYLOR - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -8860,16 +2748,16 @@ M Line
 Total
 
 Run Line
-7404385
+7454107
 
 OVER
-7404386
+7454108
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-NOLAN SCHANUEL - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+J.P. CRAWFORD - UNDER/OVER PLAYER DOUBLES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -8882,17 +2770,17 @@ M Line
 Total
 
 Run Line
-7404387
+7454109
 
 OVER
-7404388
+7454110
 
 UNDER
-Sep 09 9:07 PM
-Stream
+HELIOT RAMOS - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-RAMON LAUREANO - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -8904,16 +2792,16 @@ M Line
 Total
 
 Run Line
-7404389
+7454111
 
 OVER
-7404390
+7454112
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-ANDRES GIMENEZ - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+LUIS MATOS - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -8926,17 +2814,17 @@ M Line
 Total
 
 Run Line
-7404391
+7454113
 
 OVER
-7404392
+7454114
 
 UNDER
-Sep 09 9:07 PM
-Stream
+HA-SEONG KIM - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-STEVEN KWAN - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -8948,16 +2836,16 @@ M Line
 Total
 
 Run Line
-7404393
+7454115
 
 OVER
-7404394
+7454116
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RANDAL GRICHUK - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+AUSTIN SLATER - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -8970,17 +2858,17 @@ M Line
 Total
 
 Run Line
-7404395
+7454117
 
 OVER
-7404396
+7454118
 
 UNDER
-Sep 09 9:07 PM
-Stream
+THAIRO ESTRADA - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MYLES STRAW - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -8992,16 +2880,16 @@ M Line
 Total
 
 Run Line
-7404397
+7454119
 
 OVER
-7404398
+7454120
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-LOGAN O'HOPPE - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+XANDER BOGAERTS - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -9014,17 +2902,17 @@ M Line
 Total
 
 Run Line
-7404399
+7454121
 
 OVER
-7404400
+7454122
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MARCO LUCIANO - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KYREN PARIS - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -9036,16 +2924,16 @@ M Line
 Total
 
 Run Line
-7404401
+7454123
 
 OVER
-7404402
+7454124
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-JOSE RAMIREZ - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+TRENT GRISHAM - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -9058,17 +2946,17 @@ M Line
 Total
 
 Run Line
-7404403
+7454125
 
 OVER
-7404404
+7454126
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JUAN SOTO - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KOLE CALHOUN - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -9080,16 +2968,16 @@ M Line
 Total
 
 Run Line
-7404405
+7454127
 
 OVER
-7404406
+7454128
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-MIKE MOUSTAKAS - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+WILMER FLORES - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -9102,17 +2990,17 @@ M Line
 Total
 
 Run Line
-7404407
+7454129
 
 OVER
-7404408
+7454130
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MANNY MACHADO - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-GABRIEL ARIAS - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -9124,16 +3012,16 @@ M Line
 Total
 
 Run Line
-7404409
+7454131
 
 OVER
-7404410
+7454132
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-BRANDON DRURY - UNDER/OVER PLAYER DOUBLES (Los Angeles Angels vs Cleveland Guardians) -
+FERNANDO TATIS JR. - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -9146,17 +3034,17 @@ M Line
 Total
 
 Run Line
-7404411
+7454133
 
 OVER
-7404412
+7454134
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MATTHEW BATTEN - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-SALVADOR PEREZ - UNDER/OVER PLAYER DOUBLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -9168,16 +3056,16 @@ M Line
 Total
 
 Run Line
-7404413
+7454135
 
 OVER
-7404414
+7454136
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-MICHAEL MASSEY - UNDER/OVER PLAYER DOUBLES (Toronto Blue Jays vs Kansas City Royals) -
+MITCHELL HANIGER - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -9190,17 +3078,17 @@ M Line
 Total
 
 Run Line
-7404415
+7454137
 
 OVER
-7404416
+7454138
 
 UNDER
-Sep 09 3:07 PM
-Stream
+JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-DREW WATERS - UNDER/OVER PLAYER DOUBLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -9212,16 +3100,16 @@ M Line
 Total
 
 Run Line
-7404417
+7454139
 
 OVER
-7404418
+7454140
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-MJ MELENDEZ - UNDER/OVER PLAYER DOUBLES (Toronto Blue Jays vs Kansas City Royals) -
+LUIS CAMPUSANO - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -9234,17 +3122,17 @@ M Line
 Total
 
 Run Line
-7404419
+7454141
 
 OVER
-7404420
+7454142
 
 UNDER
-Sep 09 3:07 PM
-Stream
+JI-MAN CHOI - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-BOBBY WITT JR. - UNDER/OVER PLAYER DOUBLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -9256,17 +3144,17 @@ M Line
 Total
 
 Run Line
-7404421
+7454143
 
 OVER
-7404422
+7454144
 
 UNDER
-Sep 09 3:07 PM
-Stream
+PATRICK BAILEY - UNDER/OVER PLAYER DOUBLES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL DOUBLES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MAIKEL GARCIA - UNDER/OVER PLAYER DOUBLES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -9278,17 +3166,17 @@ M Line
 Total
 
 Run Line
-7404423
+7454145
 
 OVER
-7404424
+7454146
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
+MLB - PLAYER TOTAL STOLEN BASES - Sep 25
+CORBIN CARROLL - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
 MLB - PLAYER TOTAL STOLEN BASES
-ANDRUW MONASTERIO - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -9301,2437 +3189,17 @@ M Line
 Total
 
 Run Line
-7405003
+7455003
 
 OVER
-7405004
+7455004
 
 UNDER
-Sep 09 2:05 PM
-Stream
+GLEYBER TORRES - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ANTHONY VOLPE - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405005
-
-OVER
-7405006
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405007
-
-OVER
-7405008
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-BRICE TURANG - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405009
-
-OVER
-7405010
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLY ADAMES - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405011
-
-OVER
-7405012
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-SAL FRELICK - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405013
-
-OVER
-7405014
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-TYRONE TAYLOR - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405015
-
-OVER
-7405016
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-CHRISTIAN YELICH - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405017
-
-OVER
-7405018
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JASSON DOMINGUEZ - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405019
-
-OVER
-7405020
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-OSWALD PERAZA - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405021
-
-OVER
-7405022
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GLEYBER TORRES - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405023
-
-OVER
-7405024
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JEFF MCNEIL - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405025
-
-OVER
-7405026
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-FRANCISCO LINDOR - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405027
-
-OVER
-7405028
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRANDON NIMMO - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405029
-
-OVER
-7405030
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORDAN LUPLOW - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405031
-
-OVER
-7405032
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RONNY MAURICIO - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405033
-
-OVER
-7405034
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRETT BATY - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405035
-
-OVER
-7405036
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-PETER ALONSO - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405037
-
-OVER
-7405038
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MATT WALLNER - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405039
-
-OVER
-7405040
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CARLOS CORREA - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405041
-
-OVER
-7405042
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-ROYCE LEWIS - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405043
-
-OVER
-7405044
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RAFAEL ORTEGA - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405045
-
-OVER
-7405046
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORGE POLANCO - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405047
-
-OVER
-7405048
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-WILLI CASTRO - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405049
-
-OVER
-7405050
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-KYLE FARMER - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405051
-
-OVER
-7405052
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RYAN JEFFERS - UNDER/OVER PLAYER STOLEN BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405053
-
-OVER
-7405054
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-NICO HOERNER - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405055
-
-OVER
-7405056
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CORBIN CARROLL - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405057
-
-OVER
-7405058
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-KETEL MARTE - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405059
-
-OVER
-7405060
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-LOURDES GURRIEL - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405061
-
-OVER
-7405062
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CODY BELLINGER - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405063
-
-OVER
-7405064
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GABRIEL MORENO - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405065
-
-OVER
-7405066
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICK MADRIGAL - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405067
-
-OVER
-7405068
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-SEIYA SUZUKI - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405069
-
-OVER
-7405070
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GERALDO PERDOMO - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405071
-
-OVER
-7405072
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CHRISTIAN WALKER - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405073
-
-OVER
-7405074
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-TOMMY PHAM - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405075
-
-OVER
-7405076
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-MIKE TAUCHMAN - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405077
-
-OVER
-7405078
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-IAN HAPP - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405079
-
-OVER
-7405080
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DANSBY SWANSON - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405081
-
-OVER
-7405082
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JEIMER CANDELARIO - UNDER/OVER PLAYER STOLEN BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405083
-
-OVER
-7405084
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DAVID PERALTA - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405085
-
-OVER
-7405086
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JACOB YOUNG - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405087
-
-OVER
-7405088
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-FREDDIE FREEMAN - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405089
-
-OVER
-7405090
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-WILL SMITH - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405091
-
-OVER
-7405092
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ENRIQUE HERNANDEZ - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405093
-
-OVER
-7405094
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAMES OUTMAN - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405095
-
-OVER
-7405096
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ALEX CALL - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405097
-
-OVER
-7405098
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE ALU - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405099
-
-OVER
-7405100
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LANE THOMAS - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405101
-
-OVER
-7405102
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-KEIBERT RUIZ - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405103
-
-OVER
-7405104
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JASON HEYWARD - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405105
-
-OVER
-7405106
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIGUEL ROJAS - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405107
-
-OVER
-7405108
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CJ ABRAMS - UNDER/OVER PLAYER STOLEN BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405109
-
-OVER
-7405110
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TAYLOR WALLS - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405111
-
-OVER
-7405112
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405113
-
-OVER
-7405114
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.P. CRAWFORD - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405115
-
-OVER
-7405116
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LUKE RALEY - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405117
-
-OVER
-7405118
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CHRISTIAN BETHANCOURT - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405119
-
-OVER
-7405120
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BRANDON LOWE - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405121
-
-OVER
-7405122
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSH LOWE - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405123
-
-OVER
-7405124
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-RANDY AROZARENA - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405125
-
-OVER
-7405126
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JULIO RODRIGUEZ - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405127
-
-OVER
-7405128
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSHUA ROJAS - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405129
-
-OVER
-7405130
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSE SIRI - UNDER/OVER PLAYER STOLEN BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405131
-
-OVER
-7405132
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAMES MCCANN - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405133
-
-OVER
-7405134
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ANTHONY SANTANDER - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405135
-
-OVER
-7405136
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAFAEL DEVERS - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405137
-
-OVER
-7405138
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JORGE MATEO - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405139
-
-OVER
-7405140
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TREVOR STORY - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405141
-
-OVER
-7405142
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAMON URIAS - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405143
-
-OVER
-7405144
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CONNOR WONG - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405145
-
-OVER
-7405146
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ALEX VERDUGO - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405147
-
-OVER
-7405148
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADLEY RUTSCHMAN - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405149
-
-OVER
-7405150
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AARON HICKS - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405151
-
-OVER
-7405152
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADAM DUVALL - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405153
-
-OVER
-7405154
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RYAN MOUNTCASTLE - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405155
-
-OVER
-7405156
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-GUNNAR HENDERSON - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405157
-
-OVER
-7405158
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-MASATAKA YOSHIDA - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405159
-
-OVER
-7405160
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AUSTIN HAYS - UNDER/OVER PLAYER STOLEN BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405161
-
-OVER
-7405162
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-NICK FORTES - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405163
-
-OVER
-7405164
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAKE CAVE - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405165
-
-OVER
-7405166
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYAN DE LA CRUZ - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405167
-
-OVER
-7405168
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JESUS SANCHEZ - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405169
-
-OVER
-7405170
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JACOB MICHAEL BURGER - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405171
-
-OVER
-7405172
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK CASTELLANOS - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405173
-
-OVER
-7405174
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LUIS ARRAEZ - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405175
-
-OVER
-7405176
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRANDON MARSH - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405177
-
-OVER
-7405178
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYSON STOTT - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405179
-
-OVER
-7405180
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYCE HARPER - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405181
-
-OVER
-7405182
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAZZ CHISHOLM - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405183
-
-OVER
-7405184
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOEY WENDLE - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405185
-
-OVER
-7405186
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-TREA TURNER - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405187
-
-OVER
-7405188
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-ALEC BOHM - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405189
-
-OVER
-7405190
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-KYLE SCHWARBER - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405191
-
-OVER
-7405192
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-J.T. REALMUTO - UNDER/OVER PLAYER STOLEN BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405193
-
-OVER
-7405194
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NOLAN ARENADO - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405195
-
-OVER
-7405196
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NICK SENZEL - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405197
-
-OVER
-7405198
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER O'NEILL - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405199
-
-OVER
-7405200
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-PAUL GOLDSCHMIDT - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405201
-
-OVER
-7405202
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-SPENCER STEER - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405203
-
-OVER
-7405204
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-WILLSON CONTRERAS - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405205
-
-OVER
-7405206
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-JORDAN WALKER - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405207
-
-OVER
-7405208
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ELLY DE LA CRUZ - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405209
-
-OVER
-7405210
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MASYN WINN - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405211
-
-OVER
-7405212
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN GORMAN - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405213
-
-OVER
-7405214
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TOMMY EDMAN - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405215
-
-OVER
-7405216
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-LARS NOOTBAAR - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405217
-
-OVER
-7405218
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOELVI MARTE - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405219
-
-OVER
-7405220
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-STUART FAIRCHILD - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405221
-
-OVER
-7405222
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HARRISON BADER - UNDER/OVER PLAYER STOLEN BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7405223
-
-OVER
-7405224
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MANNY MACHADO - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -11743,17 +3211,17 @@ M Line
 Total
 
 Run Line
-7405225
+7455005
 
 OVER
-7405226
+7455006
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ALEK THOMAS - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JUAN SOTO - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -11765,16 +3233,16 @@ M Line
 Total
 
 Run Line
-7405227
+7455007
 
 OVER
-7405228
+7455008
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-JEREMY PENA - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
+TOMMY PHAM - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -11787,17 +3255,17 @@ M Line
 Total
 
 Run Line
-7405229
+7455009
 
 OVER
-7405230
+7455010
 
 UNDER
-Sep 09 7:10 PM
-Stream
+CHRISTIAN WALKER - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-TRENT GRISHAM - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -11809,16 +3277,16 @@ M Line
 Total
 
 Run Line
-7405231
+7455011
 
 OVER
-7405232
+7455012
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-XANDER BOGAERTS - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
+ANTHONY VOLPE - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -11831,17 +3299,17 @@ M Line
 Total
 
 Run Line
-7405233
+7455013
 
 OVER
-7405234
+7455014
 
 UNDER
-Sep 09 7:10 PM
-Stream
+JORDAN LAWLAR - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MICHAEL BRANTLEY - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -11853,16 +3321,16 @@ M Line
 Total
 
 Run Line
-7405235
+7455015
 
 OVER
-7405236
+7455016
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-HA-SEONG KIM - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
+ESTEVAN FLORIAL - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -11875,17 +3343,17 @@ M Line
 Total
 
 Run Line
-7405237
+7455017
 
 OVER
-7405238
+7455018
 
 UNDER
-Sep 09 7:10 PM
-Stream
+DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MAURICIO DUBÓN - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -11897,16 +3365,16 @@ M Line
 Total
 
 Run Line
-7405239
+7455019
 
 OVER
-7405240
+7455020
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-KYLE TUCKER - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
+AARON JUDGE - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -11919,17 +3387,17 @@ M Line
 Total
 
 Run Line
-7405241
+7455021
 
 OVER
-7405242
+7455022
 
 UNDER
-Sep 09 7:10 PM
-Stream
+LOURDES GURRIEL - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JOSE ALTUVE - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -11941,16 +3409,16 @@ M Line
 Total
 
 Run Line
-7405243
+7455023
 
 OVER
-7405244
+7455024
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-FERNANDO TATIS JR. - UNDER/OVER PLAYER STOLEN BASES (Houston Astros vs San Diego Padres) -
+OSWALDO CABRERA - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -11963,17 +3431,17 @@ M Line
 Total
 
 Run Line
-7405245
+7455025
 
 OVER
-7405246
+7455026
 
 UNDER
-Sep 09 7:10 PM
-Stream
+OSWALD PERAZA - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-RONALD ACUNA - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -11985,16 +3453,16 @@ M Line
 Total
 
 Run Line
-7405247
+7455027
 
 OVER
-7405248
+7455028
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-LIOVER PEGUERO - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
+GABRIEL MORENO - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -12007,17 +3475,17 @@ M Line
 Total
 
 Run Line
-7405249
+7455029
 
 OVER
-7405250
+7455030
 
 UNDER
-Sep 09 7:20 PM
-Stream
+KETEL MARTE - UNDER/OVER PLAYER STOLEN BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JI-HWAN BAE - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -12029,16 +3497,16 @@ M Line
 Total
 
 Run Line
-7405251
+7455031
 
 OVER
-7405252
+7455032
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-EDDIE ROSARIO - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
+ZACH NETO - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -12051,17 +3519,17 @@ M Line
 Total
 
 Run Line
-7405253
+7455033
 
 OVER
-7405254
+7455034
 
 UNDER
-Sep 09 7:20 PM
-Stream
+EZEQUIEL DURÁN - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-BRYAN REYNOLDS - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -12073,16 +3541,16 @@ M Line
 Total
 
 Run Line
-7405255
+7455035
 
 OVER
-7405256
+7455036
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MIGUEL ANDÚJAR - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
+RANDAL GRICHUK - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -12095,17 +3563,17 @@ M Line
 Total
 
 Run Line
-7405257
+7455037
 
 OVER
-7405258
+7455038
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MARCUS SEMIEN - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MICHAEL HARRIS - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -12117,16 +3585,16 @@ M Line
 Total
 
 Run Line
-7405259
+7455039
 
 OVER
-7405260
+7455040
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-OZZIE ALBIES - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
+DAVID FLETCHER - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -12139,17 +3607,17 @@ M Line
 Total
 
 Run Line
-7405261
+7455041
 
 OVER
-7405262
+7455042
 
 UNDER
-Sep 09 7:20 PM
-Stream
+ADOLIS GARCIA - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-JARED TRIOLO - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -12161,16 +3629,16 @@ M Line
 Total
 
 Run Line
-7405263
+7455043
 
 OVER
-7405264
+7455044
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ALIKA WILLIAMS - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
+JO ADELL - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -12183,17 +3651,17 @@ M Line
 Total
 
 Run Line
-7405265
+7455045
 
 OVER
-7405266
+7455046
 
 UNDER
-Sep 09 7:20 PM
-Stream
+LEODY TAVERAS - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:38 PM
 
-KE'BRYAN HAYES - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -12205,16 +3673,16 @@ M Line
 Total
 
 Run Line
-7405267
+7455047
 
 OVER
-7405268
+7455048
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-CONNOR JOE - UNDER/OVER PLAYER STOLEN BASES (Atlanta Braves vs Pittsburgh Pirates) -
+CHAS MCCORMICK - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -12227,17 +3695,17 @@ M Line
 Total
 
 Run Line
-7405269
+7455049
 
 OVER
-7405270
+7455050
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MAURICIO DUBÓN - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-RYAN MCMAHON - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -12249,16 +3717,16 @@ M Line
 Total
 
 Run Line
-7405271
+7455051
 
 OVER
-7405272
+7455052
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-NOLAN JONES - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
+DYLAN MOORE - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -12271,17 +3739,17 @@ M Line
 Total
 
 Run Line
-7405273
+7455053
 
 OVER
-7405274
+7455054
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JOSE ALTUVE - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-MIKE YASTRZEMSKI - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -12293,16 +3761,16 @@ M Line
 Total
 
 Run Line
-7405275
+7455055
 
 OVER
-7405276
+7455056
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BLAKE SABOL - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
+JARRED KELENIC - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -12315,17 +3783,17 @@ M Line
 Total
 
 Run Line
-7405277
+7455057
 
 OVER
-7405278
+7455058
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JEREMY PENA - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-EZEQUIEL TOVAR - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -12337,16 +3805,16 @@ M Line
 Total
 
 Run Line
-7405279
+7455059
 
 OVER
-7405280
+7455060
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-THAIRO ESTRADA - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
+JULIO RODRIGUEZ - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -12359,17 +3827,17 @@ M Line
 Total
 
 Run Line
-7405281
+7455061
 
 OVER
-7405282
+7455062
 
 UNDER
-Sep 09 9:05 PM
-Stream
+KYLE TUCKER - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-CHARLIE BLACKMON - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -12381,16 +3849,16 @@ M Line
 Total
 
 Run Line
-7405283
+7455063
 
 OVER
-7405284
+7455064
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRENTON DOYLE - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs Colorado Rockies) -
+TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -12403,17 +3871,17 @@ M Line
 Total
 
 Run Line
-7405285
+7455065
 
 OVER
-7405286
+7455066
 
 UNDER
-Sep 09 9:05 PM
-Stream
+ALEX BREGMAN - UNDER/OVER PLAYER STOLEN BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:40 PM
 
-GABRIEL ARIAS - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -12425,16 +3893,16 @@ M Line
 Total
 
 Run Line
-7405287
+7455067
 
 OVER
-7405288
+7455068
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-KOLE CALHOUN - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
+MARCO LUCIANO - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12447,17 +3915,17 @@ M Line
 Total
 
 Run Line
-7405289
+7455069
 
 OVER
-7405290
+7455070
 
 UNDER
-Sep 09 9:07 PM
-Stream
+TRENT GRISHAM - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-JOSE RAMIREZ - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -12469,16 +3937,16 @@ M Line
 Total
 
 Run Line
-7405291
+7455071
 
 OVER
-7405292
+7455072
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-JOSH NAYLOR - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
+XANDER BOGAERTS - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12491,17 +3959,17 @@ M Line
 Total
 
 Run Line
-7405293
+7455073
 
 OVER
-7405294
+7455074
 
 UNDER
-Sep 09 9:07 PM
-Stream
+HELIOT RAMOS - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-RANDAL GRICHUK - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -12513,16 +3981,16 @@ M Line
 Total
 
 Run Line
-7405295
+7455075
 
 OVER
-7405296
+7455076
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-MYLES STRAW - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
+JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12535,17 +4003,17 @@ M Line
 Total
 
 Run Line
-7405297
+7455077
 
 OVER
-7405298
+7455078
 
 UNDER
-Sep 09 9:07 PM
-Stream
+FERNANDO TATIS JR. - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KYREN PARIS - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -12557,16 +4025,16 @@ M Line
 Total
 
 Run Line
-7405299
+7455079
 
 OVER
-7405300
+7455080
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-NOLAN SCHANUEL - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
+MITCHELL HANIGER - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12579,17 +4047,17 @@ M Line
 Total
 
 Run Line
-7405301
+7455081
 
 OVER
-7405302
+7455082
 
 UNDER
-Sep 09 9:07 PM
-Stream
+AUSTIN SLATER - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-STEVEN KWAN - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -12601,16 +4069,16 @@ M Line
 Total
 
 Run Line
-7405303
+7455083
 
 OVER
-7405304
+7455084
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RAMON LAUREANO - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
+LUIS MATOS - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12623,17 +4091,17 @@ M Line
 Total
 
 Run Line
-7405305
+7455085
 
 OVER
-7405306
+7455086
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JUAN SOTO - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-ANDRES GIMENEZ - UNDER/OVER PLAYER STOLEN BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -12645,16 +4113,16 @@ M Line
 Total
 
 Run Line
-7405307
+7455087
 
 OVER
-7405308
+7455088
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-BOBBY WITT JR. - UNDER/OVER PLAYER STOLEN BASES (Toronto Blue Jays vs Kansas City Royals) -
+MANNY MACHADO - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12667,17 +4135,17 @@ M Line
 Total
 
 Run Line
-7405309
+7455089
 
 OVER
-7405310
+7455090
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MATTHEW BATTEN - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MICHAEL MASSEY - UNDER/OVER PLAYER STOLEN BASES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -12689,16 +4157,16 @@ M Line
 Total
 
 Run Line
-7405311
+7455091
 
 OVER
-7405312
+7455092
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-DREW WATERS - UNDER/OVER PLAYER STOLEN BASES (Toronto Blue Jays vs Kansas City Royals) -
+PATRICK BAILEY - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -12711,17 +4179,17 @@ M Line
 Total
 
 Run Line
-7405313
+7455093
 
 OVER
-7405314
+7455094
 
 UNDER
-Sep 09 3:07 PM
-Stream
+HA-SEONG KIM - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MAIKEL GARCIA - UNDER/OVER PLAYER STOLEN BASES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -12733,17 +4201,17 @@ M Line
 Total
 
 Run Line
-7405315
+7455095
 
 OVER
-7405316
+7455096
 
 UNDER
-Sep 09 3:07 PM
-Stream
+THAIRO ESTRADA - UNDER/OVER PLAYER STOLEN BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL STOLEN BASES
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MJ MELENDEZ - UNDER/OVER PLAYER STOLEN BASES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -12755,17 +4223,17 @@ M Line
 Total
 
 Run Line
-7405317
+7455097
 
 OVER
-7405318
+7455098
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
+MLB - PLAYER TOTAL RUNS - Sep 25
+ALEK THOMAS - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
 MLB - PLAYER TOTAL RUNS
-OSWALD PERAZA - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -12778,3339 +4246,17 @@ M Line
 Total
 
 Run Line
-7406003
+7456003
 
 OVER
-7406004
+7456004
 
 UNDER
-Sep 09 2:05 PM
-Stream
+CHRISTIAN WALKER - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406005
-
-OVER
-7406006
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GIANCARLO STANTON - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406007
-
-OVER
-7406008
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANTHONY VOLPE - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406009
-
-OVER
-7406010
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AARON JUDGE - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406011
-
-OVER
-7406012
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLIAM CONTRERAS - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406013
-
-OVER
-7406014
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-CHRISTIAN YELICH - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406015
-
-OVER
-7406016
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JASSON DOMINGUEZ - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406017
-
-OVER
-7406018
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-KYLE HIGASHIOKA - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406019
-
-OVER
-7406020
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AUSTIN WELLS - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406021
-
-OVER
-7406022
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GLEYBER TORRES - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406023
-
-OVER
-7406024
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-SAL FRELICK - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406025
-
-OVER
-7406026
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANDRUW MONASTERIO - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406027
-
-OVER
-7406028
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-TYRONE TAYLOR - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406029
-
-OVER
-7406030
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLY ADAMES - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406031
-
-OVER
-7406032
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-BRICE TURANG - UNDER/OVER PLAYER RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406033
-
-OVER
-7406034
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-MARK VIENTOS - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406035
-
-OVER
-7406036
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-OMAR NARVAEZ - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406037
-
-OVER
-7406038
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-ROYCE LEWIS - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406039
-
-OVER
-7406040
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RONNY MAURICIO - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406041
-
-OVER
-7406042
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRANDON NIMMO - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406043
-
-OVER
-7406044
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CARLOS CORREA - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406045
-
-OVER
-7406046
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RAFAEL ORTEGA - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406047
-
-OVER
-7406048
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MATT WALLNER - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406049
-
-OVER
-7406050
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-PETER ALONSO - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406051
-
-OVER
-7406052
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-KYLE FARMER - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406053
-
-OVER
-7406054
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RYAN JEFFERS - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406055
-
-OVER
-7406056
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-FRANCISCO LINDOR - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406057
-
-OVER
-7406058
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEFF MCNEIL - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406059
-
-OVER
-7406060
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRETT BATY - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406061
-
-OVER
-7406062
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORGE POLANCO - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406063
-
-OVER
-7406064
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORDAN LUPLOW - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406065
-
-OVER
-7406066
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-DONOVAN SOLANO - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406067
-
-OVER
-7406068
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-WILLI CASTRO - UNDER/OVER PLAYER RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406069
-
-OVER
-7406070
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEIMER CANDELARIO - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406071
-
-OVER
-7406072
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-KETEL MARTE - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406073
-
-OVER
-7406074
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICO HOERNER - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406075
-
-OVER
-7406076
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-YAN GOMES - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406077
-
-OVER
-7406078
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GABRIEL MORENO - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406079
-
-OVER
-7406080
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-LOURDES GURRIEL - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406081
-
-OVER
-7406082
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-IAN HAPP - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406083
-
-OVER
-7406084
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CHRISTIAN WALKER - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406085
-
-OVER
-7406086
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CODY BELLINGER - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406087
-
-OVER
-7406088
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EVAN LONGORIA - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406089
-
-OVER
-7406090
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EMMANUEL RIVERA - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406091
-
-OVER
-7406092
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GERALDO PERDOMO - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406093
-
-OVER
-7406094
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-MIKE TAUCHMAN - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406095
-
-OVER
-7406096
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-SEIYA SUZUKI - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406097
-
-OVER
-7406098
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DANSBY SWANSON - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406099
-
-OVER
-7406100
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICK MADRIGAL - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406101
-
-OVER
-7406102
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-TOMMY PHAM - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406103
-
-OVER
-7406104
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CORBIN CARROLL - UNDER/OVER PLAYER RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406105
-
-OVER
-7406106
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JAMES OUTMAN - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406107
-
-OVER
-7406108
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MAX MUNCY - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406109
-
-OVER
-7406110
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIGUEL ROJAS - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406111
-
-OVER
-7406112
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-FREDDIE FREEMAN - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406113
-
-OVER
-7406114
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JASON HEYWARD - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406115
-
-OVER
-7406116
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE ALU - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406117
-
-OVER
-7406118
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ENRIQUE HERNANDEZ - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406119
-
-OVER
-7406120
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ALEX CALL - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406121
-
-OVER
-7406122
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-WILL SMITH - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406123
-
-OVER
-7406124
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JACOB YOUNG - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406125
-
-OVER
-7406126
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DAVID PERALTA - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406127
-
-OVER
-7406128
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CJ ABRAMS - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406129
-
-OVER
-7406130
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CARTER KIEBOOM - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406131
-
-OVER
-7406132
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LANE THOMAS - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406133
-
-OVER
-7406134
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-KEIBERT RUIZ - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406135
-
-OVER
-7406136
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.D. MARTINEZ - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406137
-
-OVER
-7406138
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC SMITH - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406139
-
-OVER
-7406140
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOEY MENESES - UNDER/OVER PLAYER RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406141
-
-OVER
-7406142
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TAYLOR WALLS - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406143
-
-OVER
-7406144
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-RANDY AROZARENA - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406145
-
-OVER
-7406146
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-EUGENIO SUAREZ - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406147
-
-OVER
-7406148
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TY FRANCE - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406149
-
-OVER
-7406150
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BRANDON LOWE - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406151
-
-OVER
-7406152
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC CANZONE - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406153
-
-OVER
-7406154
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406155
-
-OVER
-7406156
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSHUA ROJAS - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406157
-
-OVER
-7406158
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSH LOWE - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406159
-
-OVER
-7406160
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ISAAC PAREDES - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406161
-
-OVER
-7406162
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CHRISTIAN BETHANCOURT - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406163
-
-OVER
-7406164
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSE SIRI - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406165
-
-OVER
-7406166
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LUKE RALEY - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406167
-
-OVER
-7406168
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.P. CRAWFORD - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406169
-
-OVER
-7406170
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIKE FORD - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406171
-
-OVER
-7406172
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CAL RALEIGH - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406173
-
-OVER
-7406174
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-YANDY DIAZ - UNDER/OVER PLAYER RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406175
-
-OVER
-7406176
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ANTHONY SANTANDER - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406177
-
-OVER
-7406178
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAFAEL DEVERS - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406179
-
-OVER
-7406180
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JORGE MATEO - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406181
-
-OVER
-7406182
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RYAN MOUNTCASTLE - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406183
-
-OVER
-7406184
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AUSTIN HAYS - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406185
-
-OVER
-7406186
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JAMES MCCANN - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406187
-
-OVER
-7406188
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TREVOR STORY - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406189
-
-OVER
-7406190
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ALEX VERDUGO - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406191
-
-OVER
-7406192
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-GUNNAR HENDERSON - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406193
-
-OVER
-7406194
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADAM DUVALL - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406195
-
-OVER
-7406196
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADLEY RUTSCHMAN - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406197
-
-OVER
-7406198
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAMON URIAS - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406199
-
-OVER
-7406200
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-MASATAKA YOSHIDA - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406201
-
-OVER
-7406202
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AARON HICKS - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406203
-
-OVER
-7406204
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JUSTIN TURNER - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406205
-
-OVER
-7406206
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CONNOR WONG - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406207
-
-OVER
-7406208
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TRISTON CASAS - UNDER/OVER PLAYER RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406209
-
-OVER
-7406210
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-BRYCE HARPER - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406211
-
-OVER
-7406212
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-TREA TURNER - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406213
-
-OVER
-7406214
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRANDON MARSH - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406215
-
-OVER
-7406216
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOEY WENDLE - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406217
-
-OVER
-7406218
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-KYLE SCHWARBER - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406219
-
-OVER
-7406220
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JESUS SANCHEZ - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406221
-
-OVER
-7406222
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYSON STOTT - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406223
-
-OVER
-7406224
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOSHUA EVAN BELL - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406225
-
-OVER
-7406226
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYAN DE LA CRUZ - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406227
-
-OVER
-7406228
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LUIS ARRAEZ - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406229
-
-OVER
-7406230
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAZZ CHISHOLM - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406231
-
-OVER
-7406232
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JACOB MICHAEL BURGER - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406233
-
-OVER
-7406234
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAKE CAVE - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406235
-
-OVER
-7406236
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-J.T. REALMUTO - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406237
-
-OVER
-7406238
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK FORTES - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406239
-
-OVER
-7406240
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-ALEC BOHM - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406241
-
-OVER
-7406242
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK CASTELLANOS - UNDER/OVER PLAYER RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406243
-
-OVER
-7406244
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LARS NOOTBAAR - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406245
-
-OVER
-7406246
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-STUART FAIRCHILD - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406247
-
-OVER
-7406248
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOELVI MARTE - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406249
-
-OVER
-7406250
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HUNTER RENFROE - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406251
-
-OVER
-7406252
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MASYN WINN - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406253
-
-OVER
-7406254
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN GORMAN - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406255
-
-OVER
-7406256
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-PAUL GOLDSCHMIDT - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406257
-
-OVER
-7406258
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CHRISTIAN ENCARNACION-STRAND - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406259
-
-OVER
-7406260
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ELLY DE LA CRUZ - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406261
-
-OVER
-7406262
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN ARENADO - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406263
-
-OVER
-7406264
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER O'NEILL - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406265
-
-OVER
-7406266
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER STEPHENSON - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406267
-
-OVER
-7406268
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-SPENCER STEER - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406269
-
-OVER
-7406270
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-WILLSON CONTRERAS - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406271
-
-OVER
-7406272
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NICK SENZEL - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406273
-
-OVER
-7406274
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-JORDAN WALKER - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406275
-
-OVER
-7406276
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HARRISON BADER - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406277
-
-OVER
-7406278
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TOMMY EDMAN - UNDER/OVER PLAYER RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406279
-
-OVER
-7406280
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MATTHEW BATTEN - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406281
-
-OVER
-7406282
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-KYLE TUCKER - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406283
-
-OVER
-7406284
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-GARRETT COOPER - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406285
-
-OVER
-7406286
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-TRENT GRISHAM - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406287
-
-OVER
-7406288
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-FERNANDO TATIS JR. - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406289
-
-OVER
-7406290
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MARTIN MALDONADO - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406291
-
-OVER
-7406292
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MICHAEL BRANTLEY - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406293
-
-OVER
-7406294
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-XANDER BOGAERTS - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406295
-
-OVER
-7406296
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-LUIS CAMPUSANO - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406297
-
-OVER
-7406298
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JUAN SOTO - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406299
-
-OVER
-7406300
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MANNY MACHADO - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406301
-
-OVER
-7406302
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ABREU - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406303
-
-OVER
-7406304
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-ALEX BREGMAN - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7406305
-
-OVER
-7406306
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JEREMY PENA - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -16122,17 +4268,17 @@ M Line
 Total
 
 Run Line
-7406307
+7456005
 
 OVER
-7406308
+7456006
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ESTEVAN FLORIAL - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MAURICIO DUBÓN - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -16144,16 +4290,16 @@ M Line
 Total
 
 Run Line
-7406309
+7456007
 
 OVER
-7406310
+7456008
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ALTUVE - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
+GIANCARLO STANTON - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16166,17 +4312,17 @@ M Line
 Total
 
 Run Line
-7406311
+7456009
 
 OVER
-7406312
+7456010
 
 UNDER
-Sep 09 7:10 PM
-Stream
+AARON JUDGE - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-HA-SEONG KIM - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -16188,16 +4334,16 @@ M Line
 Total
 
 Run Line
-7406313
+7456011
 
 OVER
-7406314
+7456012
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-YORDAN ALVAREZ - UNDER/OVER PLAYER RUNS (Houston Astros vs San Diego Padres) -
+ANTHONY VOLPE - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16210,17 +4356,17 @@ M Line
 Total
 
 Run Line
-7406315
+7456013
 
 OVER
-7406316
+7456014
 
 UNDER
-Sep 09 7:10 PM
-Stream
+LOURDES GURRIEL - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MIGUEL ANDÚJAR - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16232,16 +4378,16 @@ M Line
 Total
 
 Run Line
-7406317
+7456015
 
 OVER
-7406318
+7456016
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ALIKA WILLIAMS - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+OSWALDO CABRERA - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16254,17 +4400,17 @@ M Line
 Total
 
 Run Line
-7406319
+7456017
 
 OVER
-7406320
+7456018
 
 UNDER
-Sep 09 7:20 PM
-Stream
+GABRIEL MORENO - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ENDY RODRIGUEZ - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16276,16 +4422,16 @@ M Line
 Total
 
 Run Line
-7406321
+7456019
 
 OVER
-7406322
+7456020
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-AUSTIN RILEY - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+JORDAN LAWLAR - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16298,17 +4444,17 @@ M Line
 Total
 
 Run Line
-7406323
+7456021
 
 OVER
-7406324
+7456022
 
 UNDER
-Sep 09 7:20 PM
-Stream
+CORBIN CARROLL - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-EDDIE ROSARIO - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16320,16 +4466,16 @@ M Line
 Total
 
 Run Line
-7406325
+7456023
 
 OVER
-7406326
+7456024
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MICHAEL HARRIS - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16342,17 +4488,17 @@ M Line
 Total
 
 Run Line
-7406327
+7456025
 
 OVER
-7406328
+7456026
 
 UNDER
-Sep 09 7:20 PM
-Stream
+KETEL MARTE - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JARED TRIOLO - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16364,16 +4510,16 @@ M Line
 Total
 
 Run Line
-7406329
+7456027
 
 OVER
-7406330
+7456028
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-OZZIE ALBIES - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+TOMMY PHAM - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16386,17 +4532,17 @@ M Line
 Total
 
 Run Line
-7406331
+7456029
 
 OVER
-7406332
+7456030
 
 UNDER
-Sep 09 7:20 PM
-Stream
+GLEYBER TORRES - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-RONALD ACUNA - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16408,16 +4554,16 @@ M Line
 Total
 
 Run Line
-7406333
+7456031
 
 OVER
-7406334
+7456032
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-KE'BRYAN HAYES - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+AUSTIN WELLS - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16430,17 +4576,17 @@ M Line
 Total
 
 Run Line
-7406335
+7456033
 
 OVER
-7406336
+7456034
 
 UNDER
-Sep 09 7:20 PM
-Stream
+OSWALD PERAZA - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-LIOVER PEGUERO - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16452,16 +4598,16 @@ M Line
 Total
 
 Run Line
-7406337
+7456035
 
 OVER
-7406338
+7456036
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-TRAVIS D'ARNAUD - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+EMMANUEL RIVERA - UNDER/OVER PLAYER RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -16474,17 +4620,17 @@ M Line
 Total
 
 Run Line
-7406339
+7456037
 
 OVER
-7406340
+7456038
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JARED WALSH - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MATT OLSON - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16496,16 +4642,16 @@ M Line
 Total
 
 Run Line
-7406341
+7456039
 
 OVER
-7406342
+7456040
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MARCELL OZUNA - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+MITCH GARVER - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16518,17 +4664,17 @@ M Line
 Total
 
 Run Line
-7406343
+7456041
 
 OVER
-7406344
+7456042
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JOSH JUNG - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-JI-HWAN BAE - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16540,16 +4686,16 @@ M Line
 Total
 
 Run Line
-7406345
+7456043
 
 OVER
-7406346
+7456044
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ORLANDO ARCIA - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+JONAH HEIM - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16562,17 +4708,17 @@ M Line
 Total
 
 Run Line
-7406347
+7456045
 
 OVER
-7406348
+7456046
 
 UNDER
-Sep 09 7:20 PM
-Stream
+LEODY TAVERAS - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-CONNOR JOE - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -16584,16 +4730,16 @@ M Line
 Total
 
 Run Line
-7406349
+7456047
 
 OVER
-7406350
+7456048
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-BRYAN REYNOLDS - UNDER/OVER PLAYER RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+EZEQUIEL DURÁN - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16606,17 +4752,17 @@ M Line
 Total
 
 Run Line
-7406351
+7456049
 
 OVER
-7406352
+7456050
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JO ADELL - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-EZEQUIEL TOVAR - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16628,16 +4774,16 @@ M Line
 Total
 
 Run Line
-7406353
+7456051
 
 OVER
-7406354
+7456052
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-CHARLIE BLACKMON - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+BRANDON DRURY - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16650,17 +4796,17 @@ M Line
 Total
 
 Run Line
-7406355
+7456053
 
 OVER
-7406356
+7456054
 
 UNDER
-Sep 09 9:05 PM
-Stream
+LOGAN O'HOPPE - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-ELIAS DIAZ - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16672,16 +4818,16 @@ M Line
 Total
 
 Run Line
-7406357
+7456055
 
 OVER
-7406358
+7456056
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-LAMONTE WADE - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+DAVID FLETCHER - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16694,17 +4840,17 @@ M Line
 Total
 
 Run Line
-7406359
+7456057
 
 OVER
-7406360
+7456058
 
 UNDER
-Sep 09 9:05 PM
-Stream
+MARCUS SEMIEN - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-WILMER FLORES - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16716,16 +4862,16 @@ M Line
 Total
 
 Run Line
-7406361
+7456059
 
 OVER
-7406362
+7456060
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRENTON DOYLE - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+RANDAL GRICHUK - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16738,17 +4884,17 @@ M Line
 Total
 
 Run Line
-7406363
+7456061
 
 OVER
-7406364
+7456062
 
 UNDER
-Sep 09 9:05 PM
-Stream
+NOLAN SCHANUEL - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MIKE YASTRZEMSKI - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16760,16 +4906,16 @@ M Line
 Total
 
 Run Line
-7406365
+7456063
 
 OVER
-7406366
+7456064
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-RYAN MCMAHON - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+ZACH NETO - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16782,17 +4928,17 @@ M Line
 Total
 
 Run Line
-7406367
+7456065
 
 OVER
-7406368
+7456066
 
 UNDER
-Sep 09 9:05 PM
-Stream
+ADOLIS GARCIA - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-NOLAN JONES - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16804,16 +4950,16 @@ M Line
 Total
 
 Run Line
-7406369
+7456067
 
 OVER
-7406370
+7456068
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-THAIRO ESTRADA - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+MIKE MOUSTAKAS - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16826,17 +4972,17 @@ M Line
 Total
 
 Run Line
-7406371
+7456069
 
 OVER
-7406372
+7456070
 
 UNDER
-Sep 09 9:05 PM
-Stream
+COREY SEAGER - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-BRANDON CRAWFORD - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16848,16 +4994,16 @@ M Line
 Total
 
 Run Line
-7406373
+7456071
 
 OVER
-7406374
+7456072
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+NATHANIEL LOWE - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -16870,17 +5016,17 @@ M Line
 Total
 
 Run Line
-7406375
+7456073
 
 OVER
-7406376
+7456074
 
 UNDER
-Sep 09 9:05 PM
-Stream
+DYLAN MOORE - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRENDAN RODGERS - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16892,16 +5038,16 @@ M Line
 Total
 
 Run Line
-7406377
+7456075
 
 OVER
-7406378
+7456076
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MITCHELL HANIGER - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+EUGENIO SUAREZ - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -16914,17 +5060,17 @@ M Line
 Total
 
 Run Line
-7406379
+7456077
 
 OVER
-7406380
+7456078
 
 UNDER
-Sep 09 9:05 PM
-Stream
+ALEX BREGMAN - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BLAKE SABOL - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16936,16 +5082,16 @@ M Line
 Total
 
 Run Line
-7406381
+7456079
 
 OVER
-7406382
+7456080
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-ELEHURIS MONTERO - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
+TY FRANCE - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -16958,17 +5104,17 @@ M Line
 Total
 
 Run Line
-7406383
+7456081
 
 OVER
-7406384
+7456082
 
 UNDER
-Sep 09 9:05 PM
-Stream
+CHAS MCCORMICK - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JOC PEDERSON - UNDER/OVER PLAYER RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -16980,16 +5126,16 @@ M Line
 Total
 
 Run Line
-7406385
+7456083
 
 OVER
-7406386
+7456084
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-ANDRES GIMENEZ - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+MAURICIO DUBÓN - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17002,17 +5148,17 @@ M Line
 Total
 
 Run Line
-7406387
+7456085
 
 OVER
-7406388
+7456086
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JOSE ALTUVE - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-MYLES STRAW - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17024,16 +5170,16 @@ M Line
 Total
 
 Run Line
-7406389
+7456087
 
 OVER
-7406390
+7456088
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-JOSE RAMIREZ - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+MIKE FORD - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17046,17 +5192,17 @@ M Line
 Total
 
 Run Line
-7406391
+7456089
 
 OVER
-7406392
+7456090
 
 UNDER
-Sep 09 9:07 PM
-Stream
+YAINER DIAZ - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-MIKE MOUSTAKAS - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17068,16 +5214,16 @@ M Line
 Total
 
 Run Line
-7406393
+7456091
 
 OVER
-7406394
+7456092
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-LOGAN O'HOPPE - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+JEREMY PENA - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17090,17 +5236,17 @@ M Line
 Total
 
 Run Line
-7406395
+7456093
 
 OVER
-7406396
+7456094
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JARRED KELENIC - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-STEVEN KWAN - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17112,16 +5258,16 @@ M Line
 Total
 
 Run Line
-7406397
+7456095
 
 OVER
-7406398
+7456096
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-KOLE CALHOUN - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+JOSE ABREU - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17134,17 +5280,17 @@ M Line
 Total
 
 Run Line
-7406399
+7456097
 
 OVER
-7406400
+7456098
 
 UNDER
-Sep 09 9:07 PM
-Stream
+KYLE TUCKER - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-GABRIEL ARIAS - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17156,16 +5302,16 @@ M Line
 Total
 
 Run Line
-7406401
+7456099
 
 OVER
-7406402
+7456100
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RANDAL GRICHUK - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+J.P. CRAWFORD - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17178,17 +5324,17 @@ M Line
 Total
 
 Run Line
-7406403
+7456101
 
 OVER
-7406404
+7456102
 
 UNDER
-Sep 09 9:07 PM
-Stream
+YORDAN ALVAREZ - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-NOLAN SCHANUEL - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17200,16 +5346,16 @@ M Line
 Total
 
 Run Line
-7406405
+7456103
 
 OVER
-7406406
+7456104
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-KYREN PARIS - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17222,17 +5368,17 @@ M Line
 Total
 
 Run Line
-7406407
+7456105
 
 OVER
-7406408
+7456106
 
 UNDER
-Sep 09 9:07 PM
-Stream
+CAL RALEIGH - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JOSH NAYLOR - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17244,16 +5390,16 @@ M Line
 Total
 
 Run Line
-7406409
+7456107
 
 OVER
-7406410
+7456108
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-BRANDON DRURY - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
+JULIO RODRIGUEZ - UNDER/OVER PLAYER RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -17266,17 +5412,17 @@ M Line
 Total
 
 Run Line
-7406411
+7456109
 
 OVER
-7406412
+7456110
 
 UNDER
-Sep 09 9:07 PM
-Stream
+LUIS CAMPUSANO - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-RAMON LAUREANO - UNDER/OVER PLAYER RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -17288,16 +5434,16 @@ M Line
 Total
 
 Run Line
-7406413
+7456111
 
 OVER
-7406414
+7456112
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-MJ MELENDEZ - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+MANNY MACHADO - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17310,17 +5456,17 @@ M Line
 Total
 
 Run Line
-7406415
+7456113
 
 OVER
-7406416
+7456114
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MITCHELL HANIGER - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-GEORGE SPRINGER - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17332,16 +5478,16 @@ M Line
 Total
 
 Run Line
-7406417
+7456115
 
 OVER
-7406418
+7456116
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-MAIKEL GARCIA - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+HELIOT RAMOS - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17354,17 +5500,17 @@ M Line
 Total
 
 Run Line
-7406419
+7456117
 
 OVER
-7406420
+7456118
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MARCO LUCIANO - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-SALVADOR PEREZ - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17376,16 +5522,16 @@ M Line
 Total
 
 Run Line
-7406421
+7456119
 
 OVER
-7406422
+7456120
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-EDWARD OLIVARES - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+XANDER BOGAERTS - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17398,17 +5544,17 @@ M Line
 Total
 
 Run Line
-7406423
+7456121
 
 OVER
-7406424
+7456122
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MATTHEW BATTEN - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-WHIT MERRIFIELD - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17420,16 +5566,16 @@ M Line
 Total
 
 Run Line
-7406425
+7456123
 
 OVER
-7406426
+7456124
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-MICHAEL MASSEY - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+AUSTIN SLATER - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17442,17 +5588,17 @@ M Line
 Total
 
 Run Line
-7406427
+7456125
 
 OVER
-7406428
+7456126
 
 UNDER
-Sep 09 3:07 PM
-Stream
+JI-MAN CHOI - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-BOBBY WITT JR. - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17464,16 +5610,16 @@ M Line
 Total
 
 Run Line
-7406429
+7456127
 
 OVER
-7406430
+7456128
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-DREW WATERS - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+FERNANDO TATIS JR. - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17486,17 +5632,17 @@ M Line
 Total
 
 Run Line
-7406431
+7456129
 
 OVER
-7406432
+7456130
 
 UNDER
-Sep 09 3:07 PM
-Stream
+JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-NICK LOFTIN - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17508,16 +5654,16 @@ M Line
 Total
 
 Run Line
-7406433
+7456131
 
 OVER
-7406434
+7456132
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-VLADIMIR GUERRERO JR. - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+HA-SEONG KIM - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17530,17 +5676,17 @@ M Line
 Total
 
 Run Line
-7406435
+7456133
 
 OVER
-7406436
+7456134
 
 UNDER
-Sep 09 3:07 PM
-Stream
+WILMER FLORES - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KEVIN KIERMAIER - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17552,16 +5698,16 @@ M Line
 Total
 
 Run Line
-7406437
+7456135
 
 OVER
-7406438
+7456136
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-ALEJANDRO KIRK - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+THAIRO ESTRADA - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17574,17 +5720,17 @@ M Line
 Total
 
 Run Line
-7406439
+7456137
 
 OVER
-7406440
+7456138
 
 UNDER
-Sep 09 3:07 PM
-Stream
+JUAN SOTO - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-NELSON VELÁZQUEZ - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17596,16 +5742,16 @@ M Line
 Total
 
 Run Line
-7406441
+7456139
 
 OVER
-7406442
+7456140
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-CAVAN BIGGIO - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
+LUIS MATOS - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -17618,17 +5764,17 @@ M Line
 Total
 
 Run Line
-7406443
+7456141
 
 OVER
-7406444
+7456142
 
 UNDER
-Sep 09 3:07 PM
-Stream
+TRENT GRISHAM - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-BO BICHETTE - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17640,17 +5786,17 @@ M Line
 Total
 
 Run Line
-7406445
+7456143
 
 OVER
-7406446
+7456144
 
 UNDER
-Sep 09 3:07 PM
-Stream
+PATRICK BAILEY - UNDER/OVER PLAYER RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-DAULTON VARSHO - UNDER/OVER PLAYER RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -17662,17 +5808,17 @@ M Line
 Total
 
 Run Line
-7406447
+7456145
 
 OVER
-7406448
+7456146
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
+MLB - PLAYER TOTAL HOME RUNS - Sep 25
+AUSTIN WELLS - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
 MLB - PLAYER TOTAL HOME RUNS
-SAL FRELICK - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -17685,3119 +5831,17 @@ M Line
 Total
 
 Run Line
-7407003
+7457003
 
 OVER
-7407004
+7457004
 
 UNDER
-Sep 09 2:05 PM
-Stream
+CORBIN CARROLL - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-BRICE TURANG - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407005
-
-OVER
-7407006
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407007
-
-OVER
-7407008
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GLEYBER TORRES - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407009
-
-OVER
-7407010
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JASSON DOMINGUEZ - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407011
-
-OVER
-7407012
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-OSWALD PERAZA - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407013
-
-OVER
-7407014
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-TYRONE TAYLOR - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407015
-
-OVER
-7407016
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANTHONY VOLPE - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407017
-
-OVER
-7407018
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANDRUW MONASTERIO - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407019
-
-OVER
-7407020
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLIAM CONTRERAS - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407021
-
-OVER
-7407022
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-KYLE HIGASHIOKA - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407023
-
-OVER
-7407024
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-CHRISTIAN YELICH - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407025
-
-OVER
-7407026
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GIANCARLO STANTON - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407027
-
-OVER
-7407028
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AUSTIN WELLS - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407029
-
-OVER
-7407030
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AARON JUDGE - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407031
-
-OVER
-7407032
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLY ADAMES - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407033
-
-OVER
-7407034
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-RAFAEL ORTEGA - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407035
-
-OVER
-7407036
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MARK VIENTOS - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407037
-
-OVER
-7407038
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RONNY MAURICIO - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407039
-
-OVER
-7407040
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RYAN JEFFERS - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407041
-
-OVER
-7407042
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-PETER ALONSO - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407043
-
-OVER
-7407044
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRANDON NIMMO - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407045
-
-OVER
-7407046
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRETT BATY - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407047
-
-OVER
-7407048
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-KYLE FARMER - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407049
-
-OVER
-7407050
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MATT WALLNER - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407051
-
-OVER
-7407052
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-WILLI CASTRO - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407053
-
-OVER
-7407054
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-FRANCISCO LINDOR - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407055
-
-OVER
-7407056
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CARLOS CORREA - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407057
-
-OVER
-7407058
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORDAN LUPLOW - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407059
-
-OVER
-7407060
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-ROYCE LEWIS - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407061
-
-OVER
-7407062
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-DONOVAN SOLANO - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407063
-
-OVER
-7407064
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEFF MCNEIL - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407065
-
-OVER
-7407066
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-OMAR NARVAEZ - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407067
-
-OVER
-7407068
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORGE POLANCO - UNDER/OVER PLAYER HOME RUNS (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407069
-
-OVER
-7407070
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-GABRIEL MORENO - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407071
-
-OVER
-7407072
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-TOMMY PHAM - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407073
-
-OVER
-7407074
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CORBIN CARROLL - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407075
-
-OVER
-7407076
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CODY BELLINGER - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407077
-
-OVER
-7407078
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EMMANUEL RIVERA - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407079
-
-OVER
-7407080
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICO HOERNER - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407081
-
-OVER
-7407082
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GERALDO PERDOMO - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407083
-
-OVER
-7407084
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JEIMER CANDELARIO - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407085
-
-OVER
-7407086
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CHRISTIAN WALKER - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407087
-
-OVER
-7407088
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EVAN LONGORIA - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407089
-
-OVER
-7407090
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-SEIYA SUZUKI - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407091
-
-OVER
-7407092
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-MIKE TAUCHMAN - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407093
-
-OVER
-7407094
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DANSBY SWANSON - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407095
-
-OVER
-7407096
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-YAN GOMES - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407097
-
-OVER
-7407098
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-KETEL MARTE - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407099
-
-OVER
-7407100
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-LOURDES GURRIEL - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407101
-
-OVER
-7407102
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-IAN HAPP - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407103
-
-OVER
-7407104
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICK MADRIGAL - UNDER/OVER PLAYER HOME RUNS (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407105
-
-OVER
-7407106
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JASON HEYWARD - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407107
-
-OVER
-7407108
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOEY MENESES - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407109
-
-OVER
-7407110
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ALEX CALL - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407111
-
-OVER
-7407112
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAMES OUTMAN - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407113
-
-OVER
-7407114
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-KEIBERT RUIZ - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407115
-
-OVER
-7407116
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MAX MUNCY - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407117
-
-OVER
-7407118
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JACOB YOUNG - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407119
-
-OVER
-7407120
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.D. MARTINEZ - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407121
-
-OVER
-7407122
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC SMITH - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407123
-
-OVER
-7407124
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIGUEL ROJAS - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407125
-
-OVER
-7407126
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE ALU - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407127
-
-OVER
-7407128
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ENRIQUE HERNANDEZ - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407129
-
-OVER
-7407130
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LANE THOMAS - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407131
-
-OVER
-7407132
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CARTER KIEBOOM - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407133
-
-OVER
-7407134
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-FREDDIE FREEMAN - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407135
-
-OVER
-7407136
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CJ ABRAMS - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407137
-
-OVER
-7407138
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-WILL SMITH - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407139
-
-OVER
-7407140
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DAVID PERALTA - UNDER/OVER PLAYER HOME RUNS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407141
-
-OVER
-7407142
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JULIO RODRIGUEZ - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407143
-
-OVER
-7407144
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-RANDY AROZARENA - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407145
-
-OVER
-7407146
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CHRISTIAN BETHANCOURT - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407147
-
-OVER
-7407148
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TAYLOR WALLS - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407149
-
-OVER
-7407150
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC CANZONE - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407151
-
-OVER
-7407152
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407153
-
-OVER
-7407154
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BRANDON LOWE - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407155
-
-OVER
-7407156
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-EUGENIO SUAREZ - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407157
-
-OVER
-7407158
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TY FRANCE - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407159
-
-OVER
-7407160
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.P. CRAWFORD - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407161
-
-OVER
-7407162
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-YANDY DIAZ - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407163
-
-OVER
-7407164
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSHUA ROJAS - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407165
-
-OVER
-7407166
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIKE FORD - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407167
-
-OVER
-7407168
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CAL RALEIGH - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407169
-
-OVER
-7407170
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSE SIRI - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407171
-
-OVER
-7407172
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ISAAC PAREDES - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407173
-
-OVER
-7407174
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LUKE RALEY - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407175
-
-OVER
-7407176
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSH LOWE - UNDER/OVER PLAYER HOME RUNS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407177
-
-OVER
-7407178
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MASATAKA YOSHIDA - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407179
-
-OVER
-7407180
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ALEX VERDUGO - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407181
-
-OVER
-7407182
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAMON URIAS - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407183
-
-OVER
-7407184
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JORGE MATEO - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407185
-
-OVER
-7407186
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAFAEL DEVERS - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407187
-
-OVER
-7407188
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADAM DUVALL - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407189
-
-OVER
-7407190
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AUSTIN HAYS - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407191
-
-OVER
-7407192
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADLEY RUTSCHMAN - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407193
-
-OVER
-7407194
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CONNOR WONG - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407195
-
-OVER
-7407196
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JAMES MCCANN - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407197
-
-OVER
-7407198
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ANTHONY SANTANDER - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407199
-
-OVER
-7407200
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TREVOR STORY - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407201
-
-OVER
-7407202
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AARON HICKS - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407203
-
-OVER
-7407204
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TRISTON CASAS - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407205
-
-OVER
-7407206
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RYAN MOUNTCASTLE - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407207
-
-OVER
-7407208
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JUSTIN TURNER - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407209
-
-OVER
-7407210
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-GUNNAR HENDERSON - UNDER/OVER PLAYER HOME RUNS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407211
-
-OVER
-7407212
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JAKE CAVE - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407213
-
-OVER
-7407214
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYCE HARPER - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407215
-
-OVER
-7407216
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LUIS ARRAEZ - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407217
-
-OVER
-7407218
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAZZ CHISHOLM - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407219
-
-OVER
-7407220
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRANDON MARSH - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407221
-
-OVER
-7407222
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JESUS SANCHEZ - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407223
-
-OVER
-7407224
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JACOB MICHAEL BURGER - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407225
-
-OVER
-7407226
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOSHUA EVAN BELL - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407227
-
-OVER
-7407228
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-KYLE SCHWARBER - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407229
-
-OVER
-7407230
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYAN DE LA CRUZ - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407231
-
-OVER
-7407232
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK FORTES - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407233
-
-OVER
-7407234
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-ALEC BOHM - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407235
-
-OVER
-7407236
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYSON STOTT - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407237
-
-OVER
-7407238
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK CASTELLANOS - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407239
-
-OVER
-7407240
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-TREA TURNER - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407241
-
-OVER
-7407242
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-J.T. REALMUTO - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407243
-
-OVER
-7407244
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOEY WENDLE - UNDER/OVER PLAYER HOME RUNS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407245
-
-OVER
-7407246
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LARS NOOTBAAR - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407247
-
-OVER
-7407248
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOELVI MARTE - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407249
-
-OVER
-7407250
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-WILLSON CONTRERAS - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407251
-
-OVER
-7407252
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HUNTER RENFROE - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407253
-
-OVER
-7407254
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-STUART FAIRCHILD - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407255
-
-OVER
-7407256
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER O'NEILL - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407257
-
-OVER
-7407258
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HARRISON BADER - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407259
-
-OVER
-7407260
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER STEPHENSON - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407261
-
-OVER
-7407262
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MASYN WINN - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407263
-
-OVER
-7407264
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN GORMAN - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407265
-
-OVER
-7407266
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN ARENADO - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407267
-
-OVER
-7407268
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-JORDAN WALKER - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407269
-
-OVER
-7407270
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-PAUL GOLDSCHMIDT - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407271
-
-OVER
-7407272
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TOMMY EDMAN - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407273
-
-OVER
-7407274
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ELLY DE LA CRUZ - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407275
-
-OVER
-7407276
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-SPENCER STEER - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407277
-
-OVER
-7407278
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NICK SENZEL - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407279
-
-OVER
-7407280
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CHRISTIAN ENCARNACION-STRAND - UNDER/OVER PLAYER HOME RUNS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407281
-
-OVER
-7407282
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HA-SEONG KIM - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407283
-
-OVER
-7407284
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ABREU - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407285
-
-OVER
-7407286
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ALTUVE - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -20809,259 +5853,17 @@ M Line
 Total
 
 Run Line
-7407287
+7457005
 
 OVER
-7407288
+7457006
 
 UNDER
-Sep 09 7:10 PM
-Stream
+OSWALD PERAZA - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-YORDAN ALVAREZ - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407289
-
-OVER
-7407290
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JEREMY PENA - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407291
-
-OVER
-7407292
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-KYLE TUCKER - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407293
-
-OVER
-7407294
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-TRENT GRISHAM - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407295
-
-OVER
-7407296
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-JUAN SOTO - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407297
-
-OVER
-7407298
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-LUIS CAMPUSANO - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407299
-
-OVER
-7407300
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-FERNANDO TATIS JR. - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407301
-
-OVER
-7407302
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MANNY MACHADO - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407303
-
-OVER
-7407304
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MAURICIO DUBÓN - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407305
-
-OVER
-7407306
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-GARRETT COOPER - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407307
-
-OVER
-7407308
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-ALEX BREGMAN - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7407309
-
-OVER
-7407310
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-MARTIN MALDONADO - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -21073,17 +5875,17 @@ M Line
 Total
 
 Run Line
-7407311
+7457007
 
 OVER
-7407312
+7457008
 
 UNDER
-Sep 09 7:10 PM
-Stream
+AARON JUDGE - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-XANDER BOGAERTS - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -21095,16 +5897,16 @@ M Line
 Total
 
 Run Line
-7407313
+7457009
 
 OVER
-7407314
+7457010
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MICHAEL BRANTLEY - UNDER/OVER PLAYER HOME RUNS (Houston Astros vs San Diego Padres) -
+LOURDES GURRIEL - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21117,17 +5919,17 @@ M Line
 Total
 
 Run Line
-7407315
+7457011
 
 OVER
-7407316
+7457012
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ESTEVAN FLORIAL - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JARED TRIOLO - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21139,16 +5941,16 @@ M Line
 Total
 
 Run Line
-7407317
+7457013
 
 OVER
-7407318
+7457014
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-RONALD ACUNA - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+OSWALDO CABRERA - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21161,17 +5963,17 @@ M Line
 Total
 
 Run Line
-7407319
+7457015
 
 OVER
-7407320
+7457016
 
 UNDER
-Sep 09 7:20 PM
-Stream
+CHRISTIAN WALKER - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-EDDIE ROSARIO - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21183,16 +5985,16 @@ M Line
 Total
 
 Run Line
-7407321
+7457017
 
 OVER
-7407322
+7457018
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-KE'BRYAN HAYES - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+EMMANUEL RIVERA - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21205,17 +6007,17 @@ M Line
 Total
 
 Run Line
-7407323
+7457019
 
 OVER
-7407324
+7457020
 
 UNDER
-Sep 09 7:20 PM
-Stream
+GABRIEL MORENO - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ENDY RODRIGUEZ - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21227,16 +6029,16 @@ M Line
 Total
 
 Run Line
-7407325
+7457021
 
 OVER
-7407326
+7457022
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ORLANDO ARCIA - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21249,17 +6051,17 @@ M Line
 Total
 
 Run Line
-7407327
+7457023
 
 OVER
-7407328
+7457024
 
 UNDER
-Sep 09 7:20 PM
-Stream
+TOMMY PHAM - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MICHAEL HARRIS - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21271,16 +6073,16 @@ M Line
 Total
 
 Run Line
-7407329
+7457025
 
 OVER
-7407330
+7457026
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MATT OLSON - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+ANTHONY VOLPE - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21293,17 +6095,17 @@ M Line
 Total
 
 Run Line
-7407331
+7457027
 
 OVER
-7407332
+7457028
 
 UNDER
-Sep 09 7:20 PM
-Stream
+ALEK THOMAS - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ALIKA WILLIAMS - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21315,16 +6117,16 @@ M Line
 Total
 
 Run Line
-7407333
+7457029
 
 OVER
-7407334
+7457030
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-LIOVER PEGUERO - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+JORDAN LAWLAR - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21337,17 +6139,17 @@ M Line
 Total
 
 Run Line
-7407335
+7457031
 
 OVER
-7407336
+7457032
 
 UNDER
-Sep 09 7:20 PM
-Stream
+KETEL MARTE - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-TRAVIS D'ARNAUD - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21359,16 +6161,16 @@ M Line
 Total
 
 Run Line
-7407337
+7457033
 
 OVER
-7407338
+7457034
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-AUSTIN RILEY - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+GLEYBER TORRES - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -21381,17 +6183,17 @@ M Line
 Total
 
 Run Line
-7407339
+7457035
 
 OVER
-7407340
+7457036
 
 UNDER
-Sep 09 7:20 PM
-Stream
+GIANCARLO STANTON - UNDER/OVER PLAYER HOME RUNS (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 1:05 PM
 
-MIGUEL ANDÚJAR - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21403,16 +6205,16 @@ M Line
 Total
 
 Run Line
-7407341
+7457037
 
 OVER
-7407342
+7457038
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-BRYAN REYNOLDS - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+ZACH NETO - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21425,17 +6227,17 @@ M Line
 Total
 
 Run Line
-7407343
+7457039
 
 OVER
-7407344
+7457040
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MITCH GARVER - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-OZZIE ALBIES - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21447,16 +6249,16 @@ M Line
 Total
 
 Run Line
-7407345
+7457041
 
 OVER
-7407346
+7457042
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-JI-HWAN BAE - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+NATHANIEL LOWE - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21469,17 +6271,17 @@ M Line
 Total
 
 Run Line
-7407347
+7457043
 
 OVER
-7407348
+7457044
 
 UNDER
-Sep 09 7:20 PM
-Stream
+LOGAN O'HOPPE - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-CONNOR JOE - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -21491,16 +6293,16 @@ M Line
 Total
 
 Run Line
-7407349
+7457045
 
 OVER
-7407350
+7457046
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MARCELL OZUNA - UNDER/OVER PLAYER HOME RUNS (Atlanta Braves vs Pittsburgh Pirates) -
+EZEQUIEL DURÁN - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21513,17 +6315,17 @@ M Line
 Total
 
 Run Line
-7407351
+7457047
 
 OVER
-7407352
+7457048
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JOSH JUNG - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-EZEQUIEL TOVAR - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21535,16 +6337,16 @@ M Line
 Total
 
 Run Line
-7407353
+7457049
 
 OVER
-7407354
+7457050
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MITCHELL HANIGER - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+BRANDON DRURY - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21557,17 +6359,17 @@ M Line
 Total
 
 Run Line
-7407355
+7457051
 
 OVER
-7407356
+7457052
 
 UNDER
-Sep 09 9:05 PM
-Stream
+MARCUS SEMIEN - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MIKE YASTRZEMSKI - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21579,16 +6381,16 @@ M Line
 Total
 
 Run Line
-7407357
+7457053
 
 OVER
-7407358
+7457054
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BLAKE SABOL - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+RANDAL GRICHUK - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21601,17 +6403,17 @@ M Line
 Total
 
 Run Line
-7407359
+7457055
 
 OVER
-7407360
+7457056
 
 UNDER
-Sep 09 9:05 PM
-Stream
+NOLAN SCHANUEL - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-LAMONTE WADE - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21623,16 +6425,16 @@ M Line
 Total
 
 Run Line
-7407361
+7457057
 
 OVER
-7407362
+7457058
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-RYAN MCMAHON - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+JARED WALSH - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21645,17 +6447,17 @@ M Line
 Total
 
 Run Line
-7407363
+7457059
 
 OVER
-7407364
+7457060
 
 UNDER
-Sep 09 9:05 PM
-Stream
+COREY SEAGER - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-NOLAN JONES - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21667,16 +6469,16 @@ M Line
 Total
 
 Run Line
-7407365
+7457061
 
 OVER
-7407366
+7457062
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRANDON CRAWFORD - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+LEODY TAVERAS - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21689,17 +6491,17 @@ M Line
 Total
 
 Run Line
-7407367
+7457063
 
 OVER
-7407368
+7457064
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JONAH HEIM - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-BRENDAN RODGERS - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21711,16 +6513,16 @@ M Line
 Total
 
 Run Line
-7407369
+7457065
 
 OVER
-7407370
+7457066
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-THAIRO ESTRADA - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+JO ADELL - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21733,17 +6535,17 @@ M Line
 Total
 
 Run Line
-7407371
+7457067
 
 OVER
-7407372
+7457068
 
 UNDER
-Sep 09 9:05 PM
-Stream
+ADOLIS GARCIA - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
-WILMER FLORES - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21755,16 +6557,16 @@ M Line
 Total
 
 Run Line
-7407373
+7457069
 
 OVER
-7407374
+7457070
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRENTON DOYLE - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+MIKE MOUSTAKAS - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -21777,17 +6579,17 @@ M Line
 Total
 
 Run Line
-7407375
+7457071
 
 OVER
-7407376
+7457072
 
 UNDER
-Sep 09 9:05 PM
-Stream
+J.P. CRAWFORD - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-ELIAS DIAZ - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21799,16 +6601,16 @@ M Line
 Total
 
 Run Line
-7407377
+7457073
 
 OVER
-7407378
+7457074
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+ALEX BREGMAN - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -21821,17 +6623,17 @@ M Line
 Total
 
 Run Line
-7407379
+7457075
 
 OVER
-7407380
+7457076
 
 UNDER
-Sep 09 9:05 PM
-Stream
+YORDAN ALVAREZ - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-ELEHURIS MONTERO - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21843,16 +6645,16 @@ M Line
 Total
 
 Run Line
-7407381
+7457077
 
 OVER
-7407382
+7457078
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-CHARLIE BLACKMON - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
+MIKE FORD - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -21865,17 +6667,17 @@ M Line
 Total
 
 Run Line
-7407383
+7457079
 
 OVER
-7407384
+7457080
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JOSE ALTUVE - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JOC PEDERSON - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -21887,16 +6689,16 @@ M Line
 Total
 
 Run Line
-7407385
+7457081
 
 OVER
-7407386
+7457082
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-GABRIEL ARIAS - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+JOSE ABREU - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -21909,17 +6711,17 @@ M Line
 Total
 
 Run Line
-7407387
+7457083
 
 OVER
-7407388
+7457084
 
 UNDER
-Sep 09 9:07 PM
-Stream
+TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-RAMON LAUREANO - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -21931,16 +6733,16 @@ M Line
 Total
 
 Run Line
-7407389
+7457085
 
 OVER
-7407390
+7457086
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-MIKE MOUSTAKAS - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+YAINER DIAZ - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -21953,17 +6755,17 @@ M Line
 Total
 
 Run Line
-7407391
+7457087
 
 OVER
-7407392
+7457088
 
 UNDER
-Sep 09 9:07 PM
-Stream
+KYLE TUCKER - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JOSH NAYLOR - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -21975,16 +6777,16 @@ M Line
 Total
 
 Run Line
-7407393
+7457089
 
 OVER
-7407394
+7457090
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-LOGAN O'HOPPE - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+MAURICIO DUBÓN - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -21997,17 +6799,17 @@ M Line
 Total
 
 Run Line
-7407395
+7457091
 
 OVER
-7407396
+7457092
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JEREMY PENA - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-MYLES STRAW - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -22019,16 +6821,16 @@ M Line
 Total
 
 Run Line
-7407397
+7457093
 
 OVER
-7407398
+7457094
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RANDAL GRICHUK - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+TY FRANCE - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22041,17 +6843,17 @@ M Line
 Total
 
 Run Line
-7407399
+7457095
 
 OVER
-7407400
+7457096
 
 UNDER
-Sep 09 9:07 PM
-Stream
+DYLAN MOORE - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-ANDRES GIMENEZ - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -22063,16 +6865,16 @@ M Line
 Total
 
 Run Line
-7407401
+7457097
 
 OVER
-7407402
+7457098
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-JOSE RAMIREZ - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+CAL RALEIGH - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22085,17 +6887,17 @@ M Line
 Total
 
 Run Line
-7407403
+7457099
 
 OVER
-7407404
+7457100
 
 UNDER
-Sep 09 9:07 PM
-Stream
+EUGENIO SUAREZ - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-KOLE CALHOUN - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -22107,16 +6909,16 @@ M Line
 Total
 
 Run Line
-7407405
+7457101
 
 OVER
-7407406
+7457102
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-BRANDON DRURY - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+JARRED KELENIC - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22129,17 +6931,17 @@ M Line
 Total
 
 Run Line
-7407407
+7457103
 
 OVER
-7407408
+7457104
 
 UNDER
-Sep 09 9:07 PM
-Stream
+CHAS MCCORMICK - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
-NOLAN SCHANUEL - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -22151,16 +6953,16 @@ M Line
 Total
 
 Run Line
-7407409
+7457105
 
 OVER
-7407410
+7457106
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-STEVEN KWAN - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
+JULIO RODRIGUEZ - UNDER/OVER PLAYER HOME RUNS (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22173,17 +6975,17 @@ M Line
 Total
 
 Run Line
-7407411
+7457107
 
 OVER
-7407412
+7457108
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JUAN SOTO - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KYREN PARIS - UNDER/OVER PLAYER HOME RUNS (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -22195,16 +6997,16 @@ M Line
 Total
 
 Run Line
-7407413
+7457109
 
 OVER
-7407414
+7457110
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-MJ MELENDEZ - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22217,17 +7019,17 @@ M Line
 Total
 
 Run Line
-7407415
+7457111
 
 OVER
-7407416
+7457112
 
 UNDER
-Sep 09 3:07 PM
-Stream
+PATRICK BAILEY - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-BOBBY WITT JR. - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22239,16 +7041,16 @@ M Line
 Total
 
 Run Line
-7407417
+7457113
 
 OVER
-7407418
+7457114
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-CAVAN BIGGIO - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+LUIS MATOS - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22261,17 +7063,17 @@ M Line
 Total
 
 Run Line
-7407419
+7457115
 
 OVER
-7407420
+7457116
 
 UNDER
-Sep 09 3:07 PM
-Stream
+HA-SEONG KIM - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MICHAEL MASSEY - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22283,16 +7085,16 @@ M Line
 Total
 
 Run Line
-7407421
+7457117
 
 OVER
-7407422
+7457118
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-BO BICHETTE - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+FERNANDO TATIS JR. - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22305,17 +7107,17 @@ M Line
 Total
 
 Run Line
-7407423
+7457119
 
 OVER
-7407424
+7457120
 
 UNDER
-Sep 09 3:07 PM
-Stream
+LUIS CAMPUSANO - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-VLADIMIR GUERRERO JR. - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22327,16 +7129,16 @@ M Line
 Total
 
 Run Line
-7407425
+7457121
 
 OVER
-7407426
+7457122
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-NICK LOFTIN - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+TRENT GRISHAM - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22349,17 +7151,17 @@ M Line
 Total
 
 Run Line
-7407427
+7457123
 
 OVER
-7407428
+7457124
 
 UNDER
-Sep 09 3:07 PM
-Stream
+XANDER BOGAERTS - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-WHIT MERRIFIELD - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22371,16 +7173,16 @@ M Line
 Total
 
 Run Line
-7407429
+7457125
 
 OVER
-7407430
+7457126
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-EDWARD OLIVARES - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+JI-MAN CHOI - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22393,17 +7195,17 @@ M Line
 Total
 
 Run Line
-7407431
+7457127
 
 OVER
-7407432
+7457128
 
 UNDER
-Sep 09 3:07 PM
-Stream
+THAIRO ESTRADA - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MAIKEL GARCIA - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22415,16 +7217,16 @@ M Line
 Total
 
 Run Line
-7407433
+7457129
 
 OVER
-7407434
+7457130
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-NELSON VELÁZQUEZ - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+HELIOT RAMOS - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22437,17 +7239,17 @@ M Line
 Total
 
 Run Line
-7407435
+7457131
 
 OVER
-7407436
+7457132
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MANNY MACHADO - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KEVIN KIERMAIER - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22459,16 +7261,16 @@ M Line
 Total
 
 Run Line
-7407437
+7457133
 
 OVER
-7407438
+7457134
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-DAULTON VARSHO - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+MARCO LUCIANO - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22481,17 +7283,17 @@ M Line
 Total
 
 Run Line
-7407439
+7457135
 
 OVER
-7407440
+7457136
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MATTHEW BATTEN - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-ALEJANDRO KIRK - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22503,16 +7305,16 @@ M Line
 Total
 
 Run Line
-7407441
+7457137
 
 OVER
-7407442
+7457138
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-DREW WATERS - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
+WILMER FLORES - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -22525,17 +7327,17 @@ M Line
 Total
 
 Run Line
-7407443
+7457139
 
 OVER
-7407444
+7457140
 
 UNDER
-Sep 09 3:07 PM
-Stream
+AUSTIN SLATER - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-SALVADOR PEREZ - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22547,17 +7349,17 @@ M Line
 Total
 
 Run Line
-7407445
+7457141
 
 OVER
-7407446
+7457142
 
 UNDER
-Sep 09 3:07 PM
-Stream
+MITCHELL HANIGER - UNDER/OVER PLAYER HOME RUNS (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL HOME RUNS
+OVER @ UNDER
+Sep 25 9:45 PM
 
-GEORGE SPRINGER - UNDER/OVER PLAYER HOME RUNS (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -22569,17 +7371,17 @@ M Line
 Total
 
 Run Line
-7407447
+7457143
 
 OVER
-7407448
+7457144
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
+MLB - PITCHER PROPS (MUST START FOR ACTION) - Sep 25
+PATRICK SANDOVAL - UNDER/OVER PITCHER OUTS (Los Angeles Angels vs Texas Rangers) -
 MLB - PITCHER PROPS (MUST START FOR ACTION)
-MICHAEL KING - UNDER/OVER PITCHER OUTS (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22592,16 +7394,16 @@ M Line
 Total
 
 Run Line
-7401003
+7451003
 
 OVER
-7401004
+7451004
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-WADE MILEY - UNDER/OVER PITCHER OUTS (New York Yankees vs Milwaukee Brewers) -
+JON GRAY - UNDER/OVER PITCHER OUTS (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22614,16 +7416,16 @@ M Line
 Total
 
 Run Line
-7401005
+7451005
 
 OVER
-7401006
+7451006
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-WADE MILEY - UNDER/OVER PITCHER STRIKEOUTS (New York Yankees vs Milwaukee Brewers) -
+JON GRAY - UNDER/OVER PITCHER STRIKEOUTS (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22636,16 +7438,16 @@ M Line
 Total
 
 Run Line
-7401007
+7451007
 
 OVER
-7401008
+7451008
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-MICHAEL KING - UNDER/OVER PITCHER STRIKEOUTS (New York Yankees vs Milwaukee Brewers) -
+PATRICK SANDOVAL - UNDER/OVER PITCHER STRIKEOUTS (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22658,16 +7460,16 @@ M Line
 Total
 
 Run Line
-7401009
+7451009
 
 OVER
-7401010
+7451010
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-MICHAEL KING - UNDER/OVER PITCHER HITS ALLOWED (New York Yankees vs Milwaukee Brewers) -
+JON GRAY - UNDER/OVER PITCHER HITS ALLOWED (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22680,16 +7482,16 @@ M Line
 Total
 
 Run Line
-7401011
+7451011
 
 OVER
-7401012
+7451012
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-WADE MILEY - UNDER/OVER PITCHER HITS ALLOWED (New York Yankees vs Milwaukee Brewers) -
+PATRICK SANDOVAL - UNDER/OVER PITCHER HITS ALLOWED (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22702,16 +7504,16 @@ M Line
 Total
 
 Run Line
-7401013
+7451013
 
 OVER
-7401014
+7451014
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-MICHAEL KING - UNDER/OVER PITCHER RUNS EARNED (New York Yankees vs Milwaukee Brewers) -
+JON GRAY - UNDER/OVER PITCHER RUNS EARNED (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22724,16 +7526,16 @@ M Line
 Total
 
 Run Line
-7401015
+7451015
 
 OVER
-7401016
+7451016
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-WADE MILEY - UNDER/OVER PITCHER RUNS EARNED (New York Yankees vs Milwaukee Brewers) -
+PATRICK SANDOVAL - UNDER/OVER PITCHER RUNS EARNED (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -22746,16 +7548,16 @@ M Line
 Total
 
 Run Line
-7401017
+7451017
 
 OVER
-7401018
+7451018
 
 UNDER
-Sep 09 2:05 PM
-Stream
-
-WADE MILEY - PITCHER TO RECORD THE WIN (New York Yankees vs Milwaukee Brewers) -
+PATRICK SANDOVAL - PITCHER TO RECORD THE WIN (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+NO @ YES
+Sep 25 9:38 PM
 
 Rot
 
@@ -22768,16 +7570,16 @@ M Line
 Total
 
 Run Line
-7401019
+7451019
 
 NO
-7401020
+7451020
 
 YES
-Sep 09 2:05 PM
-Stream
-
-MICHAEL KING - PITCHER TO RECORD THE WIN (New York Yankees vs Milwaukee Brewers) -
+JON GRAY - PITCHER TO RECORD THE WIN (Los Angeles Angels vs Texas Rangers) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+NO @ YES
+Sep 25 9:38 PM
 
 Rot
 
@@ -22790,16 +7592,16 @@ M Line
 Total
 
 Run Line
-7401021
+7451021
 
 NO
-7401022
+7451022
 
 YES
-Sep 09 2:05 PM
-Stream
-
-KENTA MAEDA - UNDER/OVER PITCHER OUTS (Minnesota Twins vs New York Mets) -
+JUSTIN VERLANDER - UNDER/OVER PITCHER OUTS (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22812,16 +7614,16 @@ M Line
 Total
 
 Run Line
-7401023
+7451023
 
 OVER
-7401024
+7451024
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-DAVID PETERSON - UNDER/OVER PITCHER OUTS (Minnesota Twins vs New York Mets) -
+LUIS CASTILLO - UNDER/OVER PITCHER OUTS (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22834,16 +7636,16 @@ M Line
 Total
 
 Run Line
-7401025
+7451025
 
 OVER
-7401026
+7451026
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-KENTA MAEDA - UNDER/OVER PITCHER STRIKEOUTS (Minnesota Twins vs New York Mets) -
+LUIS CASTILLO - UNDER/OVER PITCHER STRIKEOUTS (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22856,16 +7658,16 @@ M Line
 Total
 
 Run Line
-7401027
+7451027
 
 OVER
-7401028
+7451028
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-DAVID PETERSON - UNDER/OVER PITCHER STRIKEOUTS (Minnesota Twins vs New York Mets) -
+JUSTIN VERLANDER - UNDER/OVER PITCHER STRIKEOUTS (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22878,16 +7680,16 @@ M Line
 Total
 
 Run Line
-7401029
+7451029
 
 OVER
-7401030
+7451030
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-DAVID PETERSON - UNDER/OVER PITCHER HITS ALLOWED (Minnesota Twins vs New York Mets) -
+LUIS CASTILLO - UNDER/OVER PITCHER HITS ALLOWED (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22900,16 +7702,16 @@ M Line
 Total
 
 Run Line
-7401031
+7451031
 
 OVER
-7401032
+7451032
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-KENTA MAEDA - UNDER/OVER PITCHER HITS ALLOWED (Minnesota Twins vs New York Mets) -
+JUSTIN VERLANDER - UNDER/OVER PITCHER HITS ALLOWED (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22922,16 +7724,16 @@ M Line
 Total
 
 Run Line
-7401033
+7451033
 
 OVER
-7401034
+7451034
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-DAVID PETERSON - UNDER/OVER PITCHER RUNS EARNED (Minnesota Twins vs New York Mets) -
+LUIS CASTILLO - UNDER/OVER PITCHER RUNS EARNED (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22944,16 +7746,16 @@ M Line
 Total
 
 Run Line
-7401035
+7451035
 
 OVER
-7401036
+7451036
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-KENTA MAEDA - UNDER/OVER PITCHER RUNS EARNED (Minnesota Twins vs New York Mets) -
+JUSTIN VERLANDER - UNDER/OVER PITCHER RUNS EARNED (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -22966,16 +7768,16 @@ M Line
 Total
 
 Run Line
-7401037
+7451037
 
 OVER
-7401038
+7451038
 
 UNDER
-Sep 09 2:10 PM
-Stream
-
-KENTA MAEDA - PITCHER TO RECORD THE WIN (Minnesota Twins vs New York Mets) -
+LUIS CASTILLO - PITCHER TO RECORD THE WIN (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+NO @ YES
+Sep 25 9:40 PM
 
 Rot
 
@@ -22988,16 +7790,16 @@ M Line
 Total
 
 Run Line
-7401039
+7451039
 
 NO
-7401040
+7451040
 
 YES
-Sep 09 2:10 PM
-Stream
-
-DAVID PETERSON - PITCHER TO RECORD THE WIN (Minnesota Twins vs New York Mets) -
+JUSTIN VERLANDER - PITCHER TO RECORD THE WIN (Seattle Mariners vs Houston Astros) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+NO @ YES
+Sep 25 9:40 PM
 
 Rot
 
@@ -23010,16 +7812,16 @@ M Line
 Total
 
 Run Line
-7401041
+7451041
 
 NO
-7401042
+7451042
 
 YES
-Sep 09 2:10 PM
-Stream
-
-MERRILL KELLY - UNDER/OVER PITCHER OUTS (Chicago Cubs vs Arizona Diamondbacks) -
+LOGAN WEBB - UNDER/OVER PITCHER OUTS (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23032,16 +7834,16 @@ M Line
 Total
 
 Run Line
-7401043
+7451043
 
 OVER
-7401044
+7451044
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-JUSTIN STEELE - UNDER/OVER PITCHER OUTS (Chicago Cubs vs Arizona Diamondbacks) -
+BLAKE SNELL - UNDER/OVER PITCHER OUTS (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23054,16 +7856,16 @@ M Line
 Total
 
 Run Line
-7401045
+7451045
 
 OVER
-7401046
+7451046
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-MERRILL KELLY - UNDER/OVER PITCHER STRIKEOUTS (Chicago Cubs vs Arizona Diamondbacks) -
+BLAKE SNELL - UNDER/OVER PITCHER STRIKEOUTS (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23076,16 +7878,16 @@ M Line
 Total
 
 Run Line
-7401047
+7451047
 
 OVER
-7401048
+7451048
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-JUSTIN STEELE - UNDER/OVER PITCHER STRIKEOUTS (Chicago Cubs vs Arizona Diamondbacks) -
+LOGAN WEBB - UNDER/OVER PITCHER STRIKEOUTS (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23098,16 +7900,16 @@ M Line
 Total
 
 Run Line
-7401049
+7451049
 
 OVER
-7401050
+7451050
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-JUSTIN STEELE - UNDER/OVER PITCHER HITS ALLOWED (Chicago Cubs vs Arizona Diamondbacks) -
+LOGAN WEBB - UNDER/OVER PITCHER HITS ALLOWED (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23120,16 +7922,16 @@ M Line
 Total
 
 Run Line
-7401051
+7451051
 
 OVER
-7401052
+7451052
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-MERRILL KELLY - UNDER/OVER PITCHER HITS ALLOWED (Chicago Cubs vs Arizona Diamondbacks) -
+BLAKE SNELL - UNDER/OVER PITCHER HITS ALLOWED (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23142,16 +7944,16 @@ M Line
 Total
 
 Run Line
-7401053
+7451053
 
 OVER
-7401054
+7451054
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-JUSTIN STEELE - UNDER/OVER PITCHER RUNS EARNED (Chicago Cubs vs Arizona Diamondbacks) -
+BLAKE SNELL - UNDER/OVER PITCHER RUNS EARNED (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23164,16 +7966,16 @@ M Line
 Total
 
 Run Line
-7401055
+7451055
 
 OVER
-7401056
+7451056
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-MERRILL KELLY - UNDER/OVER PITCHER RUNS EARNED (Chicago Cubs vs Arizona Diamondbacks) -
+LOGAN WEBB - UNDER/OVER PITCHER RUNS EARNED (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -23186,16 +7988,16 @@ M Line
 Total
 
 Run Line
-7401057
+7451057
 
 OVER
-7401058
+7451058
 
 UNDER
-Sep 09 2:20 PM
-Stream
-
-JUSTIN STEELE - PITCHER TO RECORD THE WIN (Chicago Cubs vs Arizona Diamondbacks) -
+BLAKE SNELL - PITCHER TO RECORD THE WIN (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+NO @ YES
+Sep 25 9:45 PM
 
 Rot
 
@@ -23208,16 +8010,16 @@ M Line
 Total
 
 Run Line
-7401059
+7451059
 
 NO
-7401060
+7451060
 
 YES
-Sep 09 2:20 PM
-Stream
-
-MERRILL KELLY - PITCHER TO RECORD THE WIN (Chicago Cubs vs Arizona Diamondbacks) -
+LOGAN WEBB - PITCHER TO RECORD THE WIN (San Francisco Giants vs San Diego Padres) -
+MLB - PITCHER PROPS (MUST START FOR ACTION)
+NO @ YES
+Sep 25 9:45 PM
 
 Rot
 
@@ -23230,1755 +8032,17 @@ M Line
 Total
 
 Run Line
-7401061
+7451061
 
 NO
-7401062
+7451062
 
 YES
-Sep 09 2:20 PM
-Stream
-
-BOBBY MILLER - UNDER/OVER PITCHER OUTS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401063
-
-OVER
-7401064
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE IRVIN - UNDER/OVER PITCHER OUTS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401065
-
-OVER
-7401066
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BOBBY MILLER - UNDER/OVER PITCHER STRIKEOUTS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401067
-
-OVER
-7401068
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE IRVIN - UNDER/OVER PITCHER STRIKEOUTS (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401069
-
-OVER
-7401070
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE IRVIN - UNDER/OVER PITCHER HITS ALLOWED (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401071
-
-OVER
-7401072
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BOBBY MILLER - UNDER/OVER PITCHER HITS ALLOWED (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401073
-
-OVER
-7401074
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BOBBY MILLER - UNDER/OVER PITCHER RUNS EARNED (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401075
-
-OVER
-7401076
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE IRVIN - UNDER/OVER PITCHER RUNS EARNED (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401077
-
-OVER
-7401078
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE IRVIN - PITCHER TO RECORD THE WIN (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401079
-
-NO
-7401080
-
-YES
-Sep 09 4:05 PM
-Stream
-
-BOBBY MILLER - PITCHER TO RECORD THE WIN (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401081
-
-NO
-7401082
-
-YES
-Sep 09 4:05 PM
-Stream
-
-AARON CIVALE - UNDER/OVER PITCHER OUTS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401083
-
-OVER
-7401084
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-AARON CIVALE - UNDER/OVER PITCHER STRIKEOUTS (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401085
-
-OVER
-7401086
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-AARON CIVALE - UNDER/OVER PITCHER HITS ALLOWED (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401087
-
-OVER
-7401088
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-AARON CIVALE - UNDER/OVER PITCHER RUNS EARNED (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401089
-
-OVER
-7401090
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-AARON CIVALE - PITCHER TO RECORD THE WIN (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401091
-
-NO
-7401092
-
-YES
-Sep 09 4:05 PM
-Stream
-
-CHRIS SALE - UNDER/OVER PITCHER OUTS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401093
-
-OVER
-7401094
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JACK FLAHERTY - UNDER/OVER PITCHER OUTS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401095
-
-OVER
-7401096
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CHRIS SALE - UNDER/OVER PITCHER STRIKEOUTS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401097
-
-OVER
-7401098
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JACK FLAHERTY - UNDER/OVER PITCHER STRIKEOUTS (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401099
-
-OVER
-7401100
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JACK FLAHERTY - UNDER/OVER PITCHER HITS ALLOWED (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401101
-
-OVER
-7401102
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CHRIS SALE - UNDER/OVER PITCHER HITS ALLOWED (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401103
-
-OVER
-7401104
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CHRIS SALE - UNDER/OVER PITCHER RUNS EARNED (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401105
-
-OVER
-7401106
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JACK FLAHERTY - UNDER/OVER PITCHER RUNS EARNED (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401107
-
-OVER
-7401108
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-CHRIS SALE - PITCHER TO RECORD THE WIN (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401109
-
-NO
-7401110
-
-YES
-Sep 09 4:10 PM
-Stream
-
-JACK FLAHERTY - PITCHER TO RECORD THE WIN (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401111
-
-NO
-7401112
-
-YES
-Sep 09 4:10 PM
-Stream
-
-JOHNNY CUETO - UNDER/OVER PITCHER OUTS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401113
-
-OVER
-7401114
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-AARON NOLA - UNDER/OVER PITCHER OUTS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401115
-
-OVER
-7401116
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-AARON NOLA - UNDER/OVER PITCHER STRIKEOUTS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401117
-
-OVER
-7401118
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOHNNY CUETO - UNDER/OVER PITCHER STRIKEOUTS (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401119
-
-OVER
-7401120
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOHNNY CUETO - UNDER/OVER PITCHER HITS ALLOWED (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401121
-
-OVER
-7401122
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-AARON NOLA - UNDER/OVER PITCHER HITS ALLOWED (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401123
-
-OVER
-7401124
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-AARON NOLA - UNDER/OVER PITCHER RUNS EARNED (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401125
-
-OVER
-7401126
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOHNNY CUETO - UNDER/OVER PITCHER RUNS EARNED (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401127
-
-OVER
-7401128
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOHNNY CUETO - PITCHER TO RECORD THE WIN (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401129
-
-NO
-7401130
-
-YES
-Sep 09 6:05 PM
-Stream
-
-AARON NOLA - PITCHER TO RECORD THE WIN (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401131
-
-NO
-7401132
-
-YES
-Sep 09 6:05 PM
-Stream
-
-ZACHARY DAVID THOMPSON - UNDER/OVER PITCHER OUTS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401133
-
-OVER
-7401134
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CARSON SPIERS - UNDER/OVER PITCHER STRIKEOUTS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401135
-
-OVER
-7401136
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ZACHARY DAVID THOMPSON - UNDER/OVER PITCHER STRIKEOUTS (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401137
-
-OVER
-7401138
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ZACHARY DAVID THOMPSON - UNDER/OVER PITCHER HITS ALLOWED (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401139
-
-OVER
-7401140
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CARSON SPIERS - UNDER/OVER PITCHER HITS ALLOWED (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401141
-
-OVER
-7401142
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CARSON SPIERS - UNDER/OVER PITCHER RUNS EARNED (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401143
-
-OVER
-7401144
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ZACHARY DAVID THOMPSON - UNDER/OVER PITCHER RUNS EARNED (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401145
-
-OVER
-7401146
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ZACHARY DAVID THOMPSON - PITCHER TO RECORD THE WIN (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401147
-
-NO
-7401148
-
-YES
-Sep 09 6:40 PM
-Stream
-
-SETH LUGO - UNDER/OVER PITCHER OUTS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401149
-
-OVER
-7401150
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-CRISTIAN JAVIER - UNDER/OVER PITCHER OUTS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401151
-
-OVER
-7401152
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-CRISTIAN JAVIER - UNDER/OVER PITCHER STRIKEOUTS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401153
-
-OVER
-7401154
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-SETH LUGO - UNDER/OVER PITCHER STRIKEOUTS (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401155
-
-OVER
-7401156
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-SETH LUGO - UNDER/OVER PITCHER HITS ALLOWED (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401157
-
-OVER
-7401158
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-CRISTIAN JAVIER - UNDER/OVER PITCHER HITS ALLOWED (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401159
-
-OVER
-7401160
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-CRISTIAN JAVIER - UNDER/OVER PITCHER RUNS EARNED (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401161
-
-OVER
-7401162
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-SETH LUGO - UNDER/OVER PITCHER RUNS EARNED (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401163
-
-OVER
-7401164
-
-UNDER
-Sep 09 7:10 PM
-Stream
-
-SETH LUGO - PITCHER TO RECORD THE WIN (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401165
-
-NO
-7401166
-
-YES
-Sep 09 7:10 PM
-Stream
-
-CRISTIAN JAVIER - PITCHER TO RECORD THE WIN (Houston Astros vs San Diego Padres) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401167
-
-NO
-7401168
-
-YES
-Sep 09 7:10 PM
-Stream
-
-JOHAN OVIEDO - UNDER/OVER PITCHER OUTS (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401169
-
-OVER
-7401170
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-JOHAN OVIEDO - UNDER/OVER PITCHER STRIKEOUTS (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401171
-
-OVER
-7401172
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-DYLAN DODD - UNDER/OVER PITCHER STRIKEOUTS (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401173
-
-OVER
-7401174
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-JOHAN OVIEDO - UNDER/OVER PITCHER HITS ALLOWED (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401175
-
-OVER
-7401176
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-DYLAN DODD - UNDER/OVER PITCHER HITS ALLOWED (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401177
-
-OVER
-7401178
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-DYLAN DODD - UNDER/OVER PITCHER RUNS EARNED (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401179
-
-OVER
-7401180
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-JOHAN OVIEDO - UNDER/OVER PITCHER RUNS EARNED (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401181
-
-OVER
-7401182
-
-UNDER
-Sep 09 7:20 PM
-Stream
-
-JOHAN OVIEDO - PITCHER TO RECORD THE WIN (Atlanta Braves vs Pittsburgh Pirates) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401183
-
-NO
-7401184
-
-YES
-Sep 09 7:20 PM
-Stream
-
-LOGAN WEBB - UNDER/OVER PITCHER OUTS (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401185
-
-OVER
-7401186
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-LOGAN WEBB - UNDER/OVER PITCHER STRIKEOUTS (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401187
-
-OVER
-7401188
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-CHASE ANDERSON - UNDER/OVER PITCHER STRIKEOUTS (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401189
-
-OVER
-7401190
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-LOGAN WEBB - UNDER/OVER PITCHER HITS ALLOWED (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401191
-
-OVER
-7401192
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-CHASE ANDERSON - UNDER/OVER PITCHER HITS ALLOWED (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401193
-
-OVER
-7401194
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-CHASE ANDERSON - UNDER/OVER PITCHER RUNS EARNED (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401195
-
-OVER
-7401196
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-LOGAN WEBB - UNDER/OVER PITCHER RUNS EARNED (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401197
-
-OVER
-7401198
-
-UNDER
-Sep 09 9:05 PM
-Stream
-
-LOGAN WEBB - PITCHER TO RECORD THE WIN (San Francisco Giants vs Colorado Rockies) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401199
-
-NO
-7401200
-
-YES
-Sep 09 9:05 PM
-Stream
-
-LUCAS GIOLITO - UNDER/OVER PITCHER OUTS (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401201
-
-OVER
-7401202
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-TYLER ANDERSON - UNDER/OVER PITCHER OUTS (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401203
-
-OVER
-7401204
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-TYLER ANDERSON - UNDER/OVER PITCHER STRIKEOUTS (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401205
-
-OVER
-7401206
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-LUCAS GIOLITO - UNDER/OVER PITCHER STRIKEOUTS (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401207
-
-OVER
-7401208
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-TYLER ANDERSON - UNDER/OVER PITCHER HITS ALLOWED (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401209
-
-OVER
-7401210
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-LUCAS GIOLITO - UNDER/OVER PITCHER HITS ALLOWED (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401211
-
-OVER
-7401212
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-LUCAS GIOLITO - UNDER/OVER PITCHER RUNS EARNED (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401213
-
-OVER
-7401214
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-TYLER ANDERSON - UNDER/OVER PITCHER RUNS EARNED (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401215
-
-OVER
-7401216
-
-UNDER
-Sep 09 9:07 PM
-Stream
-
-LUCAS GIOLITO - PITCHER TO RECORD THE WIN (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401217
-
-NO
-7401218
-
-YES
-Sep 09 9:07 PM
-Stream
-
-TYLER ANDERSON - PITCHER TO RECORD THE WIN (Los Angeles Angels vs Cleveland Guardians) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7401219
-
-NO
-7401220
-
-YES
-Sep 09 9:07 PM
-Stream
-
+MLB - PLAYER TOTAL BASES (MUST START) - Sep 25
+DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
 MLB - PLAYER TOTAL BASES (MUST START)
-WILLIAM CONTRERAS - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -24991,3053 +8055,17 @@ M Line
 Total
 
 Run Line
-7402003
+7452003
 
 OVER
-7402004
+7452004
 
 UNDER
-Sep 09 2:05 PM
-Stream
+TOMMY PHAM - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ANTHONY VOLPE - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402005
-
-OVER
-7402006
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-WILLY ADAMES - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402007
-
-OVER
-7402008
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-CHRISTIAN YELICH - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402009
-
-OVER
-7402010
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-ANDRUW MONASTERIO - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402011
-
-OVER
-7402012
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-TYRONE TAYLOR - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402013
-
-OVER
-7402014
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GLEYBER TORRES - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402015
-
-OVER
-7402016
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-OSWALD PERAZA - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402017
-
-OVER
-7402018
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-JASSON DOMINGUEZ - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402019
-
-OVER
-7402020
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-DAVID JOHN LEMAHIEU - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402021
-
-OVER
-7402022
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-GIANCARLO STANTON - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402023
-
-OVER
-7402024
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-BRICE TURANG - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402025
-
-OVER
-7402026
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-KYLE HIGASHIOKA - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402027
-
-OVER
-7402028
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-AARON JUDGE - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402029
-
-OVER
-7402030
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-SAL FRELICK - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Milwaukee Brewers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402031
-
-OVER
-7402032
-
-UNDER
-Sep 09 2:05 PM
-Stream
-
-KYLE FARMER - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402033
-
-OVER
-7402034
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRANDON NIMMO - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402035
-
-OVER
-7402036
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-BRETT BATY - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402037
-
-OVER
-7402038
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORGE POLANCO - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402039
-
-OVER
-7402040
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RONNY MAURICIO - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402041
-
-OVER
-7402042
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-FRANCISCO LINDOR - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402043
-
-OVER
-7402044
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CARLOS CORREA - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402045
-
-OVER
-7402046
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-WILLI CASTRO - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402047
-
-OVER
-7402048
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MARK VIENTOS - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402049
-
-OVER
-7402050
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-OMAR NARVAEZ - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402051
-
-OVER
-7402052
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-DONOVAN SOLANO - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402053
-
-OVER
-7402054
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-PETER ALONSO - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402055
-
-OVER
-7402056
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-ROYCE LEWIS - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402057
-
-OVER
-7402058
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RAFAEL ORTEGA - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402059
-
-OVER
-7402060
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JEFF MCNEIL - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402061
-
-OVER
-7402062
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-JORDAN LUPLOW - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402063
-
-OVER
-7402064
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-RYAN JEFFERS - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402065
-
-OVER
-7402066
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-MATT WALLNER - UNDER/OVER PLAYER TOTAL BASES (Minnesota Twins vs New York Mets) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402067
-
-OVER
-7402068
-
-UNDER
-Sep 09 2:10 PM
-Stream
-
-CODY BELLINGER - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402069
-
-OVER
-7402070
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-DANSBY SWANSON - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402071
-
-OVER
-7402072
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-MIKE TAUCHMAN - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402073
-
-OVER
-7402074
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CORBIN CARROLL - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402075
-
-OVER
-7402076
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EMMANUEL RIVERA - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402077
-
-OVER
-7402078
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-EVAN LONGORIA - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402079
-
-OVER
-7402080
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-TOMMY PHAM - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402081
-
-OVER
-7402082
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GERALDO PERDOMO - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402083
-
-OVER
-7402084
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICK MADRIGAL - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402085
-
-OVER
-7402086
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-NICO HOERNER - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402087
-
-OVER
-7402088
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-SEIYA SUZUKI - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402089
-
-OVER
-7402090
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-IAN HAPP - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402091
-
-OVER
-7402092
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-CHRISTIAN WALKER - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402093
-
-OVER
-7402094
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-LOURDES GURRIEL - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402095
-
-OVER
-7402096
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-GABRIEL MORENO - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402097
-
-OVER
-7402098
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-KETEL MARTE - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402099
-
-OVER
-7402100
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-JEIMER CANDELARIO - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402101
-
-OVER
-7402102
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-YAN GOMES - UNDER/OVER PLAYER TOTAL BASES (Chicago Cubs vs Arizona Diamondbacks) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402103
-
-OVER
-7402104
-
-UNDER
-Sep 09 2:20 PM
-Stream
-
-LANE THOMAS - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402105
-
-OVER
-7402106
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-FREDDIE FREEMAN - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402107
-
-OVER
-7402108
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIGUEL ROJAS - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402109
-
-OVER
-7402110
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ENRIQUE HERNANDEZ - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402111
-
-OVER
-7402112
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JASON HEYWARD - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402113
-
-OVER
-7402114
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAMES OUTMAN - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402115
-
-OVER
-7402116
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MAX MUNCY - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402117
-
-OVER
-7402118
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CJ ABRAMS - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402119
-
-OVER
-7402120
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DAVID PERALTA - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402121
-
-OVER
-7402122
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC SMITH - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402123
-
-OVER
-7402124
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CARTER KIEBOOM - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402125
-
-OVER
-7402126
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JACOB YOUNG - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402127
-
-OVER
-7402128
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ALEX CALL - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402129
-
-OVER
-7402130
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JAKE ALU - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402131
-
-OVER
-7402132
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-WILL SMITH - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402133
-
-OVER
-7402134
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-KEIBERT RUIZ - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402135
-
-OVER
-7402136
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.D. MARTINEZ - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402137
-
-OVER
-7402138
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOEY MENESES - UNDER/OVER PLAYER TOTAL BASES (Washington Nationals vs Los Angeles Dodgers) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402139
-
-OVER
-7402140
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-DOMINIC CANZONE - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402141
-
-OVER
-7402142
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-J.P. CRAWFORD - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402143
-
-OVER
-7402144
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TY FRANCE - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402145
-
-OVER
-7402146
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSE SIRI - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402147
-
-OVER
-7402148
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSH LOWE - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402149
-
-OVER
-7402150
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TAYLOR WALLS - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402151
-
-OVER
-7402152
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CHRISTIAN BETHANCOURT - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402153
-
-OVER
-7402154
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-ISAAC PAREDES - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402155
-
-OVER
-7402156
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-YANDY DIAZ - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402157
-
-OVER
-7402158
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-EUGENIO SUAREZ - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402159
-
-OVER
-7402160
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-RANDY AROZARENA - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402161
-
-OVER
-7402162
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402163
-
-OVER
-7402164
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-MIKE FORD - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402165
-
-OVER
-7402166
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-LUKE RALEY - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402167
-
-OVER
-7402168
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JULIO RODRIGUEZ - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402169
-
-OVER
-7402170
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-JOSHUA ROJAS - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402171
-
-OVER
-7402172
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-BRANDON LOWE - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402173
-
-OVER
-7402174
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CAL RALEIGH - UNDER/OVER PLAYER TOTAL BASES (Tampa Bay Rays vs Seattle Mariners) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402175
-
-OVER
-7402176
-
-UNDER
-Sep 09 4:05 PM
-Stream
-
-CONNOR WONG - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402177
-
-OVER
-7402178
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TREVOR STORY - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402179
-
-OVER
-7402180
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADAM DUVALL - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402181
-
-OVER
-7402182
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ADLEY RUTSCHMAN - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402183
-
-OVER
-7402184
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ANTHONY SANTANDER - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402185
-
-OVER
-7402186
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AARON HICKS - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402187
-
-OVER
-7402188
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-ALEX VERDUGO - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402189
-
-OVER
-7402190
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAFAEL DEVERS - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402191
-
-OVER
-7402192
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JUSTIN TURNER - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402193
-
-OVER
-7402194
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RYAN MOUNTCASTLE - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402195
-
-OVER
-7402196
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JAMES MCCANN - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402197
-
-OVER
-7402198
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-GUNNAR HENDERSON - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402199
-
-OVER
-7402200
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-RAMON URIAS - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402201
-
-OVER
-7402202
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-TRISTON CASAS - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402203
-
-OVER
-7402204
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-AUSTIN HAYS - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402205
-
-OVER
-7402206
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-JORGE MATEO - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402207
-
-OVER
-7402208
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-MASATAKA YOSHIDA - UNDER/OVER PLAYER TOTAL BASES (Boston Red Sox vs Baltimore Orioles) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402209
-
-OVER
-7402210
-
-UNDER
-Sep 09 4:10 PM
-Stream
-
-J.T. REALMUTO - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402211
-
-OVER
-7402212
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JACOB MICHAEL BURGER - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402213
-
-OVER
-7402214
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYSON STOTT - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402215
-
-OVER
-7402216
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-ALEC BOHM - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402217
-
-OVER
-7402218
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-TREA TURNER - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402219
-
-OVER
-7402220
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAZZ CHISHOLM - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402221
-
-OVER
-7402222
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYCE HARPER - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402223
-
-OVER
-7402224
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRANDON MARSH - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402225
-
-OVER
-7402226
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JESUS SANCHEZ - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402227
-
-OVER
-7402228
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-BRYAN DE LA CRUZ - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402229
-
-OVER
-7402230
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LUIS ARRAEZ - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402231
-
-OVER
-7402232
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOSHUA EVAN BELL - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402233
-
-OVER
-7402234
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JOEY WENDLE - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402235
-
-OVER
-7402236
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK CASTELLANOS - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402237
-
-OVER
-7402238
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-JAKE CAVE - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402239
-
-OVER
-7402240
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-NICK FORTES - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402241
-
-OVER
-7402242
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-KYLE SCHWARBER - UNDER/OVER PLAYER TOTAL BASES (Philadelphia Phillies vs Miami Marlins) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402243
-
-OVER
-7402244
-
-UNDER
-Sep 09 6:05 PM
-Stream
-
-LARS NOOTBAAR - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402245
-
-OVER
-7402246
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-ELLY DE LA CRUZ - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402247
-
-OVER
-7402248
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TOMMY EDMAN - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402249
-
-OVER
-7402250
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-JORDAN WALKER - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402251
-
-OVER
-7402252
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-WILLSON CONTRERAS - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402253
-
-OVER
-7402254
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-SPENCER STEER - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402255
-
-OVER
-7402256
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-CHRISTIAN ENCARNACION-STRAND - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402257
-
-OVER
-7402258
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN GORMAN - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402259
-
-OVER
-7402260
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-MASYN WINN - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402261
-
-OVER
-7402262
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER STEPHENSON - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402263
-
-OVER
-7402264
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-STUART FAIRCHILD - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402265
-
-OVER
-7402266
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-TYLER O'NEILL - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402267
-
-OVER
-7402268
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NICK SENZEL - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402269
-
-OVER
-7402270
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-PAUL GOLDSCHMIDT - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402271
-
-OVER
-7402272
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HUNTER RENFROE - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402273
-
-OVER
-7402274
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-HARRISON BADER - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402275
-
-OVER
-7402276
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOLAN ARENADO - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402277
-
-OVER
-7402278
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-NOELVI MARTE - UNDER/OVER PLAYER TOTAL BASES (Cincinnati Reds vs St. Louis Cardinals) -
-
-Rot
-
-Team
-
-Pitcher
-
-M Line
-
-Total
-
-Run Line
-7402279
-
-OVER
-7402280
-
-UNDER
-Sep 09 6:40 PM
-Stream
-
-KYLE TUCKER - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28049,16 +8077,16 @@ M Line
 Total
 
 Run Line
-7402281
+7452005
 
 OVER
-7402282
+7452006
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MARTIN MALDONADO - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+GABRIEL MORENO - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28071,17 +8099,17 @@ M Line
 Total
 
 Run Line
-7402283
+7452007
 
 OVER
-7402284
+7452008
 
 UNDER
-Sep 09 7:10 PM
-Stream
+CHRISTIAN WALKER - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-HA-SEONG KIM - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28093,16 +8121,16 @@ M Line
 Total
 
 Run Line
-7402285
+7452009
 
 OVER
-7402286
+7452010
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-TRENT GRISHAM - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+GIANCARLO STANTON - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28115,17 +8143,17 @@ M Line
 Total
 
 Run Line
-7402287
+7452011
 
 OVER
-7402288
+7452012
 
 UNDER
-Sep 09 7:10 PM
-Stream
+CORBIN CARROLL - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-LUIS CAMPUSANO - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28137,16 +8165,16 @@ M Line
 Total
 
 Run Line
-7402289
+7452013
 
 OVER
-7402290
+7452014
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-FERNANDO TATIS JR. - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+AUSTIN WELLS - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28159,17 +8187,17 @@ M Line
 Total
 
 Run Line
-7402291
+7452015
 
 OVER
-7402292
+7452016
 
 UNDER
-Sep 09 7:10 PM
-Stream
+JORDAN LAWLAR - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JUAN SOTO - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28181,16 +8209,16 @@ M Line
 Total
 
 Run Line
-7402293
+7452017
 
 OVER
-7402294
+7452018
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MAURICIO DUBÓN - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+GLEYBER TORRES - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28203,17 +8231,17 @@ M Line
 Total
 
 Run Line
-7402295
+7452019
 
 OVER
-7402296
+7452020
 
 UNDER
-Sep 09 7:10 PM
-Stream
+OSWALDO CABRERA - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JOSE ABREU - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28225,16 +8253,16 @@ M Line
 Total
 
 Run Line
-7402297
+7452021
 
 OVER
-7402298
+7452022
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-YORDAN ALVAREZ - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+AARON JUDGE - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28247,17 +8275,17 @@ M Line
 Total
 
 Run Line
-7402299
+7452023
 
 OVER
-7402300
+7452024
 
 UNDER
-Sep 09 7:10 PM
-Stream
+LOURDES GURRIEL - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-JEREMY PENA - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28269,16 +8297,16 @@ M Line
 Total
 
 Run Line
-7402301
+7452025
 
 OVER
-7402302
+7452026
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MANNY MACHADO - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+EMMANUEL RIVERA - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28291,17 +8319,17 @@ M Line
 Total
 
 Run Line
-7402303
+7452027
 
 OVER
-7402304
+7452028
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ALEK THOMAS - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-ALEX BREGMAN - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28313,16 +8341,16 @@ M Line
 Total
 
 Run Line
-7402305
+7452029
 
 OVER
-7402306
+7452030
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-MICHAEL BRANTLEY - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+OSWALD PERAZA - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28335,17 +8363,17 @@ M Line
 Total
 
 Run Line
-7402307
+7452031
 
 OVER
-7402308
+7452032
 
 UNDER
-Sep 09 7:10 PM
-Stream
+KETEL MARTE - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-GARRETT COOPER - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28357,16 +8385,16 @@ M Line
 Total
 
 Run Line
-7402309
+7452033
 
 OVER
-7402310
+7452034
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-JOSE ALTUVE - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
+ESTEVAN FLORIAL - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
 Rot
 
@@ -28379,17 +8407,17 @@ M Line
 Total
 
 Run Line
-7402311
+7452035
 
 OVER
-7402312
+7452036
 
 UNDER
-Sep 09 7:10 PM
-Stream
+ANTHONY VOLPE - UNDER/OVER PLAYER TOTAL BASES (New York Yankees vs Arizona Diamondbacks) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 1:05 PM
 
-XANDER BOGAERTS - UNDER/OVER PLAYER TOTAL BASES (Houston Astros vs San Diego Padres) -
-
 Rot
 
 Team
@@ -28401,16 +8429,16 @@ M Line
 Total
 
 Run Line
-7402313
+7452037
 
 OVER
-7402314
+7452038
 
 UNDER
-Sep 09 7:10 PM
-Stream
-
-ORLANDO ARCIA - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+MARCUS SEMIEN - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28423,17 +8451,17 @@ M Line
 Total
 
 Run Line
-7402315
+7452039
 
 OVER
-7402316
+7452040
 
 UNDER
-Sep 09 7:20 PM
-Stream
+DAVID FLETCHER - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-BRYAN REYNOLDS - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28445,16 +8473,16 @@ M Line
 Total
 
 Run Line
-7402317
+7452041
 
 OVER
-7402318
+7452042
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MICHAEL HARRIS - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+ADOLIS GARCIA - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28467,17 +8495,17 @@ M Line
 Total
 
 Run Line
-7402319
+7452043
 
 OVER
-7402320
+7452044
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JO ADELL - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-KE'BRYAN HAYES - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28489,16 +8517,16 @@ M Line
 Total
 
 Run Line
-7402321
+7452045
 
 OVER
-7402322
+7452046
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-LIOVER PEGUERO - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+NATHANIEL LOWE - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28511,17 +8539,17 @@ M Line
 Total
 
 Run Line
-7402323
+7452047
 
 OVER
-7402324
+7452048
 
 UNDER
-Sep 09 7:20 PM
-Stream
+LOGAN O'HOPPE - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-OZZIE ALBIES - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28533,16 +8561,16 @@ M Line
 Total
 
 Run Line
-7402325
+7452049
 
 OVER
-7402326
+7452050
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-MATT OLSON - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+MIKE MOUSTAKAS - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28555,17 +8583,17 @@ M Line
 Total
 
 Run Line
-7402327
+7452051
 
 OVER
-7402328
+7452052
 
 UNDER
-Sep 09 7:20 PM
-Stream
+NOLAN SCHANUEL - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-RONALD ACUNA - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28577,16 +8605,16 @@ M Line
 Total
 
 Run Line
-7402329
+7452053
 
 OVER
-7402330
+7452054
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-CONNOR JOE - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+BRANDON DRURY - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28599,17 +8627,17 @@ M Line
 Total
 
 Run Line
-7402331
+7452055
 
 OVER
-7402332
+7452056
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JONAH HEIM - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MARCELL OZUNA - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28621,16 +8649,16 @@ M Line
 Total
 
 Run Line
-7402333
+7452057
 
 OVER
-7402334
+7452058
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-JI-HWAN BAE - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+LEODY TAVERAS - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28643,17 +8671,17 @@ M Line
 Total
 
 Run Line
-7402335
+7452059
 
 OVER
-7402336
+7452060
 
 UNDER
-Sep 09 7:20 PM
-Stream
+RANDAL GRICHUK - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-JARED TRIOLO - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28665,16 +8693,16 @@ M Line
 Total
 
 Run Line
-7402337
+7452061
 
 OVER
-7402338
+7452062
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-ENDY RODRIGUEZ - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+JOSH JUNG - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28687,17 +8715,17 @@ M Line
 Total
 
 Run Line
-7402339
+7452063
 
 OVER
-7402340
+7452064
 
 UNDER
-Sep 09 7:20 PM
-Stream
+ZACH NETO - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-TRAVIS D'ARNAUD - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28709,16 +8737,16 @@ M Line
 Total
 
 Run Line
-7402341
+7452065
 
 OVER
-7402342
+7452066
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-EDDIE ROSARIO - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+COREY SEAGER - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28731,17 +8759,17 @@ M Line
 Total
 
 Run Line
-7402343
+7452067
 
 OVER
-7402344
+7452068
 
 UNDER
-Sep 09 7:20 PM
-Stream
+MITCH GARVER - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-MIGUEL ANDÚJAR - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28753,16 +8781,16 @@ M Line
 Total
 
 Run Line
-7402345
+7452069
 
 OVER
-7402346
+7452070
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-AUSTIN RILEY - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
+EZEQUIEL DURÁN - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
 Rot
 
@@ -28775,17 +8803,17 @@ M Line
 Total
 
 Run Line
-7402347
+7452071
 
 OVER
-7402348
+7452072
 
 UNDER
-Sep 09 7:20 PM
-Stream
+JARED WALSH - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Texas Rangers) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:38 PM
 
-ALIKA WILLIAMS - UNDER/OVER PLAYER TOTAL BASES (Atlanta Braves vs Pittsburgh Pirates) -
-
 Rot
 
 Team
@@ -28797,16 +8825,16 @@ M Line
 Total
 
 Run Line
-7402349
+7452073
 
 OVER
-7402350
+7452074
 
 UNDER
-Sep 09 7:20 PM
-Stream
-
-JOC PEDERSON - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+J.P. CRAWFORD - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -28819,17 +8847,17 @@ M Line
 Total
 
 Run Line
-7402351
+7452075
 
 OVER
-7402352
+7452076
 
 UNDER
-Sep 09 9:05 PM
-Stream
+KYLE TUCKER - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-NOLAN JONES - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -28841,16 +8869,16 @@ M Line
 Total
 
 Run Line
-7402353
+7452077
 
 OVER
-7402354
+7452078
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+YAINER DIAZ - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -28863,17 +8891,17 @@ M Line
 Total
 
 Run Line
-7402355
+7452079
 
 OVER
-7402356
+7452080
 
 UNDER
-Sep 09 9:05 PM
-Stream
+MAURICIO DUBÓN - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-LAMONTE WADE - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -28885,16 +8913,16 @@ M Line
 Total
 
 Run Line
-7402357
+7452081
 
 OVER
-7402358
+7452082
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MIKE YASTRZEMSKI - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+ALEX BREGMAN - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -28907,17 +8935,17 @@ M Line
 Total
 
 Run Line
-7402359
+7452083
 
 OVER
-7402360
+7452084
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JULIO RODRIGUEZ - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BLAKE SABOL - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -28929,16 +8957,16 @@ M Line
 Total
 
 Run Line
-7402361
+7452085
 
 OVER
-7402362
+7452086
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRENTON DOYLE - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+TEOSCAR HERNÁNDEZ - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -28951,17 +8979,17 @@ M Line
 Total
 
 Run Line
-7402363
+7452087
 
 OVER
-7402364
+7452088
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JEREMY PENA - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-EZEQUIEL TOVAR - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -28973,16 +9001,16 @@ M Line
 Total
 
 Run Line
-7402365
+7452089
 
 OVER
-7402366
+7452090
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-ELEHURIS MONTERO - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+CHAS MCCORMICK - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -28995,17 +9023,17 @@ M Line
 Total
 
 Run Line
-7402367
+7452091
 
 OVER
-7402368
+7452092
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JOSE ALTUVE - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-THAIRO ESTRADA - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -29017,16 +9045,16 @@ M Line
 Total
 
 Run Line
-7402369
+7452093
 
 OVER
-7402370
+7452094
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-CHARLIE BLACKMON - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+YORDAN ALVAREZ - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -29039,17 +9067,17 @@ M Line
 Total
 
 Run Line
-7402371
+7452095
 
 OVER
-7402372
+7452096
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JARRED KELENIC - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-RYAN MCMAHON - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -29061,16 +9089,16 @@ M Line
 Total
 
 Run Line
-7402373
+7452097
 
 OVER
-7402374
+7452098
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-BRENDAN RODGERS - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+CAL RALEIGH - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -29083,17 +9111,17 @@ M Line
 Total
 
 Run Line
-7402375
+7452099
 
 OVER
-7402376
+7452100
 
 UNDER
-Sep 09 9:05 PM
-Stream
+JOSE ABREU - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-ELIAS DIAZ - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -29105,16 +9133,16 @@ M Line
 Total
 
 Run Line
-7402377
+7452101
 
 OVER
-7402378
+7452102
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-WILMER FLORES - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+DYLAN MOORE - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -29127,17 +9155,17 @@ M Line
 Total
 
 Run Line
-7402379
+7452103
 
 OVER
-7402380
+7452104
 
 UNDER
-Sep 09 9:05 PM
-Stream
+MIKE FORD - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-BRANDON CRAWFORD - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
-
 Rot
 
 Team
@@ -29149,16 +9177,16 @@ M Line
 Total
 
 Run Line
-7402381
+7452105
 
 OVER
-7402382
+7452106
 
 UNDER
-Sep 09 9:05 PM
-Stream
-
-MITCHELL HANIGER - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs Colorado Rockies) -
+EUGENIO SUAREZ - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
 Rot
 
@@ -29171,17 +9199,17 @@ M Line
 Total
 
 Run Line
-7402383
+7452107
 
 OVER
-7402384
+7452108
 
 UNDER
-Sep 09 9:05 PM
-Stream
+TY FRANCE - UNDER/OVER PLAYER TOTAL BASES (Seattle Mariners vs Houston Astros) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:40 PM
 
-JOSH NAYLOR - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29193,16 +9221,16 @@ M Line
 Total
 
 Run Line
-7402385
+7452109
 
 OVER
-7402386
+7452110
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-KYREN PARIS - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+MITCHELL HANIGER - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29215,17 +9243,17 @@ M Line
 Total
 
 Run Line
-7402387
+7452111
 
 OVER
-7402388
+7452112
 
 UNDER
-Sep 09 9:07 PM
-Stream
+THAIRO ESTRADA - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-KOLE CALHOUN - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29237,16 +9265,16 @@ M Line
 Total
 
 Run Line
-7402389
+7452113
 
 OVER
-7402390
+7452114
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-NOLAN SCHANUEL - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+PATRICK BAILEY - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29259,17 +9287,17 @@ M Line
 Total
 
 Run Line
-7402391
+7452115
 
 OVER
-7402392
+7452116
 
 UNDER
-Sep 09 9:07 PM
-Stream
+AUSTIN SLATER - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MYLES STRAW - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29281,16 +9309,16 @@ M Line
 Total
 
 Run Line
-7402393
+7452117
 
 OVER
-7402394
+7452118
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-LOGAN O'HOPPE - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+TRENT GRISHAM - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29303,17 +9331,17 @@ M Line
 Total
 
 Run Line
-7402395
+7452119
 
 OVER
-7402396
+7452120
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MANNY MACHADO - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-JOSE RAMIREZ - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29325,16 +9353,16 @@ M Line
 Total
 
 Run Line
-7402397
+7452121
 
 OVER
-7402398
+7452122
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-GABRIEL ARIAS - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+JI-MAN CHOI - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29347,17 +9375,17 @@ M Line
 Total
 
 Run Line
-7402399
+7452123
 
 OVER
-7402400
+7452124
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MARCO LUCIANO - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-ANDRES GIMENEZ - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29369,16 +9397,16 @@ M Line
 Total
 
 Run Line
-7402401
+7452125
 
 OVER
-7402402
+7452126
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RANDAL GRICHUK - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+HELIOT RAMOS - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29391,17 +9419,17 @@ M Line
 Total
 
 Run Line
-7402403
+7452127
 
 OVER
-7402404
+7452128
 
 UNDER
-Sep 09 9:07 PM
-Stream
+LUIS MATOS - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MIKE MOUSTAKAS - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29413,16 +9441,16 @@ M Line
 Total
 
 Run Line
-7402405
+7452129
 
 OVER
-7402406
+7452130
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-STEVEN KWAN - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+WILMER FLORES - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29435,17 +9463,17 @@ M Line
 Total
 
 Run Line
-7402407
+7452131
 
 OVER
-7402408
+7452132
 
 UNDER
-Sep 09 9:07 PM
-Stream
+JUAN SOTO - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-BRANDON DRURY - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
-
 Rot
 
 Team
@@ -29457,16 +9485,16 @@ M Line
 Total
 
 Run Line
-7402409
+7452133
 
 OVER
-7402410
+7452134
 
 UNDER
-Sep 09 9:07 PM
-Stream
-
-RAMON LAUREANO - UNDER/OVER PLAYER TOTAL BASES (Los Angeles Angels vs Cleveland Guardians) -
+LUIS CAMPUSANO - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29479,17 +9507,17 @@ M Line
 Total
 
 Run Line
-7402411
+7452135
 
 OVER
-7402412
+7452136
 
 UNDER
-Sep 09 9:07 PM
-Stream
+MATTHEW BATTEN - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MICHAEL MASSEY - UNDER/OVER PLAYER TOTAL BASES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -29501,16 +9529,16 @@ M Line
 Total
 
 Run Line
-7402413
+7452137
 
 OVER
-7402414
+7452138
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-MAIKEL GARCIA - UNDER/OVER PLAYER TOTAL BASES (Toronto Blue Jays vs Kansas City Royals) -
+JONATHAN GREGORY J D DAVIS - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29523,17 +9551,17 @@ M Line
 Total
 
 Run Line
-7402415
+7452139
 
 OVER
-7402416
+7452140
 
 UNDER
-Sep 09 3:07 PM
-Stream
+FERNANDO TATIS JR. - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-MJ MELENDEZ - UNDER/OVER PLAYER TOTAL BASES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -29545,16 +9573,16 @@ M Line
 Total
 
 Run Line
-7402417
+7452141
 
 OVER
-7402418
+7452142
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-DREW WATERS - UNDER/OVER PLAYER TOTAL BASES (Toronto Blue Jays vs Kansas City Royals) -
+HA-SEONG KIM - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
 Rot
 
@@ -29567,17 +9595,17 @@ M Line
 Total
 
 Run Line
-7402419
+7452143
 
 OVER
-7402420
+7452144
 
 UNDER
-Sep 09 3:07 PM
-Stream
+XANDER BOGAERTS - UNDER/OVER PLAYER TOTAL BASES (San Francisco Giants vs San Diego Padres) -
+MLB - PLAYER TOTAL BASES (MUST START)
+OVER @ UNDER
+Sep 25 9:45 PM
 
-SALVADOR PEREZ - UNDER/OVER PLAYER TOTAL BASES (Toronto Blue Jays vs Kansas City Royals) -
-
 Rot
 
 Team
@@ -29589,35 +9617,13 @@ M Line
 Total
 
 Run Line
-7402421
+7452145
 
 OVER
-7402422
+7452146
 
 UNDER
-Sep 09 3:07 PM
-Stream
-
-BOBBY WITT JR. - UNDER/OVER PLAYER TOTAL BASES (Toronto Blue Jays vs Kansas City Royals) -
-
-Rot
-
-Team
-
-Pitcher
 
-M Line
-
-Total
-
-Run Line
-7402423
-
-OVER
-7402424
-
-UNDER
-Sep 09 3:07 PM
 """
 
 # Use regular expressions to find the matchups and corresponding Run Line numbers for each category

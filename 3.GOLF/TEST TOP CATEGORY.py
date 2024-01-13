@@ -4,18 +4,18 @@ import time
 import pyautogui
 import tkinter as tk
 
-ROT_NUMBER = 6164001
-add = 100
-TIMEDELAY = 60
+ROT_NUMBER = 8091171
+add = 10
+TIMEDELAY = 30
 
-description = " - QATAR MASTERS"
-header1 = "** MUST TEE OFF FOR ACTION **"
-header2 = "** DEAD HEAT RULE APPLIES **"
+description = " - TEAM TO PROGRESS FURTHER IN THE PLAYOFFS"
+header1 = "** WINNING THE SUPER BOWL IS"
+header2 = "CONSIDERED AS PROGRESSING FURTHER **"
 
 def category_headers():
     time.sleep(5)
     with open('../0.INFO', 'r') as file:
-        data = file.read().upper()
+        data = file.read()
 
     def run_additional_function():
         print("New Tournament being Created...")
@@ -117,7 +117,7 @@ def category_headers():
 
 def category_1_header():
     time.sleep(5)
-    with open('../0.INFO', 'r') as file:
+    with open('../../../Downloads/TNTODDS/0.INFO', 'r') as file:
         data = file.read()
 
     def run_additional_function():
@@ -214,7 +214,7 @@ def category_1_header():
 
 def category_no_headers():
     time.sleep(5)
-    with open('../0.INFO', 'r') as file:
+    with open('../../../Downloads/TNTODDS/0.INFO', 'r') as file:
         data = file.read()
 
     def run_additional_function():

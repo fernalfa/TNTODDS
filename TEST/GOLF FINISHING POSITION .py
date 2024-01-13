@@ -4,132 +4,113 @@ time.sleep(5)
 
 
 data = """
-Abraham Ancer
-Anirban Lahiri
-Branden Grace
-Brendan Steele
-Brooks Koepka
-Bryson DeChambeau
-Cameron Smith
-Cameron Tringale
-Carlos Ortiz
-Charles Howell III
-Dean Burmester
-Dustin Johnson
-Harold Varner III
-Jason Kokrak
-Joaquin Niemann
-Louis Oosthuizen
-Marc Leishman
-Mito Pereira
-Patrick Reed
-Paul Casey
-Richard Bland
-Sebastian Munoz
-Sergio Garcia
-Talor Gooch
-Thomas Pieters
+Tommy Fleetwood
+Tony Finau
+Tyrrell Hatton
+Viktor Hovland
+Wyndham Clark
+Xander Schauffele
 1
-16 or Better
+21 or Better
 -120
-18 or Better
+24 or Better
 -120
-16 or Better
+11 or Better
 -120
-18 or Better
+30 or Better
+-120
+25 or Better
+-120
+25 or Better
+-120
+17 or Better
+-120
+25 or Better
+-120
+13 or Better
+-120
+20 or Better
+-120
+14 or Better
 -120
 12 or Better
 -120
-10 or Better
--120
-7 or Better
--120
-17 or Better
--120
-19 or Better
--120
-18 or Better
--120
-16 or Better
--120
-11 or Better
--120
-16 or Better
--120
-18 or Better
--120
-13 or Better
--120
-20 or Better
--120
-20 or Better
--120
-13 or Better
--120
-11 or Better
--120
-21 or Better
--120
 22 or Better
 -120
-17 or Better
+24 or Better
 -120
-17 or Better
+24 or Better
 -120
-11 or Better
+6 or Better
+-120
+25 or Better
 -120
 21 or Better
 -120
+18 or Better
+-120
+21 or Better
+-120
+20 or Better
+-120
+20 or Better
+-120
+10 or Better
+-125
+26 or Better
+-120
+14 or Better
+-120
 2
-17 or Worse
+22 or Worse
 -120
-19 or Worse
+25 or Worse
 -120
-17 or Worse
+12 or Worse
 -120
-19 or Worse
+31 or Worse
+-120
+26 or Worse
+-120
+26 or Worse
+-120
+18 or Worse
+-120
+26 or Worse
+-120
+14 or Worse
+-120
+21 or Worse
+-120
+15 or Worse
 -120
 13 or Worse
 -120
-11 or Worse
--120
-8 or Worse
--120
-18 or Worse
--120
-20 or Worse
--120
-19 or Worse
--120
-17 or Worse
--120
-12 or Worse
--120
-17 or Worse
--120
-19 or Worse
--120
-14 or Worse
--120
-21 or Worse
--120
-21 or Worse
--120
-14 or Worse
--120
-12 or Worse
--120
-22 or Worse
--120
 23 or Worse
 -120
-18 or Worse
+25 or Worse
 -120
-18 or Worse
+25 or Worse
 -120
-12 or Worse
+7 or Worse
+-120
+26 or Worse
 -120
 22 or Worse
+-120
+19 or Worse
+-120
+22 or Worse
+-120
+21 or Worse
+-120
+21 or Worse
+-120
+11 or Worse
+-110
+27 or Worse
+-120
+15 or Worse
 -120
 """
 
@@ -163,7 +144,7 @@ def slow_type(text, delay=0.01):
         pyautogui.write(char)
         time.sleep(delay)
 
-HEADER = " - test test"
+HEADER = " - FINISHING POSITION"
 
 # Define your function here
 def your_function(arg1, arg2, arg3):

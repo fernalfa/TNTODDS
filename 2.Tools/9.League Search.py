@@ -1,10 +1,20 @@
 import time
 import pyautogui
-time.sleep(3)
+with open('../0.INFO', 'r', encoding='utf-8', errors='replace') as file:
+    value = file.read().upper()
 
-value = 'FRANCE LIGUE 1 2023/24 - TO FINISH IN TOP 4'
+
+def enterleague():
+
+    pyautogui.hotkey('alt', 'tab')
+    pyautogui.keyDown('ctrl')
+    pyautogui.press('e')
+    pyautogui.keyUp('ctrl')
+
 
 def searchleague():
     pyautogui.write(value)
 
+
+enterleague()
 searchleague()

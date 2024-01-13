@@ -1,5 +1,7 @@
 import time
 import pyautogui
+DELAY = 30
+
 
 # Read player names from text file
 with open('../0.INFO', 'r') as file:
@@ -9,6 +11,7 @@ time.sleep(3)
 
 for count, player in enumerate(player_names, start=1):
     player = player.strip()  # Remove leading/trailing whitespace and newline characters
+    print(f"{count}: {player}")
     pyautogui.typewrite(player)
     pyautogui.write(" - ")
     pyautogui.write(" TO MAKE THE CUT")
@@ -23,8 +26,7 @@ for count, player in enumerate(player_names, start=1):
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('shift', 'tab')
     pyautogui.hotkey('alt', 'o')
-    time.sleep(20)
+    time.sleep(DELAY)
 
-    print(f"{count}: {player}")
 
 print('COMPLETED')

@@ -4,7 +4,9 @@ time.sleep(5)
 count = 0
 
 
-skip = 4
+skip = 700
+
+
 
 
 
@@ -15,8 +17,6 @@ lines = data.strip().split('\n')
 
 def jump():
     pyautogui.press('down', presses = skip)
-    pyautogui.press('down')
-    pyautogui.press('down')
     print("GAME SKIPPED")
 
 
@@ -34,9 +34,6 @@ for line in lines:
         pyautogui.press('enter')
         pyautogui.press('down')
         count += 1
-        if count % skip == 0:
-            pyautogui.press('down')
-            pyautogui.press('down')
     elif line.startswith('-') or line.startswith('−'):
         value = int(line)
         if value > 10000:
@@ -46,6 +43,8 @@ for line in lines:
         pyautogui.press('enter')
         pyautogui.press('down')
         count += 1
-        if count % skip == 0:
-            pyautogui.press('down')
-            pyautogui.press('down')
+
+
+
+
+

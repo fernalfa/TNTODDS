@@ -1,241 +1,43 @@
-import re
-
-data = '''
-
-WTA - BAD HOMBURG WINNER - jun 28
-WTA - BAD HOMBURG WINNER
-WTA - BAD HOMBURG WINNER
-WTA - BAD HOMBURG WINNER
-Jun 28 - 6:44 PM
-
-
-Rot
-
-Description
-
-Odds
-
-
-8840101
-
-**ALL ACTION**
-8840102
-
-IGA SWIATEK
-8840103
-
-LIUDMILA SAMSONOVA
-8840104
-
-DONNA VEKIC
-8840105
-
-BIANCA ANDREESCU
-8840106
-
-LEYLAH A FERNANDEZ
-8840107
-
-ALIZE CORNET
-8840108
-
-ANNA BLINKOVA
-8840109
-
-LINDA NOSKOVA
-8840110
-
-ALYCIA PARKS
-8840111
-
-ALIAKSANDRA SASNOVICH
-8840112
-
-LUCIA BRONZETTI
-8840113
-
-VARVARA GRACHEVA
-8840114
-
-TATJANA MARIA
-8840115
-
-EMMA NAVARRO
-8840116
-
-MAYAR SHERIF
-8840117
-
-JIL TEICHMANN
-8840118
-
-ELISABETTA COCCIARETTO
-8840119
-
-SONAY KARTAL
-8840120
-
-KATIE VOLYNETS
-8840121
-
-REBEKA MASAROVA
-8840122
-
-KATERINA SINIAKOVA
-8840123
-
-CLAIRE LIU
-8840124
-
-MARYNA ZANEVSKA
-8840125
-
-SARA ERRANI
-8840126
-
-ANNA-LENA FRIEDSAM
-8840127
-
-JULIA GRABHER
-8840128
-
-JAQUELINE CRISTIAN
-8840129
-
-SABINE LISICKI
-8840130
-
-EVGENIYA RODINA
-8840131
-
-KATERYNA BAINDL
-8840132
-
-VIKTORIYA TOMOVA
-8840133
-
-MARTINA TREVISAN
-WTA - ROTHESAY INTERNATIONAL WINNER - jun 28
-WTA - ROTHESAY INTERNATIONAL WINNER
-WTA - ROTHESAY INTERNATIONAL WINNER
-WTA - ROTHESAY INTERNATIONAL WINNER
-Jun 28 - 6:44 PM
-
-Rot
-
-Description
-
-Odds
-
-
-8860101
-
-**ALL ACTION**
-8860102
-
-ELENA RYBAKINA
-8860103
-
-PETRA KVITOVA
-8860104
-
-BARBORA KREJCIKOVA
-8860105
-
-COCO GAUFF
-8860106
-
-JESSICA PEGULA
-8860107
-
-ONS JABEUR
-8860108
-
-CAROLINE GARCIA
-8860109
-
-MARKETA VONDROUSOVA
-8860110
-
-MARIA SAKKARI
-8860111
-
-KAROLINA PLISKOVA
-8860112
-
-JELENA OSTAPENKO
-8860113
-
-BEATRIZ HADDAD MAIA
-8860114
-
-MADISON KEYS
-8860115
-
-ELISE MERTENS
-8860116
-
-SHELBY ROGERS
-8860117
-
-ANASTASIA POTAPOVA
-8860118
-
-DARIA KASATKINA
-8860119
-
-SORANA CIRSTEA
-8860120
-
-QINWEN ZHENG
-8860121
-
-HARRIET DART
-8860122
-
-KATIE BOULTER
-8860123
-
-CAMILA GIORGI
-8860124
-
-ANHELINA KALININA
-8860125
-
-MARIE BOUZKOVA
-8860126
-
-SHUAI ZHANG
-8860127
-
-BERNARDA PERA
-8860128
-
-ANA BOGDAN
-8860129
-
-CAMILA OSORIO
-8860130
-
-JASMINE PAOLINI
-8860131
-
-JODIE ANNA BURRAGE
-8860132
-
-MADISON BRENGLE
-8860133
-
-XIYU WANG
-8860134
-
-PETRA MARTIC
-
-'''
-
-# Extract the names using regular expressions
-names = re.findall(r'\n\d+\n\n(.+)', data)
-
-# Print the names vertically
-for name in names:
-    print(name)
+import pyautogui
+import time
+
+# Define a list of custom texts to use in each iteration
+custom_texts = ['461', '463', '459', '467']
+# Define the number of times to repeat the actions for each custom text
+num_repeats_list = [2, 2, 2, 2]
+
+# Delay to allow you to focus on the target window
+time.sleep(5)
+
+# Iterate through the custom texts and their corresponding num_repeats
+for custom_text, num_repeats in zip(custom_texts, num_repeats_list):
+    for _ in range(num_repeats):
+        # Simulate CTRL+ENTER
+        pyautogui.hotkey('ctrl', 'enter')
+
+        # Simulate SHIFT+TAB three times
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+
+        # Typing the custom text
+        pyautogui.typewrite(custom_text)
+
+        pyautogui.press('tab')
+        pyautogui.press('tab')
+
+        # Typing the custom text
+        pyautogui.typewrite(custom_text)
+
+        # Simulate ALT+O twice
+        pyautogui.hotkey('alt', 'o')
+        time.sleep(7)
+        pyautogui.press('tab')
+        pyautogui.press('down')
+        pyautogui.press('down')
+        pyautogui.press('down')
+
+    # Optionally, you can add a delay between iterations to give you time to switch to the next text
+    time.sleep(2)

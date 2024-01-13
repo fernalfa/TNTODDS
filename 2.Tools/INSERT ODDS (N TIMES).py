@@ -4,7 +4,7 @@ time.sleep(5)
 times = 0
 
 
-number = 30
+number = 25
 value = "-120"
 
 
@@ -12,7 +12,7 @@ def deleteempty():
     pyautogui.press('enter')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
-    pyautogui.press('down', presses=3)
+    pyautogui.press('down', presses=1)
 count = 0
 
 while (count < number):

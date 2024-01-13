@@ -15,7 +15,7 @@ count = 0
 time.sleep(3)
 # Iterate excel rows till to finish
 
-repeat = 48
+repeat = 27
 
 for column in excel_data['Row ID'].tolist():
     pyautogui.typewrite(str(excel_data['FP'][count]))

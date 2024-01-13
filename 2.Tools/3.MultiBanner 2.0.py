@@ -14,7 +14,7 @@ excel_data = pandas.read_excel(file_path, sheet_name=sport)
 count = 0
 time.sleep(4)
 
-number = 15
+number = 2
 
 # Wrap your loop with tqdm
 with tqdm(total=number) as pbar:
@@ -56,33 +56,7 @@ with tqdm(total=number) as pbar:
         pyautogui.hotkey('shift', 'tab')
         pyautogui.press('del')
 
-        pyautogui.write((str(int(excel_data['ROT5'][count]))))
-        pyautogui.press('tab', presses=3)
-        pyautogui.typewrite(str(excel_data['BANNER'][count]))
-        pyautogui.hotkey('alt', 'o')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.press('del')
 
-        pyautogui.write((str(int(excel_data['ROT6'][count]))))
-        pyautogui.press('tab', presses=3)
-        pyautogui.typewrite(str(excel_data['BANNER'][count]))
-        pyautogui.hotkey('alt', 'o')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.press('del')
-
-        pyautogui.write((str(int(excel_data['ROT7'][count]))))
-        pyautogui.press('tab', presses=3)
-        pyautogui.typewrite(str(excel_data['BANNER'][count]))
-
-        pyautogui.hotkey('alt', 'o')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.hotkey('shift', 'tab')
-        pyautogui.press('del')
 
         # Set counter with the number of Rows
         if count == number - 1:

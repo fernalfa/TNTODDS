@@ -6,7 +6,7 @@ time.sleep(5)
 with open('../0.INFO', 'r') as file:
     data = file.read()
 
-pattern = r"Moneyline / Total Runs\n\n.*?(\d+\.\d+)\n"
+pattern = r"Moneyline / Total Goals\n\n.*?(\d+\.\d+)\n"
 
 matches = re.findall(pattern, data)
 

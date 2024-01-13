@@ -1,24 +1,25 @@
 import time
 from tqdm import tqdm
 import pyautogui
-time.sleep(5)
+time.sleep(3)
 
+number = 79
+value = 2001
 
-number = 50
-value = 8996501
+JUMP = 3
+
 
 
 add = 2
 
 
 
-
 def deleteempty():
     pyautogui.press('enter')
-    pyautogui.press('backspace')
+    pyautogui.press('right')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
-    pyautogui.press('down', presses = 3)
+    pyautogui.press('down', presses = JUMP)
 
 count = 0
 

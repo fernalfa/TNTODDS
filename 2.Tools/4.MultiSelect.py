@@ -6,7 +6,7 @@ from tqdm import tqdm
 time.sleep(4)
 
 # Precomputed values
-repeat = 300
+repeat = 500
 tab = 1
 
 def delete_empty():
