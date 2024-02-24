@@ -3,20 +3,20 @@ from tqdm import tqdm
 import pyautogui
 time.sleep(3)
 
-number = 79
-value = 2001
+number = 5
+
+value = 2723003
+
+
 
 JUMP = 3
-
-
-
 add = 2
 
 
 
 def deleteempty():
     pyautogui.press('enter')
-    pyautogui.press('right')
+    #pyautogui.press('delete')
     pyautogui.typewrite(str(value))
     pyautogui.press('enter')
     pyautogui.press('down', presses = JUMP)

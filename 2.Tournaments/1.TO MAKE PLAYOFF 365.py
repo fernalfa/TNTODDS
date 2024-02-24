@@ -4,7 +4,7 @@ from tqdm import tqdm
 
 time.sleep(3)
 EXTRACENTS = 0
-JUMP_AMOUNT = 4
+JUMP_AMOUNT = 3
 
 
 def jumper(jump_amount):
@@ -30,7 +30,7 @@ def process_line(line):
 
 # Open the "INFO" file
 try:
-    with open('../0.INFO', 'r') as file:
+    with open('C:\\Users\\User\\Desktop\\New folder\\TNTODDS\\INFO.txt', 'r') as file:
         lines = file.readlines()
 except FileNotFoundError:
     print("File not found.")

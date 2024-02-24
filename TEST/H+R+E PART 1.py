@@ -6,172 +6,156 @@ time.sleep(3)
 
 
 text = """
-Aug 27 Sun 2023
-12:05 PM
-1975
-Los Angeles Angels
-G. Canning -R
-O 26½
-+100
-1976
-New York Mets
-D. Peterson -L
-U 26½
--130
-01:35 PM
-1951
-St. Louis Cardinals
-D. Rom -L
-O 27½
--115
-1952
-Philadelphia Phillies
-A. Nola -R
-U 27½
--115
-01:35 PM
-1953
-Chicago Cubs
-J. Assad -R
-O 27
--110
-1954
-Pittsburgh Pirates
-B. Falter -L
-U 27
--120
-01:35 PM
-1977
-Los Angeles Dodgers
-C. Ferguson -L
-O 28½
--105
-1978
-Boston Red Sox
-T. Houck -R
-U 28½
--125
-01:35 PM
-1979
-Colorado Rockies
-T. Blach -L
-O 26½
--110
-1980
-Baltimore Orioles
-J. Flaherty -R
-U 26½
--120
-01:37 PM
-1963
-Cleveland Guardians
-N. Syndergaard -R
-O 27½
-+110
-1964
-Toronto Blue Jays
-Y. Kikuchi -L
-U 27½
--140
-01:40 PM
-1955
-Washington Nationals
-T. Williams -R
+3:07 PM
+1965
+Tampa Bay Rays
+S. Armstrong -R
 O 26
--110
-1956
+-106
+1966
+Toronto Blue Jays
+H. Ryu -L
+U 26
+-124
+06:35 PM
+1951
 Miami Marlins
 J. Chargois -R
-U 26
+O 27
 -120
-01:40 PM
-1965
-Houston Astros
-J. Verlander -R
-O 26
--145
-1966
-Detroit Tigers
-A. Faedo -R
-U 26
-+115
-01:40 PM
+1952
+Pittsburgh Pirates
+Q. Priester -R
+U 27
+-110
+07:05 PM
 1967
-New York Yankees
-C. Rodon -L
+Miami Marlins
+J. Chargois -R
+O 27
+-120
+1952
+Pittsburgh Pirates
+Q. Priester -R
+U 27
+-110
+07:05 PM
+1967
+Boston Red Sox
+K. Crawford -R
 O 25½
--114
+-115
 1968
-Tampa Bay Rays
-Z. Littell -R
+Baltimore Orioles
+K. Gibson -R
 U 25½
--116
-02:10 PM
-1957
+-115
+07:10 PM
+1953
+Chicago Cubs
+J. Wicks -L
+O 26
+-101
+1954
+Milwaukee Brewers
+E. Lauer -L
+U 26
+-129
+Chicago Cubs
+J. Wicks -L
+O 26
+-101
+1954
+Milwaukee Brewers
+E. Lauer -L
+U 26
+-129
+:10 PM
+1969
+New York Yankees
+C. Schmidt -R
+O 27½
+-119
+1970
+Kansas City Royals
+S. Cruz -R
+U 27½
+-111
+07:10 PM
+1975
 San Diego Padres
 M. Wacha -R
-O 26½
--125
-1958
-Milwaukee Brewers
-A. Houser -R
-U 26½
--105
-02:10 PM
-1969
-Oakland Athletics
-P. Blackburn -R
-O 27
--106
-1970
+O 26
+-120
+1976
 Chicago White Sox
 M. Clevinger -R
-U 27
--124
-02:10 PM
-1971
-Texas Rangers
-J. Montgomery -L
-O 25½
--123
-1972
-Minnesota Twins
-B. Ober -R
-U 25½
--107
-04:10 PM
-1961
-Cincinnati Reds
-G. Ashcraft -R
-O 27½
+U 26
 -110
-1962
-Arizona Diamondbacks
-S. Cecconi -R
-U 27½
--120
-04:10 PM
+07:15 PM
+1957
+Cincinnati Reds
+C. Phillips -R
+O 27
+-126
+1958
+St. Louis Cardinals
+D. Rom -L
+U 27
+-104
+07:15 PM
 1973
-Kansas City Royals
-A. Marsh -R
-O 25
--120
+Texas Rangers
+A. Heaney -L
+O 24½
+-106
 1974
 Seattle Mariners
 L. Castillo -R
-U 25
--110
-07:10 PM
+U 24½
+-124
+07:20 PM
 1959
-Atlanta Braves
-J. Shuster -L
-O 28
--115
+Washington Nationals
+J. Adon -R
+O 27
+-106
 1960
+Atlanta Braves
+S. Strider -R
+U 27
+-124
+08:10 PM
+1977
+Houston Astros
+J. Verlander -R
+O 26½
+-115
+1978
+Arizona Diamondbacks
+M. Kelly -R
+U 26½
+-115
+09:05 PM
+1961
+Los Angeles Dodgers
+C. Kershaw -L
+O 25½
+-112
+1962
 San Francisco Giants
 T. Beck -R
-U 28
--115
+U 25½
+-118
+Los Angeles Dodgers
+C. Kershaw -L
+O 25½
+-112
+1962
+San Francisco Giants
+T. Beck -R
+U 25½
+-118
 """
 
 def enteroverodd():

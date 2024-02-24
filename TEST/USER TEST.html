@@ -1,38 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Python File Selector</title>
-</head>
-<body>
-    <h1>Python File Selector</h1>
+<style>
+  p {
+  color: black;
+  font-size: 125%;
+}
 
-    <input type="file" id="fileInput" accept=".py" multiple>
-    <button id="processButton">Process Selected Files</button>
+a1 {
+  color:red;
+  font-size: 150%;
+  font-weight: bold;
+}
 
-    <div id="output"></div>
+t1 {
+  background-color:lightgray;
+  color: green;
+  font-size: 150%;
+}
+t2 {
+  background-color:lightgray;
+  color: black;
+  font-size: 150%;
+}
 
-    <script>
-        document.getElementById("processButton").addEventListener("click", function() {
-            const fileInput = document.getElementById("fileInput");
-            const outputDiv = document.getElementById("output");
+t3 {
+  color: green;
+  font-size: 125%;
+  font-weight: bold;
+}
 
-            const selectedFiles = fileInput.files;
-            outputDiv.innerHTML = "";
+t4 {
+  color: blue;
+  font-size: 125%;
+  font-weight: bold;
+}
 
-            for (let i = 0; i < selectedFiles.length; i++) {
-                const file = selectedFiles[i];
-                const fileReader = new FileReader();
+t5 {
+  color:black;
+  font-size: 150%;
+  font-weight: bold;
+}
 
-                fileReader.onload = function(event) {
-                    const content = event.target.result;
-                    const pre = document.createElement("pre");
-                    pre.textContent = content;
-                    outputDiv.appendChild(pre);
-                };
+t6 {
+  background-color: rgba(0, 0, 0, 0.692);
+  color: whitesmoke;
+  font-size: 175%;
+}
 
-                fileReader.readAsText(file);
-            }
-        });
-    </script>
+</style>
+  <head>
+  </head>
+  <body>
+    <label for="name">Name:</label>
+<input type="text" id="name" name="name">
+
+<div class="input-container">
+  <label for="date">Date:</label>
+  <input type="text" id="date" name="date">
+</div>
+
+    <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">Todo el equipo de Agencia de Viajes Aeria le saluda muy cordialmente.</span></p>
+<p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">Adjunto podr&aacute; encontrar el correspondiente recibo de ingresos por su pago realizado.</span></span></p>
+<p><br></p>
+    <div class=main>
+    <t6>Recibo de Ingresos</t6>
+    <div class=container>
+    <t1 class="u-text u-text-default u-text-2">Información y Datos en Recibo de Ingresos:</t1>
+    <h3 class="u-text u-text-default u-text-2">Numero de Recibo:</h3>
+    <a1 ><b><?= recibo?></b> </a1>
+    <h3 class="u-text u-text-default u-text-2">Codigo de Referencia:</h3>
+    <a1 ><b><?= codref?></b> </a1>
+    <p><span style="font-weight: 700;">Fecha de Pago:</span></p>
+    <p><?= fechapago?></p>
+    <p><span style="font-weight: 700;">Secuencia de Pago:</span></p>
+    <p><?= secuencia?></p>
+    </div>
+<hr>
+    <div class=container>
+    <t1 class="u-text u-text-default u-text-2">Información Sobre Cliente:</t1>
+    <p><span style="font-weight: 700;">Recibimos de:</span></p>
+    <p><?= nombre?></p>
+    <p><span style="font-weight: 700;">Numero Telefono:</span></p>
+    <p><?= telefono?></p>
+    <p><span style="font-weight: 700;">Correo Electronico:</span></p>
+    <p><?= correo?></p>
+    </div>
+<hr>
+    <div class=container>
+    <t1 class="u-text u-text-default u-text-2">Información Sobre Pago Realizado:</t1>
+    <p><span style="font-weight: 700;">La Suma de:</span></p>
+    <p><?= abonoletras?></p>
+    <p><span style="font-weight: 700;">Monto a Pagar:</span></p>
+    <p><?= abonomonto?></p>
+    <p><span style="font-weight: 700;">Por Concepto De:</span></p>
+    <p><?= concepto?></p>
+    <p><span style="font-weight: 700;">Forma de Pago:</span></p>
+    <p><?= forma?></p>
+    <p><span style="font-weight: 700;">Método de Pago:</span></p>
+    <p><?= metodo?></p>
+    <p><span style="font-weight: 700;">Sucursal:</span></p>
+    <p><?= sucursal?></p>
+  </div>
+<hr>
+  <div class=container>
+  <t1 class="u-text u-text-default u-text-2">Resumen de Saldos:</t1>
+    <p><span style="font-weight: 700;">Saldo Anterior:</span></p>
+    <t4><?= saldoanterior?></t4>
+    <p><span style="font-weight: 700;">Este Abono:</span></p>
+    <t3><?= abonomonto?></t3>
+    <p><span style="font-weight: 700;">Saldo Actual:</span></p>
+    <a1><?= saldoactual?></a1>
+    </div>
+</div>
+<p>--</p>
+    <div dir="ltr" style="text-align: left;"><p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">Documento emitido por <strong>AERIA INTERNACIONAL C.R. S.A.</strong></span></div>
+    <p><br></p>
+    <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">Autorizado mediante oficio <strong>N&deg;4631008698881</strong> del 13/07/2017 de la Direcci&oacute;n General de Tributaci&oacute;n Directa.</span></p>
+    <div dir="ltr" style="text-align: left;"><p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">Documento emitido por <strong>AERIA INTERNACIONAL C.R. S.A.</strong></span></div>
+        <p><br></p>
+        <div dir="ltr" style="text-align: left;"><p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"><strong>Departamento de Servicio al Cliente:</strong> Tel: (+506) 4000-2264.</span></div>
+        <div dir="ltr" style="text-align: left;"><p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"><strong>Departamento de Ventas:</strong> Cel: (+506) 8451-8768.</span></div>
+        <div dir="ltr" style="text-align: left;"><p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"><strong>Departamento de Pagos:</strong> Cel: (+506) 7289-6209.</span></div>
+    </div>
+    <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"><li>San Francisco de Dos R&iacute;os, San Jos&eacute;.</li></span></span></p>
+    <p><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"><li>175m Este de la Iglesia Cat&oacute;lica.</li></span></span></p>
+    <div class="gmail_signature" data-smartmail="gmail_signature" dir="ltr">
+    <div dir="ltr" style="text-align: left;">
+        <div dir="ltr">
+            <div dir="ltr">
+                <div dir="ltr">
+                    <div dir="ltr">
+                        <div dir="ltr">
+                            <div dir="ltr">
+                                <div dir="ltr" style="line-height: 1.5;"><span style="font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"><a href="http://www.canatur.org/index.php?page=afiliados" target="_blank">Canatur</a> - &nbsp;<a href="https://www.facebook.com/aeriacr" target="_blank">Facebook</a>&nbsp; - <a href="http://www.aeriacr.com/" target="_blank">P&aacute;gina Web</a> - <a href="https://twitter.com/AeriaCR" target="_blank">Twitter</a> - <a href="https://www.pinterest.es/agenciadeviajesaeria/boards/" target="_blank">Pinterest</a> - <a href="https://www.google.co.cr/maps/place/Agencia+de+Viajes+Aeria/@9.904935,-84.0532268,17z/data=!4m5!3m4!1s0x8fa0e3a587ebc067:0xbcf07e45cbf113b0!8m2!3d9.9052066!4d-84.0516963?hl=es" target="_blank">Ubicaci&oacute;n de la Oficina</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<p><span></p>
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQSKWgdHaZKvnNgJhm0u0W9KJKWMSHrnBtF8TXcHqhpkLRKRf3ziNBAA2_wkMWsqEVjK54xkOA_UpM0/pub?w=480&amp;h=200">
 </body>
 </html>

@@ -4,10 +4,7 @@ time.sleep(5)
 count = 0
 
 
-skip = 700
-
-
-
+skip = 5
 
 
 # Open the text file
@@ -15,14 +12,16 @@ with open('../0.INFO', 'r') as file:
     data = file.read()
 lines = data.strip().split('\n')
 
-def jump():
+def jump_missing_game():
     pyautogui.press('down', presses = skip)
+    pyautogui.press('down')
+    pyautogui.press('down')
     print("GAME SKIPPED")
 
 
 for line in lines:
     if line == "SKIP":
-        jump()  # Call the skip() function
+        jump_missing_game()  # Call the skip() function
         continue
 
     if line.startswith('+'):
@@ -34,6 +33,9 @@ for line in lines:
         pyautogui.press('enter')
         pyautogui.press('down')
         count += 1
+        if count % skip == 0:
+            pyautogui.press('down')
+            pyautogui.press('down')
     elif line.startswith('-') or line.startswith('−'):
         value = int(line)
         if value > 10000:
@@ -43,8 +45,6 @@ for line in lines:
         pyautogui.press('enter')
         pyautogui.press('down')
         count += 1
-
-
-
-
-
+        if count % skip == 0:
+            pyautogui.press('down')
+            pyautogui.press('down')
